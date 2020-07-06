@@ -1,0 +1,6 @@
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\bin\Debug\SurveyApplication.SurveyDb.Business.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\bin\Debug\SurveyApplication.SurveyDb.Business.pdb
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\obj\Debug\SurveyApplication.SurveyDb.Business.csprojAssemblyReference.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\obj\Debug\SurveyApplication.SurveyDb.Business.csproj.CoreCompileInputs.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\obj\Debug\SurveyApplication.SurveyDb.Business.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Business\obj\Debug\SurveyApplication.SurveyDb.Business.pdb
