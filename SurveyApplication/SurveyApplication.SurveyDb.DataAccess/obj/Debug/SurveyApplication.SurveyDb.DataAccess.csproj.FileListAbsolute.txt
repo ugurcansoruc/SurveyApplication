@@ -1,0 +1,15 @@
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\SurveyApplication.SurveyDb.DataAccess.csprojAssemblyReference.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\SurveyApplication.SurveyDb.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.DataAccess.dll.config
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.DataAccess.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.DataAccess.pdb
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.Entities.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.Entities.pdb
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\SurveyApplication.SurveyDb.Entities.dll.config
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\SurveyApplication.SurveyDb.DataAccess.csproj.CopyComplete
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\SurveyApplication.SurveyDb.DataAccess.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\SurveyApplication.SurveyDb.DataAccess.pdb

@@ -1,0 +1,12 @@
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\obj\Debug\SurveyApplication.SurveyDb.Entities.csprojAssemblyReference.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\obj\Debug\SurveyApplication.SurveyDb.Entities.csproj.CoreCompileInputs.cache
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\SurveyApplication.SurveyDb.Entities.dll.config
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\SurveyApplication.SurveyDb.Entities.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\SurveyApplication.SurveyDb.Entities.pdb
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\EntityFramework.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\EntityFramework.xml
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\obj\Debug\SurveyApplication.SurveyDb.Entities.csproj.CopyComplete
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\obj\Debug\SurveyApplication.SurveyDb.Entities.dll
+C:\Users\US\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.Entities\obj\Debug\SurveyApplication.SurveyDb.Entities.pdb
