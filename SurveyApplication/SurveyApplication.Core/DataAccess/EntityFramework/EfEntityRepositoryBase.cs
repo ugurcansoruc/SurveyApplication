@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using SurveyApplication.Core.Entities;
 
 namespace SurveyApplication.Core.DataAccess.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
-    where TEntity : class, IEntity, new()
-    where TContext : DbContext, new()
+        where TEntity : class, IEntity, new()
+        where TContext : DbContext, new()
     {
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {

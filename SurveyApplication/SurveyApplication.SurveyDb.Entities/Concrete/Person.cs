@@ -1,9 +1,10 @@
+using SurveyApplication.Core.Entities;
 using System;
 using System.Collections.Generic;
 
 namespace SurveyApplication.SurveyDb.Entities.Concrete
 {
-    public class Person
+    public class Person:IEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

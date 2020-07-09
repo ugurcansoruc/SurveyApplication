@@ -20,6 +20,9 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
                 .IsRequired()
                 .HasMaxLength(200);
 
+            this.Property(t => t.EndDate)
+                .IsOptional();
+
             // Table & Column Mappings
             this.ToTable("Surveys");
             this.Property(t => t.Id).HasColumnName("Id");

@@ -1,0 +1,17 @@
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.deps.json
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.dll
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.csprojAssemblyReference.cache
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.AssemblyInfo.cs
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.Entities.dll
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.runtimeconfig.json
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.runtimeconfig.dev.json
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.pdb
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.Entities.pdb
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.csproj.CopyComplete
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.dll
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.pdb
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\obj\Debug\netcoreapp3.1\SurveyApplication.SurveyDb.DataAccess.genruntimeconfig.cache
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.Core.dll
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.DataAccess\bin\Debug\netcoreapp3.1\SurveyApplication.Core.pdb

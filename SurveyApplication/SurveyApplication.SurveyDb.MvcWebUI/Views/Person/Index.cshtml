@@ -1,0 +1,33 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.PersonListViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    İsim
+                </td>
+            </tr>
+
+            @foreach (var person in Model.Persons)
+            {
+                <tr>
+                    <td>@person.FirstName</td>
+                </tr>
+            }
+                
+
+            </table>
+        </div>
+    </body>
+</html>

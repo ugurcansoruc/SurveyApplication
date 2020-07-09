@@ -1,22 +1,13 @@
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+﻿using System.Data.Entity;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping;
 using SurveyApplication.SurveyDb.Entities.Concrete;
+using DbContext = System.Data.Entity.DbContext;
+
 
 namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
 {
     public class SurveyDbContext : DbContext
     {
-        static SurveyDbContext()
-        {
-            Database.SetInitializer<SurveyDbContext>(null);
-        }
-
-        public SurveyDbContext()
-            : base("Name=SurveyDbContext")
-        {
-        }
-
         public DbSet<Answer> Answers { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Gender> Genders { get; set; }
@@ -31,6 +22,8 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+        
+            
             modelBuilder.Configurations.Add(new AnswerMap());
             modelBuilder.Configurations.Add(new CityMap());
             modelBuilder.Configurations.Add(new GenderMap());
@@ -42,6 +35,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             modelBuilder.Configurations.Add(new QuestionTypeMap());
             modelBuilder.Configurations.Add(new SurveyMap());
             modelBuilder.Configurations.Add(new UserMap());
+            
         }
     }
 }
