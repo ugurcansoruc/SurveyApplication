@@ -20,10 +20,11 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
         public DbSet<Survey> Surveys { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public DbSet<PersonType> PersonTypes { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-        
-            
+
+
             modelBuilder.Configurations.Add(new AnswerMap());
             modelBuilder.Configurations.Add(new CityMap());
             modelBuilder.Configurations.Add(new GenderMap());
@@ -35,7 +36,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             modelBuilder.Configurations.Add(new QuestionTypeMap());
             modelBuilder.Configurations.Add(new SurveyMap());
             modelBuilder.Configurations.Add(new UserMap());
-            
+            modelBuilder.Configurations.Add(new PersonTypeMap());
         }
     }
 }

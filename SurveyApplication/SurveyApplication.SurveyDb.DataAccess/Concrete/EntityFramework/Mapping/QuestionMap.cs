@@ -19,18 +19,16 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
             // Table & Column Mappings
             this.ToTable("Questions");
             this.Property(t => t.Id).HasColumnName("Id");
+            this.Property(t => t.SurveyId).HasColumnName("SurveyId");
             this.Property(t => t.QuestionTypeId).HasColumnName("QuestionTypeId");
             this.Property(t => t.Text).HasColumnName("Text");
 
             // Relationships
-            this.HasMany(t => t.Surveys)
+            this.HasRequired(t => t.Survey)
                 .WithMany(t => t.Questions)
-                .Map(m =>
-                    {
-                        m.ToTable("SurveysQuestions");
-                        m.MapLeftKey("QuestionId");
-                        m.MapRightKey("SurveyId");
-                    });
+                .HasForeignKey(d => d.SurveyId)
+                .WillCascadeOnDelete(false);
+
 
             this.HasRequired(t => t.QuestionType)
                 .WithMany(t => t.Questions)

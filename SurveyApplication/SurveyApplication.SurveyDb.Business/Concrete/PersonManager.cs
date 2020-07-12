@@ -19,5 +19,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             return _personDal.GetList();
         }
+
+        
     }
 }

@@ -11,6 +11,7 @@ using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Business.Concrete;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework;
+using SurveyApplication.SurveyDb.MvcWebUI.Middlewares;
 
 namespace SurveyApplication.SurveyDb.MvcWebUI
 {
@@ -22,6 +23,16 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
         {
             services.AddScoped<IPersonService, PersonManager>();
             services.AddScoped<IPersonDal, EfPersonDal>();
+
+            services.AddScoped<ISurveyService, SurveyManager>();
+            services.AddScoped<ISurveyDal, EfSurveyDal>();
+
+            services.AddScoped<IQuestionService, QuestionManager>();
+            services.AddScoped<IQuestionDal, EfQuestionDal>();
+
+            services.AddScoped<IQuestionOptionService, QuestionOptionManager>();
+            services.AddScoped<IQuestionOptionsDal,EfQuestionOptionDal >();
+
             services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
@@ -33,6 +44,10 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseFileServer();
+            app.UseNodeModules(env.ContentRootPath);
+
+            
             app.UseMvcWithDefaultRoute();
         }
     }

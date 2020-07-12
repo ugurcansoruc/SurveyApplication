@@ -10,10 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\EntityFramework\Mapping\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SurveyApplication.Core\SurveyApplication.Core.csproj" />
     <ProjectReference Include="..\SurveyApplication.SurveyDb.Entities\SurveyApplication.SurveyDb.Entities.csproj" />
   </ItemGroup>

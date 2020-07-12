@@ -35,6 +35,12 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
             this.Property(t => t.LastName).HasColumnName("LastName");
             this.Property(t => t.Email).HasColumnName("Email");
             this.Property(t => t.Password).HasColumnName("Password");
+            this.Property(t => t.PersonTypeId).HasColumnName("PersonTypeId");
+
+            this.HasRequired(t => t.PersonType)
+                .WithMany(t => t.Persons)
+                .HasForeignKey(d => d.PersonTypeId);
+
         }
     }
 }

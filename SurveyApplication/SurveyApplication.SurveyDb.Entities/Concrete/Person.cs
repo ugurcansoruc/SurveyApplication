@@ -11,6 +11,8 @@ namespace SurveyApplication.SurveyDb.Entities.Concrete
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public int PersonTypeId { get; set; }
+        public PersonType PersonType { get; set; }
         public Manager Manager { get; set; }
         public User User { get; set; }
     }
