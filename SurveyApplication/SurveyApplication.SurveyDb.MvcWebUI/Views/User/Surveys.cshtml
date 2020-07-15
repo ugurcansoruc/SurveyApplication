@@ -4,39 +4,66 @@
 
 @{
     Layout = "~/Views/_UserLayout.cshtml";
+    int counter = 0;
+    bool check = false;
 }
+<div>
+    <div class="col-md-2">
+        @await Component.InvokeAsync("SurveyList2")
 
-<div class="col-md-2">
-    @await Component.InvokeAsync("SurveyList2")
-
-</div>
-@foreach (var question in Model.Questions)
-{
-    var test = "";
-    <h3>--------@question.Text------------</h3>
-
-    @foreach (var answer in Model.Answers)
-    {
-        @if (answer.QuestionId == question.Id)
+    </div>
+    <div class="col-md-8">
+        <hr />
+        @foreach (var question in Model.Questions)
         {
-            <p>Soruyu yanıtladınız.</p>
-            <p>Vermiş olduğunuz yanıt:
-            @foreach (var option in Model.QuestionOptions)
+            check = false;
+            var test = "";
+            counter += 1;
+            <h3>@counter. @question.Text</h3>
+            <br />
+
+            @foreach (var answer in Model.Answers)
             {
-                if (answer.Choice == option.Id)
+                @if (answer.QuestionId == question.Id)
                 {
-                    @option.Text
+                    <p>Soruyu yanıtladınız.</p>
+                    <p>
+                        Vermiş olduğunuz yanıt:
+                        @foreach (var option in Model.QuestionOptions)
+                        {
+                            if (answer.Choice == option.Id)
+                            {
+                                <b>@option.Text</b>
+                            }
+                        }
+                    </p>
+                    test = "hidden";
+                    check = true;
                 }
             }
-            </p>
-            test = "hidden";
+
+            @foreach (var answer in Model.Answers)
+            {
+                @if (answer.QuestionId != question.Id && @check == false)
+                {
+                        @foreach (var option in Model.QuestionOptions)
+                        {
+                            if (question.Id == option.QuestionId)
+                            {
+                                <input class="form-check-input" type="radio" disabled>
+                                <label class="form-check-label">
+                                    @option.Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                            }
+                        }
+                }
+            }
+
+            <div @test>
+                <a class="btn btn-warning pull-right" asp-controller="User" asp-action="QuestionAnswer" asp-route-surveyId="@question.SurveyId" asp-route-questionId="@question.Id">Yanıtla</a>
+            </div>
+            <hr />
         }
-    }
-
-    <div @test>
-        <a asp-controller="User" asp-action="QuestionAnswer" asp-route-surveyId="@question.SurveyId" asp-route-questionId="@question.Id">Yanıtla</a>
     </div>
-
-
-    <hr />
-}
+    <div class="col-md-2"></div>
+</div>

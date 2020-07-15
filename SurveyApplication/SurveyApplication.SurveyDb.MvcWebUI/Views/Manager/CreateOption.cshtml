@@ -11,24 +11,30 @@
         sonuc = (int)TempData["CreateOption"];
     }
 }
-
-<a asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-testViewModel="@Model" asp-route-surveyId="@Model.SurveyId">Geri</a>
-
-<form asp-controller="Manager" asp-action="CreateOption" method="post">
-    <div class="form-group">
-        <label>Seçenek</label>
-        <input asp-for="QuestionResponseOption.Text" class="form-control" />
-        <span asp-validation-for="QuestionResponseOption.Text"></span>
+    <div class="col-md-2">
+        <a class="list-group-item active">Seçenek Bilgileri</a>
     </div>
-    <input type="hidden" asp-for="SurveyId" />
-    <input type="hidden" asp-for="QuestionId" />
+    <div class="col-md-8">
+        <hr />
+        <a class="btn btn-info" asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-testViewModel="@Model" asp-route-surveyId="@Model.SurveyId">Geri</a>
 
-    <input type="submit" value="Seçenek Ekle" class="btn btn-xs btn-success" />
-</form>
+        <form asp-controller="Manager" asp-action="CreateOption" method="post">
+            <div class="form-group">
+                <h3>Seçenek:</h3>
+                <input asp-for="QuestionResponseOption.Text" class="form-control" />
+                <span asp-validation-for="QuestionResponseOption.Text"></span>
+            </div>
+            <input type="hidden" asp-for="SurveyId" />
+            <input type="hidden" asp-for="QuestionId" />
 
-<div class="col-md-10">
-    @if (@sonuc == 1)
-    {
-        <div class="alert alert-info" role="alert">İşlem başarılı</div>
-    }
-</div>
+            <input type="submit" value="Seçenek Ekle" class="btn btn-success" />
+        </form>
+        <br/>
+
+        <div>
+            @if (@sonuc == 1)
+            {
+                <div class="alert alert-info" role="alert">İşlem başarılı</div>
+            }
+        </div>
+    </div>

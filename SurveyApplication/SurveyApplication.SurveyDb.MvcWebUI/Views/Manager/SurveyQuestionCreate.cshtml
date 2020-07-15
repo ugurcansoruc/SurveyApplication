@@ -4,40 +4,50 @@
 
 @{
     Layout = "~/Views/_ManagerLayout.cshtml";
+    int counter = 0;
 }
 
-
+<div class="col-md-2">
+    <a class="list-group-item active">Soru Bilgileri</a>
+</div>
+<div class="col-md-8">
+    <hr />
+    <a class="btn btn-success pull-right" asp-action="Surveys" asp-controller="Manager">Anketi Tamamla</a>
+    <br/>
     <form asp-controller="Manager" asp-action="SurveyQuestionCreate" method="post">
         <div class="form-group">
-            <label>Soru</label>
+            <h3>Soru:</h3>
             <input asp-for="Question.Text" class="form-control" />
             <span asp-validation-for="Question.Text"></span>
         </div>
         <input type="hidden" asp-for="SurveyId" />
         <input type="hidden" asp-for="QuestionId" />
-        <input type="submit" value="Soru Ekle" class="btn btn-xs btn-success" />
+        <input type="submit" value="Soru Ekle" class="btn btn-warning" />
+        <hr/>
     </form>
-
-@foreach (var question in Model.Questions)
-{
-    <h1>Soru:</h1>
-    <p>@question.Text</p>
-    <br />
-    <hr />
-
-    @foreach (var option in Model.QuestionResponseOptions)
+    <h3 style="text-align: center">Sorular</h3>
+    @foreach (var question in Model.Questions)
     {
-        if (question.Id == option.QuestionId)
+        counter += 1;
+        <h3>@counter. @question.Text</h3>
+        <br />
+        @foreach (var option in Model.QuestionResponseOptions)
         {
-            <p>@option.Text</p>
-            <br />
+            if (question.Id == option.QuestionId)
+            {
+                <div class="col-md-3 form-check">
+                    <input class="form-check-input" type="radio" disabled>
+                    <label class="form-check-label">
+                        @option.Text
+                    </label>
+                </div>
+            }
         }
+        <a class="btn btn-warning btn-xs" asp-controller="Manager" asp-action="CreateOption" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" asp-route-testViewModel="@Model">Seçenek Ekle</a>
+
+        <br />
+        <br />
+        <hr />
     }
-    <a asp-controller="Manager" asp-action="CreateOption" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" asp-route-testViewModel="@Model" >SEÇENEK EKLE</a>
 
-    <br/>
-    <br/>
-    <hr/>
-}
-
-<a asp-action="Surveys" asp-controller="Manager">Bitir</a>
+</div>

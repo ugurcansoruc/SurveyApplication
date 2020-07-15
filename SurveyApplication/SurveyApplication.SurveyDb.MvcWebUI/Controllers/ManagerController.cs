@@ -14,12 +14,17 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private ISurveyService _surveyService;
         private IQuestionService _questionService;
         private IQuestionOptionService _questionOptionService;
-
-        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService)
+        private IManagerService _managerService;
+        private IPersonService _personService;
+        private IGroupService _groupService;
+        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService)
         {
             _surveyService = surveyService;
             _questionService = questionService;
             _questionOptionService = questionOptionService;
+            _managerService = managerService;
+            _personService = personService;
+            _groupService = groupService;
         }
 
         public ActionResult Index()
@@ -30,8 +35,27 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult MyAccount()
         {
+            var model = new ManagerUpdateListViewModel
+            {
+                Person = _personService.GetById(1),
+                Manager = _managerService.GetById(1),
+                Groups = _groupService.GetList()
+            };
 
-            return View();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult MyAccount(ManagerUpdateListViewModel managerUpdateListViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                _personService.Update(managerUpdateListViewModel.Person);
+                _managerService.Update(managerUpdateListViewModel.Manager);
+            }
+
+            managerUpdateListViewModel.Groups = _groupService.GetList();
+            return View(managerUpdateListViewModel);
         }
 
         public ActionResult Surveys(int page = 1, int surveyId = 0)
@@ -161,7 +185,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         }
 
-        public ActionResult CreateOption(int questionId,int surveyId, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
+        public ActionResult CreateOption(int questionId, int surveyId, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
         {
             surveyQuestionCreateViewModel.QuestionId = questionId;
             surveyQuestionCreateViewModel.SurveyId = surveyId;

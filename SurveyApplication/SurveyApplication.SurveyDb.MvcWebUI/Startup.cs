@@ -11,6 +11,7 @@ using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Business.Concrete;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework;
+using SurveyApplication.SurveyDb.Entities.Concrete;
 using SurveyApplication.SurveyDb.MvcWebUI.Middlewares;
 
 namespace SurveyApplication.SurveyDb.MvcWebUI
@@ -24,6 +25,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
             services.AddScoped<IPersonService, PersonManager>();
             services.AddScoped<IPersonDal, EfPersonDal>();
 
+            services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<IUserDal, EfUserDal>();
+
+            services.AddScoped<IManagerService, ManagerManager>();
+            services.AddScoped<IManagerDal, EfManagerDal>();
+
+
             services.AddScoped<ISurveyService, SurveyManager>();
             services.AddScoped<ISurveyDal, EfSurveyDal>();
 
@@ -35,6 +43,15 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
 
             services.AddScoped<IAnswerService, AnswerManager>();
             services.AddScoped<IAnswerDal, EfAnswerDal>();
+
+            services.AddScoped<IGroupService, GroupManager>();
+            services.AddScoped<IGroupDal, EfGroupDal>();
+
+            services.AddScoped<ICityService, CityManager>();
+            services.AddScoped<ICityDal, EfCityDal>();
+
+            services.AddScoped<IGenderService, GenderManager>();
+            services.AddScoped<IGenderDal, EfGenderDal>();
 
 
             services.AddSession();

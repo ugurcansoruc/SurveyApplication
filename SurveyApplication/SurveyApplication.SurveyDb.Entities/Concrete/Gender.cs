@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using SurveyApplication.Core.Entities;
 
 namespace SurveyApplication.SurveyDb.Entities.Concrete
 {
-    public class Gender
+    public class Gender : IEntity
     {
         public Gender()
         {

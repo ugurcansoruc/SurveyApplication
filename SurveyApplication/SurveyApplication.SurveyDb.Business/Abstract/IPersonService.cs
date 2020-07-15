@@ -8,6 +8,8 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
     public interface IPersonService
     {
         List<Person> GetAll();
+        Person GetById(int personId);
 
+        void Update(Person person);
     }
 }

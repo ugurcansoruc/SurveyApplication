@@ -19,7 +19,7 @@
     <div class="col-md-2">
         @await Component.InvokeAsync("SurveyList")
     </div>
-    <div class="col-md-10">
+    <div class="col-md-8">
         <hr />
         @foreach (var question in Model.Questions)
         {
@@ -50,4 +50,5 @@
         </div>
         @*<form asp-controller="Manager" asp-action="Survey"></form>*@
     </div>
+    <div class="col-md-2"></div>
 </div>

@@ -20,6 +20,14 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
             return _personDal.GetList();
         }
 
-        
+        public Person GetById(int personId)
+        {
+            return _personDal.Get(p=> p.Id == personId);
+        }
+
+        public void Update(Person person)
+        {
+            _personDal.Update(person);
+        }
     }
 }
