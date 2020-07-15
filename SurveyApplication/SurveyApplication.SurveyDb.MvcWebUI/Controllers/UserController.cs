@@ -14,12 +14,21 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private IQuestionService _questionService;
         private IQuestionOptionService _questionOptionService;
         private IAnswerService _answerService;
-        public UserController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService)
+        private IPersonService _personService;
+        private IUserService _userService;
+        private ICityService _cityService;
+        private IGenderService _genderService;
+
+        public UserController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService, IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
         {
             _surveyService = surveyService;
             _questionService = questionService;
             _questionOptionService = questionOptionService;
             _answerService = answerService;
+            _personService = personService;
+            _userService = userService;
+            _cityService = cityService;
+            _genderService = genderService;
         }
 
         public ActionResult Index()
@@ -30,8 +39,30 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult MyAccount()
         {
+            var model = new UserUpdateListViewModel
+            {
+                Person = _personService.GetById(2),
+                User = _userService.GetById(2),
+                Genders = _genderService.GetList(),
+                Cities = _cityService.GetList()
+            };
+            return View(model);
+        }
 
-            return View();
+
+        [HttpPost]
+        public ActionResult MyAccount(UserUpdateListViewModel userUpdateListViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                _personService.Update(userUpdateListViewModel.Person);
+                _userService.Update(userUpdateListViewModel.User);
+            }
+
+            userUpdateListViewModel.Cities = _cityService.GetList();
+            userUpdateListViewModel.Genders = _genderService.GetList();
+
+            return View(userUpdateListViewModel);
         }
 
         public ActionResult Surveys(AnswerListViewModel answerListViewModel, int page = 1, int surveyId = 0)
