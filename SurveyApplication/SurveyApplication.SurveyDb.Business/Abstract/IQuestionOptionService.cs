@@ -9,6 +9,9 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
     {
         List<QuestionResponseOption> GetAll();
         List<QuestionResponseOption> GetByQuestionId(int questionId);
+        QuestionResponseOption GetById(int questionResponseOptionId);
 
+        void Update(QuestionResponseOption questionResponseOption);
+        void Add(QuestionResponseOption questionResponseOption);
     }
 }

@@ -1,0 +1,42 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.AnswerListViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_UserLayout.cshtml";
+}
+
+<div class="col-md-2">
+    @await Component.InvokeAsync("SurveyList2")
+
+</div>
+@foreach (var question in Model.Questions)
+{
+    var test = "";
+    <h3>--------@question.Text------------</h3>
+
+    @foreach (var answer in Model.Answers)
+    {
+        @if (answer.QuestionId == question.Id)
+        {
+            <p>Soruyu yanıtladınız.</p>
+            <p>Vermiş olduğunuz yanıt:
+            @foreach (var option in Model.QuestionOptions)
+            {
+                if (answer.Choice == option.Id)
+                {
+                    @option.Text
+                }
+            }
+            </p>
+            test = "hidden";
+        }
+    }
+
+    <div @test>
+        <a asp-controller="User" asp-action="QuestionAnswer" asp-route-surveyId="@question.SurveyId" asp-route-questionId="@question.Id">Yanıtla</a>
+    </div>
+
+
+    <hr />
+}

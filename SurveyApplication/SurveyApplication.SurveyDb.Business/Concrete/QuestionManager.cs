@@ -23,12 +23,22 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 
         public List<Question> GetBySurveyId(int surveyId)
         {
-            return _questionDal.GetList(p => p.SurveyId == surveyId );
+            return _questionDal.GetList(p => p.SurveyId == surveyId);
         }
 
-        public List<Question> GetByQuestionId(int questionId)
+        public Question GetById(int questionId)
         {
-            return _questionDal.GetList(p => p.Id == questionId);
+            return _questionDal.Get(p => p.Id == questionId);
+        }
+
+        public void Update(Question question)
+        { 
+            _questionDal.Update(question);
+        }
+
+        public void Add(Question question)
+        {
+            _questionDal.Add(question);
         }
     }
 }

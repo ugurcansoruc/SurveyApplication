@@ -1,0 +1,34 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.SurveyQuestionCreateViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@{
+    Layout = "~/Views/_ManagerLayout.cshtml";
+    int sonuc = 0;
+    if (TempData.ContainsKey("CreateOption"))
+    {
+        sonuc = (int)TempData["CreateOption"];
+    }
+}
+
+<a asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-testViewModel="@Model" asp-route-surveyId="@Model.SurveyId">Geri</a>
+
+<form asp-controller="Manager" asp-action="CreateOption" method="post">
+    <div class="form-group">
+        <label>Seçenek</label>
+        <input asp-for="QuestionResponseOption.Text" class="form-control" />
+        <span asp-validation-for="QuestionResponseOption.Text"></span>
+    </div>
+    <input type="hidden" asp-for="SurveyId" />
+    <input type="hidden" asp-for="QuestionId" />
+
+    <input type="submit" value="Seçenek Ekle" class="btn btn-xs btn-success" />
+</form>
+
+<div class="col-md-10">
+    @if (@sonuc == 1)
+    {
+        <div class="alert alert-info" role="alert">İşlem başarılı</div>
+    }
+</div>

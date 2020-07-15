@@ -26,5 +26,20 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
             return _questionOptionsDal.GetList(p => p.QuestionId == questionId);
 
         }
+
+        public QuestionResponseOption GetById(int questionResponseOptionId)
+        {
+            return _questionOptionsDal.Get(p => p.Id == questionResponseOptionId);
+        }
+
+        public void Update(QuestionResponseOption questionResponseOption)
+        {
+            _questionOptionsDal.Update(questionResponseOption);
+        }
+
+        public void Add(QuestionResponseOption questionResponseOption)
+        {
+            _questionOptionsDal.Add(questionResponseOption);
+        }
     }
 }

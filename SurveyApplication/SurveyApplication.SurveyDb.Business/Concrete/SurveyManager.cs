@@ -21,5 +21,21 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             return _surveyDal.GetList();
         }
+
+        public Survey GetById(int surveyId)
+        {
+            return _surveyDal.Get(p => p.Id == surveyId);
+
+        }
+
+        public void Update(Survey survey)
+        {
+            _surveyDal.Update(survey);
+        }
+
+        public void Add(Survey survey)
+        {
+            _surveyDal.Add(survey);
+        }
     }
 }

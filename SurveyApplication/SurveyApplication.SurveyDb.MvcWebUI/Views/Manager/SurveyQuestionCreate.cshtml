@@ -1,0 +1,43 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.SurveyQuestionCreateViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_ManagerLayout.cshtml";
+}
+
+
+    <form asp-controller="Manager" asp-action="SurveyQuestionCreate" method="post">
+        <div class="form-group">
+            <label>Soru</label>
+            <input asp-for="Question.Text" class="form-control" />
+            <span asp-validation-for="Question.Text"></span>
+        </div>
+        <input type="hidden" asp-for="SurveyId" />
+        <input type="hidden" asp-for="QuestionId" />
+        <input type="submit" value="Soru Ekle" class="btn btn-xs btn-success" />
+    </form>
+
+@foreach (var question in Model.Questions)
+{
+    <h1>Soru:</h1>
+    <p>@question.Text</p>
+    <br />
+    <hr />
+
+    @foreach (var option in Model.QuestionResponseOptions)
+    {
+        if (question.Id == option.QuestionId)
+        {
+            <p>@option.Text</p>
+            <br />
+        }
+    }
+    <a asp-controller="Manager" asp-action="CreateOption" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" asp-route-testViewModel="@Model" >SEÇENEK EKLE</a>
+
+    <br/>
+    <br/>
+    <hr/>
+}
+
+<a asp-action="Surveys" asp-controller="Manager">Bitir</a>

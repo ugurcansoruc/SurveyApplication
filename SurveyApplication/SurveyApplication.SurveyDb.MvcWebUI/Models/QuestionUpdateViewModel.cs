@@ -8,7 +8,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Models
 {
     public class QuestionUpdateViewModel
     {
-        public List<Question> Question { get; set; }
+        public Question Question { get; set; }
         public List<QuestionResponseOption> QuestionOptions { get; set; }
+        public Survey Survey { get; set; }
     }
 }

@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Http
+@model SurveyApplication.SurveyDb.MvcWebUI.Models.QuestionListViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_ManagerLayout.cshtml";
+
+    int sonuc = 0;
+    if (TempData.ContainsKey("Update_"))
+    {
+        sonuc = (int)TempData["Update_"];
+    }
+    int count = 0;
+}
+
+
+<div>
+    <div class="col-md-2">
+        @await Component.InvokeAsync("SurveyList")
+    </div>
+    <div class="col-md-10">
+        <hr />
+        @foreach (var question in Model.Questions)
+        {
+            count += 1;
+            <h3>@count. @question.Text</h3>
+            <br />
+            @foreach (var questionOption in Model.QuestionOptions)
+            {
+                if (questionOption.QuestionId == question.Id)
+                {
+                    <input class="form-check-input" type="radio" disabled>
+                    <label class="form-check-label">
+                        @questionOption.Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                }
+            }
+            <br />
+            @*<button>@Html.ActionLink("Update", "Update", new { questionId = question.Id, surveyId = question.SurveyId })</button>*@
+            <a class="btn btn-warning pull-right" asp-controller="Manager" asp-action="Update" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId">Düzenle</a>
+            <br />
+            <hr />
+        }
+        <div class="col-md-3">
+            @if (@sonuc == 1)
+            {
+                <div class="alert alert-info" role="alert">Güncelleme başarılı</div>
+            }
+        </div>
+        @*<form asp-controller="Manager" asp-action="Survey"></form>*@
+    </div>
+</div>

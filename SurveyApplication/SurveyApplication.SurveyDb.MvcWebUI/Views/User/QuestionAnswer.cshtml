@@ -1,0 +1,36 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.AnswerListViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_UserLayout.cshtml";
+
+    int sonuc = 0;
+    if (TempData.ContainsKey("_QuestionAnswer"))
+    {
+        sonuc = (int)TempData["_QuestionAnswer"];
+    }
+}
+
+<a asp-controller="User" asp-action="Surveys" asp-route-surveyId="@Model.Question.SurveyId" >Geri</a>
+
+<p>geldi</p>
+<h1>@Model.Question.Text</h1>
+<form asp-action="QuestionAnswer" asp-controller="User" method="post">
+    @foreach (var option in Model.QuestionOptions)
+    {
+        <input type="radio" asp-for="Answer.Choice" value="@option.Id" />@option.Text<br />
+    }
+    <input type="hidden" asp-for="Question.Id" />
+    <input type="hidden" asp-for="Question.SurveyId" />
+    <input type="hidden" asp-for="Question.Text" />
+ 
+    <input type="submit" />
+</form>
+
+<div class="col-md-10">
+    @if (@sonuc == 1)
+    {
+        <div class="alert alert-info" role="alert">İşlem başarılı</div>
+    }
+</div>

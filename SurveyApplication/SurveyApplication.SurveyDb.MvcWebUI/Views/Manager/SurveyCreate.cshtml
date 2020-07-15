@@ -1,0 +1,33 @@
+﻿@using SurveyApplication.SurveyDb.Entities.Concrete
+@model SurveyApplication.SurveyDb.MvcWebUI.Models.SurveyViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_ManagerLayout.cshtml";
+}
+
+
+<div>
+    <p> Bu sayfa anket oluşturma sayfasıdır</p>
+
+
+    <form asp-controller="Manager" asp-action="SurveyQuestionCreate" method="post">
+        <div class="form-group">
+            <label>Anket İsmi</label>
+            <input asp-for="Survey.Name" class="form-control" />
+            <span asp-validation-for="Survey.Name"></span>
+        </div>
+        <div class="form-group">
+            <label>Anket Açıklaması</label>
+            <input asp-for="Survey.Description" class="form-control" />
+            <span asp-validation-for="Survey.Description"></span>
+        </div>
+
+        <input type="submit" value="Next" class="btn btn-xs btn-success" />
+    </form>
+    
+
+
+    <a></a>
+</div>

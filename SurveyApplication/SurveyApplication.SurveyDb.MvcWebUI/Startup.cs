@@ -33,6 +33,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
             services.AddScoped<IQuestionOptionService, QuestionOptionManager>();
             services.AddScoped<IQuestionOptionsDal,EfQuestionOptionDal >();
 
+            services.AddScoped<IAnswerService, AnswerManager>();
+            services.AddScoped<IAnswerDal, EfAnswerDal>();
+
+
+            services.AddSession();
+            services.AddDistributedMemoryCache();
+
             services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
@@ -46,7 +53,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
 
             app.UseFileServer();
             app.UseNodeModules(env.ContentRootPath);
-
+            app.UseSession();
             
             app.UseMvcWithDefaultRoute();
         }
