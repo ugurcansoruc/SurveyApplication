@@ -92,3 +92,7 @@ C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplicatio
 C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\User\Surveys.cshtml.g.cs
 C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\SurveyList2\Default.cshtml.g.cs
 C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\User\QuestionAnswer.cshtml.g.cs
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\Manager\SurveyAnalysis.cshtml.g.cs
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\_AccountLayout.cshtml.g.cs
+C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs

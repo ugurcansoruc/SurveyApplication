@@ -25,5 +25,10 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             _answerDal.Add(answer);
         }
+
+        public int GetOptionCount(int choiceId)
+        {
+            return _answerDal.GetList(p => p.Choice == choiceId).Count;
+        }
     }
 }

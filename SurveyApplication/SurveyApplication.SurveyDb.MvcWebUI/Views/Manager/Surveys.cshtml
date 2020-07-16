@@ -39,6 +39,8 @@
             <br />
             @*<button>@Html.ActionLink("Update", "Update", new { questionId = question.Id, surveyId = question.SurveyId })</button>*@
             <a class="btn btn-warning pull-right" asp-controller="Manager" asp-action="Update" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId">Düzenle</a>
+            <a class="btn btn-info pull-right" asp-controller="Manager" asp-action="SurveyAnalysis" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId">Verilen Yanıtlar</a>
+
             <br />
             <hr />
         }

@@ -7,6 +7,35 @@
     <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/node_modules/mdbootstrap/js/mdb.js"></script>
+    <script>
+        window.onload = function () {
+ 
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light1",
+                title: {
+                    text: " "
+                },
+                axisY: {
+                    scaleBreaks: {
+                        autoCalculate: true,
+                        type: "wavy",
+                        lineColor: "black"
+                    },
+                    gridThickness: 0,
+                    suffix: " "
+                },
+                data: [{
+                    type: "column",
+                    indexLabel: "{y}",
+                    dataPoints:  @Html.Raw(ViewBag.DataPoints)
+                }]
+            });
+            chart.render();
+ 
+        }
+    </script>
 </head>
 
 <body>
@@ -21,7 +50,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/Manager/Index">Survey</a>
+                    <a class="navbar-brand" href="/Manager/Index">Anket</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,8 +69,8 @@
     </div>
     <div class="col-md-2">
         <div class="list-group">
-            <a class="list-group-item" href="/Manager/MyAccount"  asp-controller="Manager" asp-action="Index">Hesabım</a>
-            <a class="list-group-item" href="/Manager/Surveys" asp-controller="Manager" asp-action="Surveys" >Anketler</a>
+            <a class="list-group-item" href="/Manager/MyAccount" asp-controller="Manager" asp-action="Index">Hesabım</a>
+            <a class="list-group-item" href="/Manager/Surveys" asp-controller="Manager" asp-action="Surveys">Anketler</a>
             <a class="list-group-item" href="/Manager/SurveyCreate" asp-controller="Manager" asp-action="SurveyCreate">Anket Oluştur</a>
         </div>
     </div>
@@ -49,7 +78,6 @@
         @RenderBody()
     </div>
 
-    <div class="col-md-12">Footer // burayı sonra düzenle</div>
 
 </body>
 

@@ -9,5 +9,7 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
     {
         List<Answer> GetBySurveyAndUserId(int surveyId, int userId);
         void Add(Answer answer);
+
+        int GetOptionCount(int choiceId);
     }
 }

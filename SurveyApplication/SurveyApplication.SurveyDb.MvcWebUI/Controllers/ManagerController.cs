@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Entities.Concrete;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
@@ -17,7 +18,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private IManagerService _managerService;
         private IPersonService _personService;
         private IGroupService _groupService;
-        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService)
+        private IAnswerService _answerService;
+        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService)
         {
             _surveyService = surveyService;
             _questionService = questionService;
@@ -25,6 +27,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             _managerService = managerService;
             _personService = personService;
             _groupService = groupService;
+            _answerService = answerService;
         }
 
         public ActionResult Index()
@@ -189,6 +192,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         {
             surveyQuestionCreateViewModel.QuestionId = questionId;
             surveyQuestionCreateViewModel.SurveyId = surveyId;
+
             return View(surveyQuestionCreateViewModel);
         }
 
@@ -203,6 +207,26 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
 
             return View(surveyQuestionCreateViewModel);
+        }
+
+        public ActionResult SurveyAnalysis(int questionId,int surveyId)
+        {
+            List<DataPoint> dataPoints = new List<DataPoint>();
+            var options = _questionOptionService.GetByQuestionId(questionId);
+            foreach (var option in options)
+            {
+                var optionAnswerCount = _answerService.GetOptionCount(option.Id);
+                dataPoints.Add(new DataPoint(option.Text, optionAnswerCount));
+            }
+            ViewBag.DataPoints = JsonConvert.SerializeObject(dataPoints);
+
+            var model = new SurveyQuestionCreateViewModel
+            {
+                Question = _questionService.GetById(questionId),
+                
+            };
+
+            return View(model);
         }
 
     }
