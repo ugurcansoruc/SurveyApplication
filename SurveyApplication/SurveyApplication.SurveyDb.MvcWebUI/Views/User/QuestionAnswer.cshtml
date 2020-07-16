@@ -1,0 +1,45 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.AnswerListViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_UserLayout.cshtml";
+
+    int sonuc = 0;
+    if (TempData.ContainsKey("_QuestionAnswer"))
+    {
+        sonuc = (int)TempData["_QuestionAnswer"];
+    }
+}
+
+<div class="col-md-2">
+    <a class="list-group-item active">Anket Düzenle</a>
+</div>
+<div class="col-md-8">
+    <hr />
+    <h3>@Model.Question.Text</h3>
+    <form asp-action="QuestionAnswer" asp-controller="User" method="post">
+        @foreach (var option in Model.QuestionOptions)
+        {
+            <input type="radio" class="form-check-input" asp-for="Answer.Choice" value="@option.Id">
+            <label class="form-check-label">
+                @option.Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+        }
+        <input type="hidden" asp-for="Question.Id" />
+        <input type="hidden" asp-for="Question.SurveyId" />
+        <input type="hidden" asp-for="Question.Text" />
+        <br/>
+        <br/>
+        <a class="btn btn-info" asp-controller="User" asp-action="Surveys" asp-route-surveyId="@Model.Question.SurveyId">Geri</a>
+        <input class="btn btn-success" type="submit" value="Onayla" />
+    </form>
+    <br/>
+    <div>
+        @if (@sonuc == 1)
+        {
+            <div class="alert alert-info" role="alert">İşlem başarılı</div>
+        }
+    </div>
+
+</div>
