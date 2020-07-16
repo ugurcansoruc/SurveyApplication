@@ -25,5 +25,10 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             _userDal.Update(user);
         }
+
+        public void Add(User user)
+        {
+            _userDal.Add(user);
+        }
     }
 }

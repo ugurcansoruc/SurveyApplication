@@ -8,19 +8,17 @@ using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
 namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 {
-    public class AccountController:Controller
+    public class AccountController : Controller
     {
         private IPersonService _personService;
-        private IManagerService _managerService;
         private IUserService _userService;
         private ICityService _cityService;
         private IGenderService _genderService;
 
 
-        public AccountController(IPersonService personService, IManagerService managerService, IUserService userService, ICityService cityService, IGenderService genderService)
+        public AccountController(IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
         {
             _personService = personService;
-            _managerService = managerService;
             _userService = userService;
             _cityService = cityService;
             _genderService = genderService;
@@ -28,15 +26,32 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult Login()
         {
-            
 
             return View();
         }
-        
-        //public ActionResult Login()
-        //{
-        //    return View();
-        //}
+
+        [HttpPost]
+        public ActionResult Login(AccountViewModel accountViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var person =
+                    _personService.GetByEmailPassword(accountViewModel.Person.Email, accountViewModel.Person.Password);
+
+                if (person != null)
+                {
+                    if (person.PersonTypeId == 1)
+                    {
+                        return RedirectToAction("Index", "User");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Manager");
+                    }
+                }
+            }
+            return RedirectToAction();
+        }
 
         public ActionResult Register()
         {
@@ -48,9 +63,18 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             return View(model);
         }
 
-        //public ActionResult Register()
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public ActionResult Register(AccountViewModel accountViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                accountViewModel.Person.PersonTypeId = 1;
+                _personService.Add(accountViewModel.Person);
+                accountViewModel.User.PersonId = accountViewModel.Person.Id;
+                _userService.Add(accountViewModel.User);
+            }
+
+            return RedirectToAction("Login");
+        }
     }
 }

@@ -20,6 +20,11 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
             return _personDal.GetList();
         }
 
+        public Person GetByEmailPassword(string email, string password)
+        {
+            return _personDal.Get(p => p.Email == email && p.Password == password);
+        }
+
         public Person GetById(int personId)
         {
             return _personDal.Get(p=> p.Id == personId);
@@ -28,6 +33,11 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         public void Update(Person person)
         {
             _personDal.Update(person);
+        }
+
+        public void Add(Person person)
+        {
+            _personDal.Add(person);
         }
     }
 }

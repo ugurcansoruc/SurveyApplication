@@ -9,5 +9,7 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
     {
         User GetById(int personId);
         void Update(User user);
+
+        void Add(User user);
     }
 }
