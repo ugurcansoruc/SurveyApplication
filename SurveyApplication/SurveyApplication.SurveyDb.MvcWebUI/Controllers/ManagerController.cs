@@ -32,16 +32,17 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult Index()
         {
-
             return View();
         }
 
         public ActionResult MyAccount()
         {
+            var personId = TempData["personId"];
+
             var model = new ManagerUpdateListViewModel
             {
-                Person = _personService.GetById(1),
-                Manager = _managerService.GetById(1),
+                Person = _personService.GetById((int)personId), //personId
+                Manager = _managerService.GetById((int)personId),//personId
                 Groups = _groupService.GetList()
             };
 
@@ -154,12 +155,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         public ActionResult SurveyQuestionCreate(SurveyViewModel surveyViewModel, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
         {
             var model = new SurveyQuestionCreateViewModel();
+            var personId = TempData["personId"];
 
             if (surveyViewModel.Survey != null)
             {
                 surveyViewModel.Survey.StartDate = DateTime.Now;
                 surveyViewModel.Survey.EndDate = DateTime.Now;
-                surveyViewModel.Survey.ManagerId = 1;//şuanlık 
+                surveyViewModel.Survey.ManagerId = (int)personId;//şuanlık //personId
                 surveyViewModel.Survey.IsOpen = true;
 
                 _surveyService.Add(surveyViewModel.Survey);
@@ -168,18 +170,18 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             if (surveyQuestionCreateViewModel.Question == null)
             {
                 model.SurveyId = surveyViewModel.Survey.Id;
-                model.Questions = _questionService.GetBySurveyId(surveyViewModel.Survey.Id);//nket ıd ye göre getireceğim.
+                model.Questions = _questionService.GetBySurveyId(surveyViewModel.Survey.Id);
                 model.QuestionResponseOptions = _questionOptionService.GetAll();
             }
             else
             {
-                surveyQuestionCreateViewModel.Question.QuestionTypeId = 2;
+                surveyQuestionCreateViewModel.Question.QuestionTypeId = 2; //Soru türü için
                 surveyQuestionCreateViewModel.Question.SurveyId = surveyQuestionCreateViewModel.SurveyId;
                 _questionService.Add(surveyQuestionCreateViewModel.Question);
 
 
                 model.SurveyId = surveyQuestionCreateViewModel.SurveyId;
-                model.Questions = _questionService.GetBySurveyId(surveyQuestionCreateViewModel.SurveyId);//nket ıd ye göre getireceğim.
+                model.Questions = _questionService.GetBySurveyId(surveyQuestionCreateViewModel.SurveyId);
                 model.QuestionResponseOptions = _questionOptionService.GetAll();
 
             }

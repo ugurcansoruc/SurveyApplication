@@ -39,10 +39,12 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult MyAccount()
         {
+            var personId = TempData["personId"];
+
             var model = new UserUpdateListViewModel
             {
-                Person = _personService.GetById(2),
-                User = _userService.GetById(2),
+                Person = _personService.GetById((int)personId), //personId !!
+                User = _userService.GetById((int)personId), //personId !!
                 Genders = _genderService.GetList(),
                 Cities = _cityService.GetList()
             };
@@ -67,10 +69,12 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult Surveys(AnswerListViewModel answerListViewModel, int page = 1, int surveyId = 0)
         {
+            var personId = TempData["personId"];
+
             int pageSize = 10;
             var questions = _questionService.GetBySurveyId(surveyId);
             var questionOptions = _questionOptionService.GetAll();
-            var answers = _answerService.GetBySurveyAndUserId(surveyId, 2);
+            var answers = _answerService.GetBySurveyAndUserId(surveyId, (int)personId);//personId!!
             AnswerListViewModel model = new AnswerListViewModel
             {
                 Questions = questions.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
@@ -97,9 +101,11 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult QuestionAnswer(AnswerListViewModel answerListViewModel)
         {
+            var personId = TempData["personId"];
+
             answerListViewModel.Answer.SurveyId = answerListViewModel.Question.SurveyId;
             answerListViewModel.Answer.QuestionId = answerListViewModel.Question.Id;
-            answerListViewModel.Answer.UserId = 2;
+            answerListViewModel.Answer.UserId = (int) personId; //personId !!
             answerListViewModel.QuestionOptions =
                 _questionOptionService.GetByQuestionId(answerListViewModel.Question.Id);
             _answerService.Add(answerListViewModel.Answer);

@@ -40,9 +40,11 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
                 if (person != null)
                 {
+                    TempData["personId"] = person.Id;
+
                     if (person.PersonTypeId == 1)
                     {
-                        return RedirectToAction("Index", "User");
+                        return AcceptedAtAction("Index", "User");
                     }
                     else
                     {
@@ -50,7 +52,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                     }
                 }
             }
-            return RedirectToAction();
+            return RedirectToAction("Login");
         }
 
         public ActionResult Register()
@@ -72,9 +74,12 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                 _personService.Add(accountViewModel.Person);
                 accountViewModel.User.PersonId = accountViewModel.Person.Id;
                 _userService.Add(accountViewModel.User);
+
+                return RedirectToAction("Login");
+
             }
 
-            return RedirectToAction("Login");
+            return RedirectToAction("Register");
         }
     }
 }
