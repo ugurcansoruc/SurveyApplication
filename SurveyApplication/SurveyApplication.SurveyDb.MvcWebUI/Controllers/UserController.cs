@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
@@ -39,7 +40,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult MyAccount()
         {
-            var personId = TempData["personId"];
+            var personId = HttpContext.Session.GetInt32("personId");
 
             var model = new UserUpdateListViewModel
             {
@@ -69,7 +70,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult Surveys(AnswerListViewModel answerListViewModel, int page = 1, int surveyId = 0)
         {
-            var personId = TempData["personId"];
+            var personId = HttpContext.Session.GetInt32("personId");
 
             int pageSize = 10;
             var questions = _questionService.GetBySurveyId(surveyId);
@@ -101,7 +102,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult QuestionAnswer(AnswerListViewModel answerListViewModel)
         {
-            var personId = TempData["personId"];
+            var personId = HttpContext.Session.GetInt32("personId");
 
             answerListViewModel.Answer.SurveyId = answerListViewModel.Question.SurveyId;
             answerListViewModel.Answer.QuestionId = answerListViewModel.Question.Id;

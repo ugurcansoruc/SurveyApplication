@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
@@ -40,11 +41,11 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
                 if (person != null)
                 {
-                    TempData["personId"] = person.Id;
+                    HttpContext.Session.SetInt32("personId",person.Id);
 
                     if (person.PersonTypeId == 1)
                     {
-                        return AcceptedAtAction("Index", "User");
+                        return RedirectToAction("Index", "User");
                     }
                     else
                     {

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -22,18 +24,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/User/Index">Anket</a>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="User">Anket</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a asp-controller="Account" asp-action="Login">Kullanıcı<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a>Kullanıcı<span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Cart <span class="caret"></span></a>
-                        </li>
+                        <li class="active"><a asp-controller="Account" asp-action="Login">Oturumu Kapat<span class="sr-only">(current)</span></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -41,8 +41,8 @@
     </div>
     <div class="col-md-2">
         <div class="list-group">
-            <a class="list-group-item" href="/User/MyAccount" asp-controller="User" asp-action="Index">Hesabım</a>
-            <a class="list-group-item" href="/User/Surveys" asp-controller="User" asp-action="Surveys">Anketler</a>
+            <a class="list-group-item" asp-controller="User" asp-action="MyAccount">Hesabım</a>
+            <a class="list-group-item" asp-controller="User" asp-action="Surveys">Anketler</a>
         </div>
     </div>
     <div class="col-md-10">

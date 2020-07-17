@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SurveyApplication.SurveyDb.Business.Abstract;
@@ -71,8 +72,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
             app.UseFileServer();
             app.UseNodeModules(env.ContentRootPath);
             app.UseSession();
+            app.UseMvc(ConfigureRoutes);
+        }
+
+        private void ConfigureRoutes(IRouteBuilder routeBuilder)
+        {
             
-            app.UseMvcWithDefaultRoute();
+            routeBuilder.MapRoute("Default", "{controller=Account}/{action=Login}");
         }
     }
 }

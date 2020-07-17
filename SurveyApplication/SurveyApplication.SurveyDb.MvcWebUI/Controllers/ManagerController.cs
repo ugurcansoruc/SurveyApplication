@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
@@ -37,7 +38,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult MyAccount()
         {
-            var personId = TempData["personId"];
+            var personId = HttpContext.Session.GetInt32("personId");
 
             var model = new ManagerUpdateListViewModel
             {
@@ -155,7 +156,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         public ActionResult SurveyQuestionCreate(SurveyViewModel surveyViewModel, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
         {
             var model = new SurveyQuestionCreateViewModel();
-            var personId = TempData["personId"];
+            var personId = HttpContext.Session.GetInt32("personId");
 
             if (surveyViewModel.Survey != null)
             {

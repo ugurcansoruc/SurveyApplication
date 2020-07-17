@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -10,7 +11,7 @@
     <script src="/node_modules/mdbootstrap/js/mdb.js"></script>
     <script>
         window.onload = function () {
- 
+
             var chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
                 theme: "light1",
@@ -33,7 +34,7 @@
                 }]
             });
             chart.render();
- 
+
         }
     </script>
 </head>
@@ -50,18 +51,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/Manager/Index">Anket</a>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Manager">Anket</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a asp-controller="Account" asp-action="Login">Yönetici<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a>Yönetici<span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Cart <span class="caret"></span></a>
-                        </li>
+                        <li class="active"><a asp-controller="Account" asp-action="Login">Oturumu Kapat<span class="sr-only">(current)</span></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -69,9 +68,9 @@
     </div>
     <div class="col-md-2">
         <div class="list-group">
-            <a class="list-group-item" href="/Manager/MyAccount" asp-controller="Manager" asp-action="Index">Hesabım</a>
-            <a class="list-group-item" href="/Manager/Surveys" asp-controller="Manager" asp-action="Surveys">Anketler</a>
-            <a class="list-group-item" href="/Manager/SurveyCreate" asp-controller="Manager" asp-action="SurveyCreate">Anket Oluştur</a>
+            <a class="list-group-item" asp-controller="Manager" asp-action="MyAccount">Hesabım</a>
+            <a class="list-group-item" asp-controller="Manager" asp-action="Surveys">Anketler</a>
+            <a class="list-group-item" asp-controller="Manager" asp-action="SurveyCreate">Anket Oluştur</a>
         </div>
     </div>
     <div class="col-md-10">
