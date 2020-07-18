@@ -1,4 +1,8 @@
-﻿using System.Data.Entity;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
+using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping;
 using SurveyApplication.SurveyDb.Entities.Concrete;
 using DbContext = System.Data.Entity.DbContext;
@@ -8,23 +12,13 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
 {
     public class SurveyDbContext : DbContext
     {
-        public DbSet<Answer> Answers { get; set; }
-        public DbSet<City> Cities { get; set; }
-        public DbSet<Gender> Genders { get; set; }
-        public DbSet<Group> Groups { get; set; }
-        public DbSet<Manager> Managers { get; set; }
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<QuestionResponseOption> QuestionResponseOptions { get; set; }
-        public DbSet<Question> Questions { get; set; }
-        public DbSet<QuestionType> QuestionTypes { get; set; }
-        public DbSet<Survey> Surveys { get; set; }
-        public DbSet<User> Users { get; set; }
+        public SurveyDbContext() : base("SurveyDB")
+        {
+           Database.SetInitializer(new SurveyDbInitializer());
+        }
 
-        public DbSet<PersonType> PersonTypes { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
-
             modelBuilder.Configurations.Add(new AnswerMap());
             modelBuilder.Configurations.Add(new CityMap());
             modelBuilder.Configurations.Add(new GenderMap());
@@ -38,5 +32,24 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             modelBuilder.Configurations.Add(new UserMap());
             modelBuilder.Configurations.Add(new PersonTypeMap());
         }
+
+        public System.Data.Entity.DbSet<Answer> Answers { get; set; }
+        public System.Data.Entity.DbSet<City> Cities { get; set; }
+        public System.Data.Entity.DbSet<Gender> Genders { get; set; }
+        public System.Data.Entity.DbSet<Group> Groups { get; set; }
+        public System.Data.Entity.DbSet<Manager> Managers { get; set; }
+        public System.Data.Entity.DbSet<Person> Persons { get; set; }
+        public System.Data.Entity.DbSet<QuestionResponseOption> QuestionResponseOptions { get; set; }
+        public System.Data.Entity.DbSet<Question> Questions { get; set; }
+        public System.Data.Entity.DbSet<QuestionType> QuestionTypes { get; set; }
+        public System.Data.Entity.DbSet<Survey> Surveys { get; set; }
+        public System.Data.Entity.DbSet<User> Users { get; set; }
+        public System.Data.Entity.DbSet<PersonType> PersonTypes { get; set; }
+
+        
+
+        
+        
+        
     }
 }

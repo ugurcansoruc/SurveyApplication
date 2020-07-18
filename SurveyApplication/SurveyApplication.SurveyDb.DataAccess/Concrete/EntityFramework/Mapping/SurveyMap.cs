@@ -14,11 +14,11 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
             // Properties
             this.Property(t => t.Name)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(500);
 
             this.Property(t => t.Description)
                 .IsRequired()
-                .HasMaxLength(200);
+                .HasMaxLength(1000);
 
             this.Property(t => t.EndDate)
                 .IsOptional();

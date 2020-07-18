@@ -176,7 +176,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             }
             else
             {
-                surveyQuestionCreateViewModel.Question.QuestionTypeId = 2; //Soru türü için
+                surveyQuestionCreateViewModel.Question.QuestionTypeId = 1; //Soru türü için
                 surveyQuestionCreateViewModel.Question.SurveyId = surveyQuestionCreateViewModel.SurveyId;
                 _questionService.Add(surveyQuestionCreateViewModel.Question);
 

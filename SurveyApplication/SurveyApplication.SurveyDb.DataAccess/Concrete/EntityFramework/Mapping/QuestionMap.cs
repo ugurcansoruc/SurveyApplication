@@ -14,7 +14,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
             // Properties
             this.Property(t => t.Text)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(500);
 
             // Table & Column Mappings
             this.ToTable("Questions");
