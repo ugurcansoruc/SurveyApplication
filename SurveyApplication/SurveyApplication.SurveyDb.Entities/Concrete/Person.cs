@@ -1,6 +1,6 @@
-using SurveyApplication.Core.Entities;
 using System;
 using System.Collections.Generic;
+using SurveyApplication.SurveyDb.Entities.Abstract;
 
 namespace SurveyApplication.SurveyDb.Entities.Concrete
 {

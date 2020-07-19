@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
-using SurveyApplication.Core.Entities;
+using SurveyApplication.SurveyDb.Entities.Abstract;
 
-namespace SurveyApplication.Core.DataAccess
+namespace SurveyApplication.SurveyDb.DataAccess.Abstract
 {
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {

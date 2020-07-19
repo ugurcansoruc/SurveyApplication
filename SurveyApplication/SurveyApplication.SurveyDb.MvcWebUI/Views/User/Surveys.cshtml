@@ -42,9 +42,7 @@
                 }
             }
 
-            @foreach (var answer in Model.Answers)
-            {
-                @if (answer.QuestionId != question.Id && @check == false)
+                @if (@check == false)
                 {
                         @foreach (var option in Model.QuestionOptions)
                         {
@@ -57,8 +55,7 @@
                             }
                         }
                 }
-            }
-
+            
             <div @test>
                 <a class="btn btn-warning pull-right" asp-controller="User" asp-action="QuestionAnswer" asp-route-surveyId="@question.SurveyId" asp-route-questionId="@question.Id">Yanıtla</a>
             </div>

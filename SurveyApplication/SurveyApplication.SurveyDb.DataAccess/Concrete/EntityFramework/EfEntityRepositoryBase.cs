@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using SurveyApplication.Core.Entities;
+using SurveyApplication.SurveyDb.DataAccess.Abstract;
+using SurveyApplication.SurveyDb.Entities.Abstract;
 
-namespace SurveyApplication.Core.DataAccess.EntityFramework
+namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()
