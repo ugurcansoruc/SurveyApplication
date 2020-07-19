@@ -13,7 +13,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
     {
         public SurveyDbContext() : base("SurveyDB")
         {
-           Database.SetInitializer(new SurveyDbInitializer());
+           //Database.SetInitializer(new SurveyDbInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
