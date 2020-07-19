@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SurveyApplication.SurveyDb.Business.Abstract;
@@ -16,6 +15,7 @@ using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework;
 using SurveyApplication.SurveyDb.Entities.Concrete;
 using SurveyApplication.SurveyDb.MvcWebUI.Middlewares;
+
 
 namespace SurveyApplication.SurveyDb.MvcWebUI
 {

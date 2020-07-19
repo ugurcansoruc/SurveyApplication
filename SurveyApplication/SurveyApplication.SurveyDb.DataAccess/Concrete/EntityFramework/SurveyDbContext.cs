@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Data.Entity;
-using Microsoft.EntityFrameworkCore;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping;
 using SurveyApplication.SurveyDb.Entities.Concrete;
