@@ -9,18 +9,16 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 {
     public class UserController : Controller
     {
-        private ISurveyService _surveyService;
-        private IQuestionService _questionService;
-        private IQuestionOptionService _questionOptionService;
-        private IAnswerService _answerService;
-        private IPersonService _personService;
-        private IUserService _userService;
-        private ICityService _cityService;
-        private IGenderService _genderService;
+        private readonly IQuestionService _questionService;
+        private readonly IQuestionOptionService _questionOptionService;
+        private readonly IAnswerService _answerService;
+        private readonly IPersonService _personService;
+        private readonly IUserService _userService;
+        private readonly ICityService _cityService;
+        private readonly IGenderService _genderService;
 
-        public UserController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService, IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
+        public UserController(IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService, IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
         {
-            _surveyService = surveyService;
             _questionService = questionService;
             _questionOptionService = questionOptionService;
             _answerService = answerService;

@@ -11,13 +11,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 {
     public class ManagerController : Controller
     {
-        private ISurveyService _surveyService;
-        private IQuestionService _questionService;
-        private IQuestionOptionService _questionOptionService;
-        private IManagerService _managerService;
-        private IPersonService _personService;
-        private IGroupService _groupService;
-        private IAnswerService _answerService;
+        private readonly ISurveyService _surveyService;
+        private readonly IQuestionService _questionService;
+        private readonly IQuestionOptionService _questionOptionService;
+        private readonly IManagerService _managerService;
+        private readonly IPersonService _personService;
+        private readonly IGroupService _groupService;
+        private readonly IAnswerService _answerService;
         public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService)
         {
             _surveyService = surveyService;
@@ -63,12 +63,6 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         public ActionResult Surveys(int page = 1, int surveyId = 0)
         {
-            //var surveys = _surveyService.GetAll();
-            //SurveyListViewModel model = new SurveyListViewModel()
-            //{
-            //    Surveys = surveys
-            //};
-
             int pageSize = 10;
             var questions = _questionService.GetBySurveyId(surveyId);
             var questionOptions = _questionOptionService.GetAll();

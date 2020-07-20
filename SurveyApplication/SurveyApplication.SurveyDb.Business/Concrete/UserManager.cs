@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class UserManager : IUserService
     {
-        private IUserDal _userDal;
+        private readonly IUserDal _userDal;
 
         public UserManager(IUserDal userDal)
         {

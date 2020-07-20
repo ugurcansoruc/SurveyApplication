@@ -9,7 +9,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.ViewComponents
 {
     public class SurveyListViewComponent:ViewComponent
     {
-        private ISurveyService _surveyService;
+        private readonly ISurveyService _surveyService;
 
         public SurveyListViewComponent(ISurveyService surveyService)
         {

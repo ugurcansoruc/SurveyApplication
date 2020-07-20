@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class GenderManager:IGenderService
     {
-        private IGenderDal _genderDal;
+        private readonly IGenderDal _genderDal;
 
         public GenderManager(IGenderDal genderDal)
         {

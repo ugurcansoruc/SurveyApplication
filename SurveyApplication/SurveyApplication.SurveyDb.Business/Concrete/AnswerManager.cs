@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class AnswerManager:IAnswerService
     {
-        private IAnswerDal _answerDal;
+        private readonly IAnswerDal _answerDal;
 
         public AnswerManager(IAnswerDal answerDal)
         {

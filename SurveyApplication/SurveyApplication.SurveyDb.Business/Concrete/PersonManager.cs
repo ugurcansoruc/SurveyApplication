@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class PersonManager:IPersonService
     {
-        private IPersonDal _personDal;
+        private readonly IPersonDal _personDal;
 
         public PersonManager(IPersonDal personDal)
         {

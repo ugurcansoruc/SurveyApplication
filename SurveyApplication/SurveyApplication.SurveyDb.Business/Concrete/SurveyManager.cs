@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class SurveyManager:ISurveyService
     {
-        private ISurveyDal _surveyDal;
+        private readonly ISurveyDal _surveyDal;
 
         public SurveyManager(ISurveyDal surveyDal)
         {

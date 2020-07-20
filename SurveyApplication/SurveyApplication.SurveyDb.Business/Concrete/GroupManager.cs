@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class GroupManager:IGroupService
     {
-        private IGroupDal _groupDal;
+        private readonly IGroupDal _groupDal;
 
         public GroupManager(IGroupDal groupDal)
         {

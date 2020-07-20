@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class CityManager:ICityService
     {
-        private ICityDal _cityDal;
+        private readonly ICityDal _cityDal;
 
         public CityManager(ICityDal cityDal)
         {

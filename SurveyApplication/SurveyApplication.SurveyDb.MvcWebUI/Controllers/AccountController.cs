@@ -8,10 +8,10 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 {
     public class AccountController : Controller
     {
-        private IPersonService _personService;
-        private IUserService _userService;
-        private ICityService _cityService;
-        private IGenderService _genderService;
+        private readonly IPersonService _personService;
+        private readonly IUserService _userService;
+        private readonly ICityService _cityService;
+        private readonly IGenderService _genderService;
 
 
         public AccountController(IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)

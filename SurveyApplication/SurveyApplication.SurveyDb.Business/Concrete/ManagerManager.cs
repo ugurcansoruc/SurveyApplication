@@ -7,7 +7,7 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
 {
     public class ManagerManager : IManagerService
     {
-        private IManagerDal _managerDal;
+        private readonly IManagerDal _managerDal;
 
         public ManagerManager(IManagerDal managerDal)
         {
