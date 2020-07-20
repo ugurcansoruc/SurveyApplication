@@ -38,4 +38,4 @@ Geliştirme aşamasında,
 Eğer benimle iletişime geçmek isterseniz bana <ugurcan.soruc@gmail.com> adresinden ulaşabilirsiniz.
 
 ## Lisans
-Bu proje [MIT](<https://github.com/ugurcansoruc/SurveyApplication/blob/master/LICENSE>). lisansını kullanmaktadır: 
+Bu proje [MIT](<https://github.com/ugurcansoruc/SurveyApplication/blob/master/LICENSE>) lisansını kullanmaktadır.
