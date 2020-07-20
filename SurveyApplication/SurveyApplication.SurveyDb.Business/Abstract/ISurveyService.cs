@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SurveyApplication.SurveyDb.DataAccess.Abstract;
+﻿using System.Collections.Generic;
+
 using SurveyApplication.SurveyDb.Entities.Concrete;
 
 namespace SurveyApplication.SurveyDb.Business.Abstract

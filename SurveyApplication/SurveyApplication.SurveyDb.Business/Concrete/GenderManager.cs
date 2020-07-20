@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.Entities.Concrete;

@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using System.Data.Entity;
-using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping;
 using SurveyApplication.SurveyDb.Entities.Concrete;
 using DbContext = System.Data.Entity.DbContext;

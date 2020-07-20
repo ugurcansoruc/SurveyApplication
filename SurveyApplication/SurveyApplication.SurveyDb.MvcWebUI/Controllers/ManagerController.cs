@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
-using SurveyApplication.SurveyDb.Entities.Concrete;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
 namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers

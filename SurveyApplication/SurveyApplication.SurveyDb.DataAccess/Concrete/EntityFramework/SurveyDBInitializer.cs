@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.Migrations;
-using System.Text;
+
 using SurveyApplication.SurveyDb.Entities.Concrete;
 
 namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
