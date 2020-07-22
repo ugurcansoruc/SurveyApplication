@@ -13,5 +13,6 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Models
 
         public int SurveyId { get; set; }
         public int QuestionId { get; set; }
+        public int CountOptionAdded { get; set; }
     }
 }

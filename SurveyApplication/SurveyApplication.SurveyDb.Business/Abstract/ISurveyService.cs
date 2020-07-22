@@ -10,6 +10,7 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
         Survey GetById(int surveyId);
         void Update(Survey survey);
         void Add(Survey survey);
+        void Delete(int surveyId);
 
     }
 }

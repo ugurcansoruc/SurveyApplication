@@ -5,6 +5,12 @@
 @{
     Layout = "~/Views/_ManagerLayout.cshtml";
     int counter = 0;
+    bool questionDeleteControl = true;
+
+    string css = "";
+    string cssSurvey = "";
+    string cssColMd = "col-md-6";
+
 }
 
 <div class="col-md-2">
@@ -12,8 +18,21 @@
 </div>
 <div class="col-md-8">
     <hr />
-    <a class="btn btn-success pull-right" asp-action="Surveys" asp-controller="Manager">Anketi Tamamla</a>
-    <br/>
+    @if (Model.Questions.Count != 0)
+    {
+        cssSurvey = "hidden";
+        cssColMd = "col-md-12";
+    }
+    <div>
+        <div @cssSurvey class="col-md-6">
+            <a class="btn btn-danger" asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-surveyId="@Model.SurveyId" asp-route-isDeletedSurvey="true">Anketi Sil</a>
+        </div>
+        <div class="@cssColMd">
+            <a class="btn btn-success pull-right" asp-action="Surveys" asp-controller="Manager">Anketi Tamamla</a>
+        </div>
+    </div>
+
+    <br />
     <form asp-controller="Manager" asp-action="SurveyQuestionCreate" method="post">
         <div class="form-group">
             <h3>Soru:</h3>
@@ -23,7 +42,7 @@
         <input type="hidden" asp-for="SurveyId" />
         <input type="hidden" asp-for="QuestionId" />
         <input type="submit" value="Soru Ekle" class="btn btn-warning" />
-        <hr/>
+        <hr />
     </form>
     <h3 style="text-align: center">Sorular</h3>
     @foreach (var question in Model.Questions)
@@ -31,6 +50,8 @@
         counter += 1;
         <h3>@counter. @question.Text</h3>
         <br />
+        questionDeleteControl = true;
+        css = "";
         @foreach (var option in Model.QuestionResponseOptions)
         {
             if (question.Id == option.QuestionId)
@@ -41,9 +62,18 @@
                         @option.Text
                     </label>
                 </div>
+                questionDeleteControl = false;
             }
         }
-        <a class="btn btn-warning btn-xs" asp-controller="Manager" asp-action="CreateOption" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" asp-route-testViewModel="@Model">Seçenek Ekle</a>
+        @if (questionDeleteControl == false)
+        {
+            css = "hidden";
+        }
+        <div>
+            <a class="btn btn-warning btn-xs" asp-controller="Manager" asp-action="CreateOption" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" >Seçenek Ekle</a>
+        </div>
+        <br />
+        <div @css><a class="btn btn-danger btn-xs" asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-questionId="@question.Id" asp-route-surveyId="@question.SurveyId" asp-route-isDeletedQuestion="true">Soruyu Sil</a></div>
 
         <br />
         <br />

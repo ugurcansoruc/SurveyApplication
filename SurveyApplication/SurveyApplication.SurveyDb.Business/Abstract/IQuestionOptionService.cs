@@ -11,5 +11,8 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
 
         void Update(QuestionResponseOption questionResponseOption);
         void Add(QuestionResponseOption questionResponseOption);
+        int GetAddedOptionCount(int questionId);
+        void Delete(int optionId);
+
     }
 }

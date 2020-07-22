@@ -39,5 +39,16 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             _questionOptionsDal.Add(questionResponseOption);
         }
+
+        public int GetAddedOptionCount(int questionId)
+        {
+            return _questionOptionsDal.GetList(p => p.QuestionId == questionId).Count;
+        }
+
+        public void Delete(int optionId)
+        {
+            _questionOptionsDal.Delete(new QuestionResponseOption { Id = optionId });
+
+        }
     }
 }

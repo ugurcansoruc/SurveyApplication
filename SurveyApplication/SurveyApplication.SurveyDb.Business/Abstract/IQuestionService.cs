@@ -11,5 +11,8 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
 
         void Update(Question question);
         void Add(Question question);
+
+        void Delete(int questionId);
+
     }
 }

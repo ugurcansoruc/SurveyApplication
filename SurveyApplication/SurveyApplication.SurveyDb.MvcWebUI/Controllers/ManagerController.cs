@@ -135,11 +135,24 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         }
 
 
-        public ActionResult SurveyQuestionCreate(SurveyQuestionCreateViewModel surveyQuestionCreateViewModel, int surveyId)
+        public ActionResult SurveyQuestionCreate(SurveyQuestionCreateViewModel surveyQuestionCreateViewModel, int surveyId, int questionId, bool isDeletedSurvey, bool isDeletedQuestion)
         {
             surveyQuestionCreateViewModel.SurveyId = surveyId;
+            
+            if (isDeletedQuestion == true)
+            {
+                _questionService.Delete(questionId);
+            }
+
+            if (isDeletedSurvey ==true)
+            {
+                _surveyService.Delete(surveyId);
+                return RedirectToAction("SurveyCreate");
+            }
+
             surveyQuestionCreateViewModel.Questions = _questionService.GetBySurveyId(surveyId);
             surveyQuestionCreateViewModel.QuestionResponseOptions = _questionOptionService.GetAll();
+
 
             return View(surveyQuestionCreateViewModel);
         }
@@ -183,10 +196,20 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
         }
 
-        public ActionResult CreateOption(int questionId, int surveyId, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
+        public ActionResult CreateOption(int questionId, int surveyId, int optionId, bool isDeleted, SurveyQuestionCreateViewModel surveyQuestionCreateViewModel)
         {
             surveyQuestionCreateViewModel.QuestionId = questionId;
             surveyQuestionCreateViewModel.SurveyId = surveyId;
+
+            if (isDeleted == true)
+            {
+                _questionOptionService.Delete(optionId);
+            }
+
+            surveyQuestionCreateViewModel.QuestionResponseOptions = _questionOptionService.GetByQuestionId(surveyQuestionCreateViewModel.QuestionId);
+            surveyQuestionCreateViewModel.CountOptionAdded =
+                _questionOptionService.GetAddedOptionCount(surveyQuestionCreateViewModel.QuestionId);
+
 
             return View(surveyQuestionCreateViewModel);
         }
@@ -196,15 +219,18 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         {
 
             surveyQuestionCreateViewModel.QuestionResponseOption.QuestionId = surveyQuestionCreateViewModel.QuestionId;
+
             _questionOptionService.Add(surveyQuestionCreateViewModel.QuestionResponseOption);
 
-            TempData["CreateOption"] = 1;
+            surveyQuestionCreateViewModel.CountOptionAdded =
+                _questionOptionService.GetAddedOptionCount(surveyQuestionCreateViewModel.QuestionResponseOption.QuestionId);
 
+            surveyQuestionCreateViewModel.QuestionResponseOptions = _questionOptionService.GetByQuestionId(surveyQuestionCreateViewModel.QuestionResponseOption.QuestionId);
 
-            return View(surveyQuestionCreateViewModel);
+            return RedirectToAction("CreateOption", surveyQuestionCreateViewModel);
         }
 
-        public ActionResult SurveyAnalysis(int questionId,int surveyId)
+        public ActionResult SurveyAnalysis(int questionId, int surveyId)
         {
             List<DataPoint> dataPoints = new List<DataPoint>();
             var options = _questionOptionService.GetByQuestionId(questionId);
@@ -218,7 +244,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             var model = new SurveyQuestionCreateViewModel
             {
                 Question = _questionService.GetById(questionId),
-                
+
             };
 
             return View(model);

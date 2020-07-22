@@ -11,7 +11,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
     {
         public SurveyDbContext() : base("SurveyDB")
         {
-           //Database.SetInitializer(new SurveyDbInitializer());
+           Database.SetInitializer(new SurveyDbInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -42,11 +42,5 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
         public System.Data.Entity.DbSet<Survey> Surveys { get; set; }
         public System.Data.Entity.DbSet<User> Users { get; set; }
         public System.Data.Entity.DbSet<PersonType> PersonTypes { get; set; }
-
-        
-
-        
-        
-        
     }
 }

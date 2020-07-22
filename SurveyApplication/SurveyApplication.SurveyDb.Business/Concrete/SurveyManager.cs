@@ -35,5 +35,10 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             _surveyDal.Add(survey);
         }
+
+        public void Delete(int surveyId)
+        {
+            _surveyDal.Delete(new Survey { Id = surveyId });
+        }
     }
 }

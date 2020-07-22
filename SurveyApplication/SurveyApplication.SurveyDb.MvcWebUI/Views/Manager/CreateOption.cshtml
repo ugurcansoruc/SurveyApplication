@@ -5,36 +5,43 @@
 
 @{
     Layout = "~/Views/_ManagerLayout.cshtml";
-    int sonuc = 0;
-    if (TempData.ContainsKey("CreateOption"))
-    {
-        sonuc = (int)TempData["CreateOption"];
-    }
 }
-    <div class="col-md-2">
-        <a class="list-group-item active">Seçenek Bilgileri</a>
-    </div>
-    <div class="col-md-8">
-        <hr />
-        <a class="btn btn-info" asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-testViewModel="@Model" asp-route-surveyId="@Model.SurveyId">Geri</a>
+<div class="col-md-2">
+    <a class="list-group-item active">Seçenek Bilgileri</a>
+</div>
+<div class="col-md-8">
+    <hr />
+    <a class="btn btn-info" asp-controller="Manager" asp-action="SurveyQuestionCreate" asp-route-surveyId="@Model.SurveyId">Geri</a>
 
-        <form asp-controller="Manager" asp-action="CreateOption" method="post">
-            <div class="form-group">
-                <h3>Seçenek:</h3>
-                <input asp-for="QuestionResponseOption.Text" class="form-control" />
-                <span asp-validation-for="QuestionResponseOption.Text"></span>
-            </div>
-            <input type="hidden" asp-for="SurveyId" />
-            <input type="hidden" asp-for="QuestionId" />
-
-            <input type="submit" value="Seçenek Ekle" class="btn btn-success" />
-        </form>
-        <br/>
-
-        <div>
-            @if (@sonuc == 1)
-            {
-                <div class="alert alert-info" role="alert">İşlem başarılı</div>
-            }
+    <a class="btn btn-info">
+        @Model.CountOptionAdded
+    </a>
+    <form asp-controller="Manager" asp-action="CreateOption" method="post">
+        <div class="form-group">
+            <h3>Seçenek:</h3>
+            <input asp-for="QuestionResponseOption.Text" class="form-control" />
+            <span asp-validation-for="QuestionResponseOption.Text"></span>
         </div>
-    </div>
+        <input type="hidden" asp-for="SurveyId" />
+        <input type="hidden" asp-for="QuestionId" />
+
+        <input type="submit" value="Seçenek Ekle" class="btn btn-success" />
+        <hr />
+    </form>
+    <h3 style="text-align: center">Seçenekler</h3>
+    @if (Model.QuestionResponseOptions != null)
+    {
+        @foreach (var option in Model.QuestionResponseOptions)
+        {
+            <div class="col-md-10">
+                <h3>@option.Text</h3>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-danger " asp-controller="Manager" asp-action="CreateOption" asp-route-surveyId="@Model.SurveyId" asp-route-questionId="@Model.QuestionId" asp-route-isDeleted="true" asp-route-optionId="@option.Id">Sil</a>
+            </div>
+        }
+    }
+</div>
+
+
+
