@@ -13,6 +13,16 @@
 <div class="col-md-8">
     <a class="btn btn-info" asp-controller="Manager" asp-action="Surveys" asp-route-surveyId="@Model.SurveyId">Geri</a>
     <hr />
+    <div class="col-md-6"><h4><strong>Tüm kullanıcıların ortalama puanı:</strong></h4></div>
+    <div class="col-md-6">
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: @Model.ScoreAvg%" aria-valuenow="@Model.ScoreAvg" aria-valuemin="0" aria-valuemax="100">@Model.ScoreAvg</div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <hr/>
+    <br/>
     <table class="table table-striped">
         <thead>
             <tr>

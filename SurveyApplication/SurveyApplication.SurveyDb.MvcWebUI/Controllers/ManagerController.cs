@@ -268,7 +268,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             int questionCount = _questionService.GetQuestionCount(surveyId);
             int surveyScore = 100;
             int questionScore = surveyScore / questionCount;
-            int userScore = 0;
+            int userScore = 0, totalScore = 0, userCount = 0;
 
             List<Question> questions = _questionService.GetBySurveyId(surveyId);
             List<PersonUser> personUsers = _personUserService.GetAll();
@@ -303,8 +303,14 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                     arrCounter++;
                 }
                 usersScore.Add(personUser.Id, userScore);
+                if (userScore != 0)
+                {
+                    totalScore += userScore;
+                    userCount += 1;
+                }
                 userScore = 0;
             }
+
             int lowId=1, highId = array[0, 0], highCount = 0, lowCount = array[0,1];
 
             for (var i = 0; i < questionCount; i++)
@@ -320,7 +326,15 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                     lowId = array[i, 0];
                 }
             }
-
+            int scoreAvg;
+            if (totalScore!=0)
+            {
+                scoreAvg = totalScore / userCount;
+            }
+            else
+            {
+                scoreAvg = 0;
+            }
             var model = new UserAnalysisViewModel
             {
                 PersonUsers = personUsers,
@@ -329,7 +343,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                 LowQuestion = _questionService.GetById(lowId),
                 LowOption = _questionOptionService.GetByQuestionId(lowId),
                 HighQuestion = _questionService.GetById(highId),
-                HighOption = _questionOptionService.GetByQuestionId(highId)
+                HighOption = _questionOptionService.GetByQuestionId(highId),
+                ScoreAvg = scoreAvg
             };
 
             return View(model);

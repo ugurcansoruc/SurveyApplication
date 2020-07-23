@@ -15,5 +15,6 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Models
         public int SurveyId { get; set; }
         public List<QuestionResponseOption> LowOption { get; set; }
         public List<QuestionResponseOption> HighOption { get; set; }
+        public int ScoreAvg { get; set; }
     }
 }
