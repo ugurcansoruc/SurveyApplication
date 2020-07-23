@@ -43,5 +43,10 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         {
             _questionDal.Delete(new Question { Id = questionId });
         }
+
+        public int GetQuestionCount(int surveyId)
+        {
+            return _questionDal.GetList(p => p.SurveyId == surveyId).Count;
+        }
     }
 }

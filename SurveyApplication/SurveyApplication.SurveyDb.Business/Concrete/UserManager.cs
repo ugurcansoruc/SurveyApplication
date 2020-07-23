@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.Entities.Concrete;
@@ -12,6 +13,11 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
+        }
+
+        public List<User> GetAll()
+        {
+            return _userDal.GetList();
         }
 
         public User GetById(int personId)

@@ -1,0 +1,82 @@
+﻿@model SurveyApplication.SurveyDb.MvcWebUI.Models.UserAnalysisViewModel
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Views/_ManagerLayout.cshtml";
+    int counter = 1;
+}
+
+<div class="col-md-2">
+    <a class="list-group-item active">Kullanıcı Analiz</a>
+</div>
+<div class="col-md-8">
+    <a class="btn btn-info" asp-controller="Manager" asp-action="Surveys" asp-route-surveyId="@Model.SurveyId">Geri</a>
+    <hr />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ad</th>
+                <th scope="col">Soyad</th>
+                <th scope="col">Yaş</th>
+                <th scope="col">Cinsiyet</th>
+                <th scope="col">Şehir</th>
+                <th scope="col">Puan</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.PersonUsers)
+            {
+                <tr>
+                    <th scope="row">@counter</th>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Age</td>
+                    <td>@user.Gender</td>
+                    <td>@user.City</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: @Model.UsersScore[user.Id]%" aria-valuenow="@Model.UsersScore[user.Id]" aria-valuemin="0" aria-valuemax="100">@Model.UsersScore[user.Id]</div>
+                        </div>
+                    </td>
+                </tr>
+                counter += 1;
+            }
+
+        </tbody>
+    </table>
+    <br />
+    <h3><strong>En çok mutlu olunan soru:</strong></h3>
+    <hr />
+    @if (@Model.HighQuestion != null)
+    {
+        <h4>@Model.HighQuestion.Text</h4>
+        @foreach (var option in @Model.HighOption)
+        {
+            <input class="form-check-input" type="radio" disabled>
+            <label class="form-check-label">
+                @option.Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+        }
+        <a class="btn btn-success pull-right" asp-controller="Manager" asp-action="SurveyAnalysis" asp-route-questionId="@Model.HighQuestion.Id">Soru Detay</a>
+    }
+    <br />
+    <br />
+    <h3><strong>En çok mutsuz olunan soru:</strong></h3>
+    <hr />
+    @if (@Model.LowQuestion != null && @Model.HighQuestion != null)
+    {
+        <h4>@Model.LowQuestion.Text</h4>
+        @foreach (var option in @Model.LowOption)
+        {
+            <input class="form-check-input" type="radio" disabled>
+            <label class="form-check-label">
+                @option.Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+        }
+        <a class="btn btn-success pull-right" asp-controller="Manager" asp-action="SurveyAnalysis" asp-route-questionId="@Model.LowQuestion.Id">Soru Detay</a>
+    }
+</div>
+
+

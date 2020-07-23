@@ -50,6 +50,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
             services.AddScoped<IGenderService, GenderManager>();
             services.AddScoped<IGenderDal, EfGenderDal>();
 
+            services.AddScoped<IPersonUserService, PersonUserManager>();
+            services.AddScoped<IPersonUserDal, EfPersonUserDal>();
+
             services.AddSession();
             services.AddDistributedMemoryCache();
 

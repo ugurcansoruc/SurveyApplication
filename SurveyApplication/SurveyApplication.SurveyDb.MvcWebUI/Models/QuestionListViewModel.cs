@@ -9,5 +9,6 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Models
         public List<Question> Questions { get; set; }
         public List<QuestionResponseOption> QuestionOptions { get; set; }
         public Answer Answer { get; set; }
+        public int SurveyId { get; set; }
     }
 }

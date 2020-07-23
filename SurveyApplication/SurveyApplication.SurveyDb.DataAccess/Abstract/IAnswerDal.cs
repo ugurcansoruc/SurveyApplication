@@ -5,5 +5,6 @@ namespace SurveyApplication.SurveyDb.DataAccess.Abstract
 {
     public interface IAnswerDal : IEntityRepository<Answer>
     {
+
     }
 }

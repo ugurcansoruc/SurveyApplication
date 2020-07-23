@@ -56,6 +56,15 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 PersonTypeId = 2
             });
 
+            persons.Add(new Person()
+            {
+                FirstName = "Yusuf",
+                LastName = "Ceylan",
+                Email = "yusuf.ceylan@gmail.com",
+                Password = "123456789",
+                PersonTypeId = 1
+            });
+
             users.Add(new User()
             {
                 PersonId = 1,
@@ -69,6 +78,15 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             {
                 PersonId = 2,
                 GroupId = 1
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 3,
+                CityId = 1,
+                Age = 21,
+                GenderId = 2,
+
             });
 
             surveys.Add(new Survey()
@@ -373,6 +391,46 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 QuestionId = 5,
                 UserId = 1,
                 Choice = 14,
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 3,
+                Choice = 2,
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 3,
+                Choice = 5,
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 3,
+                Choice = 8,
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 3,
+                Choice = 11,
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 3,
+                Choice = 15,
             });
 
 

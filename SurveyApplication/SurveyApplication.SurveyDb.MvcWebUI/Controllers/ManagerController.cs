@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
+using SurveyApplication.SurveyDb.Entities.Concrete;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
 namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
@@ -18,7 +19,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private readonly IPersonService _personService;
         private readonly IGroupService _groupService;
         private readonly IAnswerService _answerService;
-        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService)
+        private readonly IUserService _userService;
+        private readonly IPersonUserService _personUserService;
+        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService, IUserService userService, IPersonUserService personUserService)
         {
             _surveyService = surveyService;
             _questionService = questionService;
@@ -27,6 +30,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             _personService = personService;
             _groupService = groupService;
             _answerService = answerService;
+            _userService = userService;
+            _personUserService = personUserService;
         }
 
         public ActionResult Index()
@@ -69,7 +74,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             QuestionListViewModel model = new QuestionListViewModel
             {
                 Questions = questions.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
-                QuestionOptions = questionOptions
+                QuestionOptions = questionOptions,
+                SurveyId = surveyId
             };
 
             return View(model);
@@ -138,13 +144,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         public ActionResult SurveyQuestionCreate(SurveyQuestionCreateViewModel surveyQuestionCreateViewModel, int surveyId, int questionId, bool isDeletedSurvey, bool isDeletedQuestion)
         {
             surveyQuestionCreateViewModel.SurveyId = surveyId;
-            
+
             if (isDeletedQuestion == true)
             {
                 _questionService.Delete(questionId);
             }
 
-            if (isDeletedSurvey ==true)
+            if (isDeletedSurvey == true)
             {
                 _surveyService.Delete(surveyId);
                 return RedirectToAction("SurveyCreate");
@@ -230,7 +236,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             return RedirectToAction("CreateOption", surveyQuestionCreateViewModel);
         }
 
-        public ActionResult SurveyAnalysis(int questionId, int surveyId)
+        public ActionResult SurveyAnalysis(int questionId)
         {
             List<DataPoint> dataPoints = new List<DataPoint>();
             var options = _questionOptionService.GetByQuestionId(questionId);
@@ -250,5 +256,77 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             return View(model);
         }
 
+
+        public ActionResult UserAnalysis(int surveyId)
+        {
+            int questionCount = _questionService.GetQuestionCount(surveyId);
+            int surveyScore = 100;
+            int questionScore = surveyScore / questionCount;
+            int userScore = 0;
+
+            List<Question> questions = _questionService.GetBySurveyId(surveyId);
+            List<PersonUser> personUsers = _personUserService.GetAll();
+
+            Dictionary<int, int> usersScore = new Dictionary<int, int>();
+            Dictionary<int, int> test = new Dictionary<int, int>();
+
+            int[,] array = new int[questionCount, 2];
+
+
+            foreach (var personUser in personUsers)
+            {
+                int arrCounter = 0;
+
+                foreach (var question in questions)
+                {
+                    List<QuestionResponseOption> questionResponseOptions =
+                        _questionOptionService.GetByQuestionId(question.Id);
+                    int counter = 1;
+                    int answer = _answerService.GetBySurveyUserIdQuestionId(surveyId, personUser.Id, question.Id);
+
+                    foreach (var questionOption in questionResponseOptions)
+                    {
+                        if (answer == questionOption.Id)
+                        {
+                            userScore += questionScore / counter;
+                            array[arrCounter, 0] = question.Id;
+                            array[arrCounter, 1] += questionScore / counter;
+                        }
+                        counter++;
+                    }
+                    arrCounter++;
+                }
+                usersScore.Add(personUser.Id, userScore);
+                userScore = 0;
+            }
+            int lowId=1, highId = array[0, 0], highCount = 0, lowCount = array[0,1];
+
+            for (var i = 0; i < questionCount; i++)
+            {
+                if (array[i, 1] > highCount)
+                {
+                    highCount = array[i, 1];
+                    highId = array[i, 0];
+                }
+                if (array[i, 1] < lowCount)
+                {
+                    lowCount = array[i, 1];
+                    lowId = array[i, 0];
+                }
+            }
+
+            var model = new UserAnalysisViewModel
+            {
+                PersonUsers = personUsers,
+                UsersScore = usersScore,
+                SurveyId = surveyId,
+                LowQuestion = _questionService.GetById(lowId),
+                LowOption = _questionOptionService.GetByQuestionId(lowId),
+                HighQuestion = _questionService.GetById(highId),
+                HighOption = _questionOptionService.GetByQuestionId(highId)
+            };
+
+            return View(model);
+        }
     }
 }

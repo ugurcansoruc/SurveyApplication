@@ -13,6 +13,7 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
         void Add(Question question);
 
         void Delete(int questionId);
+        int GetQuestionCount(int surveyId);
 
     }
 }
