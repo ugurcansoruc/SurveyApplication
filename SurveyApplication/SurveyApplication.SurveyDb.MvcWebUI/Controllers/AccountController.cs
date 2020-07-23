@@ -1,6 +1,8 @@
 ﻿
+using System.ComponentModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
@@ -31,12 +33,24 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         [HttpPost]
         public ActionResult Login(AccountViewModel accountViewModel)
         {
+            var locker = Security.Security.CreatLocker();
+
             if (ModelState.IsValid)
             {
-                var person =
-                    _personService.GetByEmailPassword(accountViewModel.Person.Email, accountViewModel.Person.Password);
+                bool check = false;
+                
+                var person = _personService.GetByEmail(accountViewModel.Person.Email);
+                var decryptKey = locker.Decrypt(person.Password);
 
-                if (person != null)
+                if (person!=null)
+                {
+                    if (accountViewModel.Person.Password == decryptKey)
+                    {
+                        check = true;
+                    }
+                }
+
+                if (person != null && check)
                 {
                     HttpContext.Session.SetInt32("personId",person.Id);
 
@@ -66,9 +80,18 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         [HttpPost]
         public ActionResult Register(AccountViewModel accountViewModel)
         {
+            var SCollection = new ServiceCollection();
+            SCollection.AddDataProtection();
+            var LockerKey = SCollection.BuildServiceProvider();
+            var locker = ActivatorUtilities.CreateInstance<Security.Security>(LockerKey);
+
             if (ModelState.IsValid)
             {
                 accountViewModel.Person.PersonTypeId = 1;
+                
+                string encryptKey = locker.Encrypt(accountViewModel.Person.Password);
+                accountViewModel.Person.Password = encryptKey;
+
                 _personService.Add(accountViewModel.Person);
                 accountViewModel.User.PersonId = accountViewModel.Person.Id;
                 _userService.Add(accountViewModel.User);

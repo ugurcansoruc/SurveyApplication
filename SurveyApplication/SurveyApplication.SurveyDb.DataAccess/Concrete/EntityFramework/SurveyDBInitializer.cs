@@ -43,7 +43,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 FirstName = "Uğurcan",
                 LastName = "Soruç",
                 Email = "ugurcan.soruc@gmail.com",
-                Password = "123456789",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
                 PersonTypeId = 1
             });
 
@@ -52,7 +52,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 FirstName = "Adem",
                 LastName = "Soruç",
                 Email = "adem.soruc@gmail.com",
-                Password = "123456789",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
                 PersonTypeId = 2
             });
 
@@ -61,7 +61,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 FirstName = "Yusuf",
                 LastName = "Ceylan",
                 Email = "yusuf.ceylan@gmail.com",
-                Password = "123456789",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
                 PersonTypeId = 1
             });
 

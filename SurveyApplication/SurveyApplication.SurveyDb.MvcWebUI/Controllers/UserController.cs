@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
@@ -38,6 +39,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         {
             var personId = HttpContext.Session.GetInt32("personId");
 
+            var locker = Security.Security.CreatLocker();
+            
             var model = new UserUpdateListViewModel
             {
                 Person = _personService.GetById((int)personId), //personId !!
@@ -45,6 +48,10 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                 Genders = _genderService.GetList(),
                 Cities = _cityService.GetList()
             };
+
+            string decryptKey = locker.Decrypt(model.Person.Password);
+            model.Person.Password = decryptKey;
+
             return View(model);
         }
 

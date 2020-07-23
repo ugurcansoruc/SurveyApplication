@@ -23,6 +23,11 @@ namespace SurveyApplication.SurveyDb.Business.Concrete
             return _personDal.Get(p => p.Email == email && p.Password == password);
         }
 
+        public Person GetByEmail(string email)
+        {
+            return _personDal.Get(p => p.Email == email);
+        }
+
         public Person GetById(int personId)
         {
             return _personDal.Get(p=> p.Id == personId);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Entities.Concrete;
@@ -43,12 +44,17 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         {
             var personId = HttpContext.Session.GetInt32("personId");
 
+            var locker = Security.Security.CreatLocker();
+
             var model = new ManagerUpdateListViewModel
             {
                 Person = _personService.GetById((int)personId), //personId
                 Manager = _managerService.GetById((int)personId),//personId
                 Groups = _groupService.GetList()
             };
+
+            string decryptKey = locker.Decrypt(model.Person.Password);
+            model.Person.Password = decryptKey;
 
             return View(model);
         }

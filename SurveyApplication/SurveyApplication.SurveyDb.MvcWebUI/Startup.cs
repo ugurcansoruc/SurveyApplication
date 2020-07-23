@@ -9,6 +9,7 @@ using SurveyApplication.SurveyDb.Business.Concrete;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
 using SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework;
 using SurveyApplication.SurveyDb.MvcWebUI.Middlewares;
+using SurveyApplication.SurveyDb.MvcWebUI.Security;
 
 
 namespace SurveyApplication.SurveyDb.MvcWebUI
@@ -52,6 +53,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
 
             services.AddScoped<IPersonUserService, PersonUserManager>();
             services.AddScoped<IPersonUserDal, EfPersonUserDal>();
+
+            services.AddScoped<ICipherService, Security.Security>();
+
 
             services.AddSession();
             services.AddDistributedMemoryCache();

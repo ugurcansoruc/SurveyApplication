@@ -13,19 +13,19 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework.Mapping
             // Properties
             this.Property(t => t.FirstName)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(150);
 
             this.Property(t => t.LastName)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(150);
 
             this.Property(t => t.Email)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(150);
 
             this.Property(t => t.Password)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(300);
 
             // Table & Column Mappings
             this.ToTable("Persons");

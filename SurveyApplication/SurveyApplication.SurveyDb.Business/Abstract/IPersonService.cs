@@ -8,6 +8,8 @@ namespace SurveyApplication.SurveyDb.Business.Abstract
         List<Person> GetAll();
         Person GetByEmailPassword(string email, string password);
 
+        Person GetByEmail(string email);
+
         Person GetById(int personId);
 
         void Update(Person person);
