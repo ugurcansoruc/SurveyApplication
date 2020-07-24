@@ -12,6 +12,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
         public SurveyDbContext() : base("SurveyDB")
         {
            Database.SetInitializer(new SurveyDbInitializer());
+           //Database.SetInitializer(new MigrateDatabaseToLatestVersion<SurveyDbContext, Migrations.Configuration>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

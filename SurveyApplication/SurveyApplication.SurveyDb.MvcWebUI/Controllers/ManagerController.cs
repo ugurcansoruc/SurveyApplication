@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Entities.Concrete;
@@ -22,7 +23,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private readonly IAnswerService _answerService;
         private readonly IUserService _userService;
         private readonly IPersonUserService _personUserService;
-        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService, IUserService userService, IPersonUserService personUserService)
+        private readonly ILogger<ManagerController> _logger;
+
+        public ManagerController(ISurveyService surveyService, IQuestionService questionService, IQuestionOptionService questionOptionService, IManagerService managerService, IPersonService personService, IGroupService groupService, IAnswerService answerService, IUserService userService, IPersonUserService personUserService, ILogger<ManagerController> logger)
         {
             _surveyService = surveyService;
             _questionService = questionService;
@@ -33,6 +36,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             _answerService = answerService;
             _userService = userService;
             _personUserService = personUserService;
+            _logger = logger;
         }
 
         public ActionResult Index()
@@ -66,6 +70,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             {
                 _personService.Update(managerUpdateListViewModel.Person);
                 _managerService.Update(managerUpdateListViewModel.Manager);
+
+                _logger.LogInformation("{firstname} {lastname} updated his personal information.", managerUpdateListViewModel.Person.FirstName,managerUpdateListViewModel.Person.LastName);
             }
 
             managerUpdateListViewModel.Groups = _groupService.GetList();

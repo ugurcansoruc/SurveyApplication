@@ -48,7 +48,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             });
 
             persons.Add(new Person()
-            {
+            {//tüm kullanıcıların passwordleri = 123456789 
                 FirstName = "Adem",
                 LastName = "Soruç",
                 Email = "adem.soruc@gmail.com",

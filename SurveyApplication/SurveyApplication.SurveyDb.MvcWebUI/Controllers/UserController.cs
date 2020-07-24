@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
@@ -17,8 +18,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private readonly IUserService _userService;
         private readonly ICityService _cityService;
         private readonly IGenderService _genderService;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService, IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
+        public UserController(IQuestionService questionService, IQuestionOptionService questionOptionService, IAnswerService answerService, IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService, ILogger<UserController> logger)
         {
             _questionService = questionService;
             _questionOptionService = questionOptionService;
@@ -27,6 +29,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             _userService = userService;
             _cityService = cityService;
             _genderService = genderService;
+            _logger = logger;
         }
 
         public ActionResult Index()
@@ -63,6 +66,8 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             {
                 _personService.Update(userUpdateListViewModel.Person);
                 _userService.Update(userUpdateListViewModel.User);
+                _logger.LogInformation("{firstname} {lastname} updated his personal information.", userUpdateListViewModel.Person.FirstName, userUpdateListViewModel.Person.LastName);
+
             }
 
             userUpdateListViewModel.Cities = _cityService.GetList();

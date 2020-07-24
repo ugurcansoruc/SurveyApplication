@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.Business.Concrete;
 using SurveyApplication.SurveyDb.DataAccess.Abstract;
@@ -71,6 +72,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSerilogRequestLogging();
             app.UseFileServer();
             app.UseNodeModules(env.ContentRootPath);
             app.UseSession();

@@ -3,6 +3,8 @@ using System.ComponentModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using SurveyApplication.SurveyDb.Business.Abstract;
 using SurveyApplication.SurveyDb.MvcWebUI.Models;
 
@@ -14,19 +16,22 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         private readonly IUserService _userService;
         private readonly ICityService _cityService;
         private readonly IGenderService _genderService;
+        private readonly ILogger<AccountController> _logger;
 
 
-        public AccountController(IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService)
+        public AccountController(IPersonService personService, IUserService userService, ICityService cityService, IGenderService genderService, ILogger<AccountController> logger)
         {
             _personService = personService;
             _userService = userService;
             _cityService = cityService;
             _genderService = genderService;
+            _logger = logger;
+            logger.LogInformation("Hello first log in AccountController Constructor");
         }
 
         public ActionResult Login()
         {
-
+            _logger.LogInformation("Hello firs log in AccountController Login Action");
             return View();
         }
 
@@ -40,10 +45,12 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                 bool check = false;
                 
                 var person = _personService.GetByEmail(accountViewModel.Person.Email);
-                var decryptKey = locker.Decrypt(person.Password);
 
                 if (person!=null)
                 {
+                    var decryptKey = locker.Decrypt(person.Password);
+                    _logger.LogInformation("{name} {lastname} in logged",person.FirstName,person.LastName);
+                    
                     if (accountViewModel.Person.Password == decryptKey)
                     {
                         check = true;
@@ -87,8 +94,9 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
 
             if (ModelState.IsValid)
             {
+                _logger.LogInformation("{firstname} {lastname}",accountViewModel.Person.FirstName,accountViewModel.Person.LastName);
+
                 accountViewModel.Person.PersonTypeId = 1;
-                
                 string encryptKey = locker.Encrypt(accountViewModel.Person.Password);
                 accountViewModel.Person.Password = encryptKey;
 
