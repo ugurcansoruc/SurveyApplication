@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using SurveyApplication.SurveyDb.Business.Abstract;
@@ -66,8 +65,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         [HttpPost]
         public ActionResult MyAccount(ManagerUpdateListViewModel managerUpdateListViewModel)
         {
+            var locker = Security.Security.CreatLocker();
+
             if (ModelState.IsValid)
             {
+                string encryptKey = locker.Encrypt(managerUpdateListViewModel.Person.Password);
+                managerUpdateListViewModel.Person.Password = encryptKey;
+
                 _personService.Update(managerUpdateListViewModel.Person);
                 _managerService.Update(managerUpdateListViewModel.Manager);
 
@@ -259,6 +263,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
             }
             ViewBag.DataPoints = JsonConvert.SerializeObject(dataPoints);
 
+
             var model = new SurveyQuestionCreateViewModel
             {
                 Question = _questionService.GetById(questionId),
@@ -317,7 +322,7 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
                 userScore = 0;
             }
 
-            int lowId=1, highId = array[0, 0], highCount = 0, lowCount = array[0,1];
+            int lowId= array[0, 0], highId = array[0, 0], highCount = 0, lowCount = array[0,1];
 
             for (var i = 0; i < questionCount; i++)
             {

@@ -65,6 +65,51 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 PersonTypeId = 1
             });
 
+            persons.Add(new Person()
+            {
+                FirstName = "Tuncay",
+                LastName = "Damlar",
+                Email = "tuncay.damlar@gmail.com",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
+                PersonTypeId = 1
+            });
+
+            persons.Add(new Person()
+            {
+                FirstName = "Sinan",
+                LastName = "Ganiz",
+                Email = "sinan.ganiz@gmail.com",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
+                PersonTypeId = 1
+            });
+
+            persons.Add(new Person()
+            {
+                FirstName = "Feyzullah",
+                LastName = "Hasar",
+                Email = "feyzullah.hasar@gmail.com",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
+                PersonTypeId = 1
+            });
+
+            persons.Add(new Person()
+            {
+                FirstName = "Emine",
+                LastName = "Soruç",
+                Email = "emine.soruc@gmail.com",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
+                PersonTypeId = 1
+            });
+
+            persons.Add(new Person()
+            {
+                FirstName = "Kerim",
+                LastName = "Ünal",
+                Email = "kerim.Ünal@gmail.com",
+                Password = "CfDJ8PlljSUaVGhHls_yGgb5oAxvVVLwROlFG_gFxLUTiqRHWIDOQAr7dEaOMrhUQMf9zv1f4E4TmzkXOsS_4nxHjY1KLUj8CDBtl27NejFLFjAca94UCWZ4PUTmvd9XBkLuAQ",
+                PersonTypeId = 1
+            });
+
             users.Add(new User()
             {
                 PersonId = 1,
@@ -87,6 +132,47 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 Age = 21,
                 GenderId = 2,
 
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 4,
+                CityId = 3,
+                Age = 21,
+                GenderId = 2,
+
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 5,
+                CityId = 2,
+                Age = 21,
+                GenderId = 2,
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 6,
+                CityId = 1,
+                Age = 21,
+                GenderId = 2,
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 7,
+                CityId = 2,
+                Age = 47,
+                GenderId = 1,
+            });
+
+            users.Add(new User()
+            {
+                PersonId = 8,
+                CityId = 3,
+                Age = 29,
+                GenderId = 2,
             });
 
             surveys.Add(new Survey()
@@ -182,7 +268,19 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             questionResponseOptions.Add(new QuestionResponseOption()
             {
                 QuestionId = 1,
+                Text = "Biraz olumlu"
+            });
+
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 1,
                 Text = "Ne olumlu ne de olumsuz"
+            });
+
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 1,
+                Text = "Biraz olumsuz"
             });
 
             questionResponseOptions.Add(new QuestionResponseOption()
@@ -200,7 +298,19 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             questionResponseOptions.Add(new QuestionResponseOption()
             {
                 QuestionId = 2,
+                Text = "Kısmen memnunum"
+            });
+
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 2,
                 Text = "Ne memnunum ne de değilim"
+            });
+
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 2,
+                Text = "Pek memnun değilim"
             });
 
             questionResponseOptions.Add(new QuestionResponseOption()
@@ -233,11 +343,6 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 Text = "Son derece iyi"
             });
 
-            questionResponseOptions.Add(new QuestionResponseOption()
-            {
-                QuestionId = 4,
-                Text = "Orta derecede iyi"
-            });
 
             questionResponseOptions.Add(new QuestionResponseOption()
             {
@@ -304,11 +409,21 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 QuestionId = 8,
                 Text = "Son derece gerçekçi"
             });
-
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 8,
+                Text = "Çok gerçekçi"
+            });
             questionResponseOptions.Add(new QuestionResponseOption()
             {
                 QuestionId = 8,
                 Text = "Orta derecede gerçekçi"
+            });
+
+            questionResponseOptions.Add(new QuestionResponseOption()
+            {
+                QuestionId = 8,
+                Text = "Kısmen gerçekçi"
             });
 
             questionResponseOptions.Add(new QuestionResponseOption()
@@ -344,21 +459,16 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
             questionResponseOptions.Add(new QuestionResponseOption()
             {
                 QuestionId = 10,
-                Text = "Orta derecede"
-            });
-
-            questionResponseOptions.Add(new QuestionResponseOption()
-            {
-                QuestionId = 10,
                 Text = "Hiç değer vermiyor"
             });
 
+           
             answers.Add(new Answer()
             {
                 SurveyId = 1,
                 QuestionId = 1,
                 UserId = 1,
-                Choice = 1,
+                Choice = 1
             });
 
             answers.Add(new Answer()
@@ -366,7 +476,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 2,
                 UserId = 1,
-                Choice = 4,
+                Choice = 6
             });
 
             answers.Add(new Answer()
@@ -374,7 +484,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 3,
                 UserId = 1,
-                Choice = 8,
+                Choice = 11
             });
 
             answers.Add(new Answer()
@@ -382,7 +492,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 4,
                 UserId = 1,
-                Choice = 12,
+                Choice = 14
             });
 
             answers.Add(new Answer()
@@ -390,7 +500,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 5,
                 UserId = 1,
-                Choice = 14,
+                Choice = 16
             });
 
             answers.Add(new Answer()
@@ -398,7 +508,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 1,
                 UserId = 3,
-                Choice = 2,
+                Choice = 2
             });
 
             answers.Add(new Answer()
@@ -406,7 +516,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 2,
                 UserId = 3,
-                Choice = 5,
+                Choice = 7
             });
 
             answers.Add(new Answer()
@@ -414,7 +524,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 3,
                 UserId = 3,
-                Choice = 8,
+                Choice = 12
             });
 
             answers.Add(new Answer()
@@ -422,7 +532,7 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 4,
                 UserId = 3,
-                Choice = 11,
+                Choice = 15
             });
 
             answers.Add(new Answer()
@@ -430,8 +540,213 @@ namespace SurveyApplication.SurveyDb.DataAccess.Concrete.EntityFramework
                 SurveyId = 1,
                 QuestionId = 5,
                 UserId = 3,
-                Choice = 15,
+                Choice = 17
             });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 4,
+                Choice = 3
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 4,
+                Choice = 8
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 4,
+                Choice = 13
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 4,
+                Choice = 14
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 4,
+                Choice = 18
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 5,
+                Choice = 4
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 5,
+                Choice = 9
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 5,
+                Choice = 13
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 5,
+                Choice = 14
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 5,
+                Choice = 18
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 6,
+                Choice = 5
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 6,
+                Choice = 10
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 6,
+                Choice = 13
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 6,
+                Choice = 14
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 6,
+                Choice = 18
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 7,
+                Choice = 1
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 7,
+                Choice = 7
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 7,
+                Choice = 11
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 7,
+                Choice = 14
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 7,
+                Choice = 16
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 1,
+                UserId = 8,
+                Choice = 2
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 2,
+                UserId = 8,
+                Choice = 6
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 3,
+                UserId = 8,
+                Choice = 11
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 4,
+                UserId = 8,
+                Choice = 15
+            });
+
+            answers.Add(new Answer()
+            {
+                SurveyId = 1,
+                QuestionId = 5,
+                UserId = 8,
+                Choice = 16
+            });
+
+
+
+
+
 
 
             context.Cities.AddRange(cities);

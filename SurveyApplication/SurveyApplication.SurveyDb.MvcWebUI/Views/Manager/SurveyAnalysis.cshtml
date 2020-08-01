@@ -12,9 +12,10 @@
     </div>
     <div class="col-md-8">
         <hr />
-        <a class="btn btn-warning pull-right" asp-controller="Manager" asp-action="Surveys" asp-route-surveyId="@Model.Question.SurveyId">Geri</a>
+        <a class="btn btn-info pull-left" asp-controller="Manager" asp-action="Surveys" asp-route-surveyId="@Model.Question.SurveyId">Geri</a>
+        <br/>
+        <hr/>
         <h3>@Model.Question.Text</h3>
-        @*style="height: 370px; width: 100%;"*@
         <div id="chartContainer"></div>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </div>

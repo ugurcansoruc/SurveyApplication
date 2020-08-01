@@ -1,0 +1,1547 @@
+2020-08-01 01:56:21.271 +03:00 [INF] Starting web host
+2020-08-01 01:56:23.433 +03:00 [DBG] Hosting starting
+2020-08-01 01:56:23.915 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 01:56:23.916 +03:00 [INF] Hosting environment: Development
+2020-08-01 01:56:23.926 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 01:56:23.926 +03:00 [DBG] Hosting started
+2020-08-01 01:56:24.157 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 162.9783 ms
+2020-08-01 01:56:24.258 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 01:56:24.260 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 01:56:24.545 +03:00 [INF] HTTP GET / responded 200 in 554.9253 ms
+2020-08-01 01:56:24.572 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.6316 ms
+2020-08-01 01:56:24.624 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2909 ms
+2020-08-01 01:56:45.904 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 01:57:04.028 +03:00 [INF] Adem Soruç in logged
+2020-08-01 01:57:04.041 +03:00 [INF] HTTP POST / responded 302 in 18192.9144 ms
+2020-08-01 01:57:04.168 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 107.9242 ms
+2020-08-01 01:57:07.174 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 241.6143 ms
+2020-08-01 01:57:11.007 +03:00 [INF] Adem Soruç updated his personal information.
+2020-08-01 01:57:11.030 +03:00 [INF] HTTP POST /Manager/MyAccount responded 200 in 103.7057 ms
+2020-08-01 01:57:13.407 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 196.4242 ms
+2020-08-01 01:57:14.561 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 28.8463 ms
+2020-08-01 01:57:19.785 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 26.7941 ms
+2020-08-01 01:57:20.704 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 66.0365 ms
+2020-08-01 01:57:21.538 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 53.0268 ms
+2020-08-01 01:57:22.487 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 79.9125 ms
+2020-08-01 01:57:23.531 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 56.1389 ms
+2020-08-01 01:57:24.325 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 49.3551 ms
+2020-08-01 01:57:25.007 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 41.105 ms
+2020-08-01 01:57:26.286 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 463.4211 ms
+2020-08-01 01:57:33.824 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 49.4371 ms
+2020-08-01 01:57:34.548 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 34.5248 ms
+2020-08-01 01:57:36.001 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 250.0441 ms
+2020-08-01 01:57:39.789 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 28.9639 ms
+2020-08-01 01:57:40.541 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 22.6789 ms
+2020-08-01 01:57:43.577 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 9.902 ms
+2020-08-01 01:57:44.469 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 22.9729 ms
+2020-08-01 01:57:45.270 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 51.7486 ms
+2020-08-01 01:57:46.210 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 5.0978 ms
+2020-08-01 01:57:52.181 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 89.2869 ms
+2020-08-01 01:57:56.001 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 31.7418 ms
+2020-08-01 01:58:00.527 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 66.7851 ms
+2020-08-01 01:58:03.064 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 30.3536 ms
+2020-08-01 01:58:03.084 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 14.3354 ms
+2020-08-01 01:58:06.143 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 15.7286 ms
+2020-08-01 01:58:06.164 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 13.4001 ms
+2020-08-01 01:58:07.546 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 30.2064 ms
+2020-08-01 01:58:10.471 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 11.208 ms
+2020-08-01 01:58:12.880 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 16.6273 ms
+2020-08-01 01:58:15.234 +03:00 [INF] HTTP GET /Manager/Update?questionId=11&surveyId=3 responded 200 in 104.9968 ms
+2020-08-01 01:58:17.605 +03:00 [INF] HTTP GET /Manager/UpdateOptions?questionOptionId=35&surveyId=3&questionId=11 responded 200 in 110.5899 ms
+2020-08-01 01:58:20.297 +03:00 [INF] HTTP POST /Manager/UpdateOptions responded 200 in 21.4994 ms
+2020-08-01 01:58:21.843 +03:00 [INF] HTTP GET /Manager/Update?surveyId=3&questionId=11 responded 200 in 10.1652 ms
+2020-08-01 01:58:23.654 +03:00 [INF] HTTP GET /Manager/UpdateOptions?questionOptionId=36&surveyId=3&questionId=11 responded 200 in 14.4416 ms
+2020-08-01 01:58:26.072 +03:00 [INF] HTTP POST /Manager/UpdateOptions responded 200 in 12.8118 ms
+2020-08-01 01:58:27.471 +03:00 [INF] HTTP GET /Manager/Update?surveyId=3&questionId=11 responded 200 in 18.9829 ms
+2020-08-01 01:58:38.107 +03:00 [INF] HTTP POST /Manager/Update responded 302 in 79.9778 ms
+2020-08-01 01:58:38.136 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 18.4642 ms
+2020-08-01 01:58:39.672 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 15.44 ms
+2020-08-01 01:58:41.768 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 75.9143 ms
+2020-08-01 01:58:44.419 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 14.3446 ms
+2020-08-01 01:58:46.129 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=11 responded 200 in 387.7751 ms
+2020-08-01 01:58:48.095 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 17.2384 ms
+2020-08-01 01:58:49.609 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 16.6705 ms
+2020-08-01 01:58:50.696 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 16.0566 ms
+2020-08-01 01:58:52.238 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 35.181 ms
+2020-08-01 01:58:54.814 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 18.3309 ms
+2020-08-01 01:58:56.389 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 34.5304 ms
+2020-08-01 01:58:57.724 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 18.1159 ms
+2020-08-01 01:58:59.262 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 25.1872 ms
+2020-08-01 01:59:00.596 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 16.9956 ms
+2020-08-01 01:59:03.054 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 16.5369 ms
+2020-08-01 01:59:07.046 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 16.2669 ms
+2020-08-01 01:59:07.727 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 28.8264 ms
+2020-08-01 01:59:08.998 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 16.9598 ms
+2020-08-01 01:59:09.603 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 13.3686 ms
+2020-08-01 01:59:10.128 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 28.9288 ms
+2020-08-01 01:59:11.501 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 27.1218 ms
+2020-08-01 01:59:12.024 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 17.1989 ms
+2020-08-01 01:59:12.829 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 14.5685 ms
+2020-08-01 01:59:14.760 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.9842 ms
+2020-08-01 01:59:16.395 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 210.4855 ms
+2020-08-01 01:59:21.227 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 44.2438 ms
+2020-08-01 02:00:03.584 +03:00 [INF] Starting web host
+2020-08-01 02:00:04.988 +03:00 [DBG] Hosting starting
+2020-08-01 02:00:05.354 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:00:05.355 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:00:05.366 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:00:05.367 +03:00 [DBG] Hosting started
+2020-08-01 02:00:05.568 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:00:05.571 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:00:05.847 +03:00 [INF] HTTP GET / responded 200 in 424.8293 ms
+2020-08-01 02:00:05.896 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 14.0411 ms
+2020-08-01 02:00:05.921 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.6769 ms
+2020-08-01 02:00:12.751 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:00:19.781 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:00:19.788 +03:00 [INF] HTTP POST / responded 302 in 7162.7679 ms
+2020-08-01 02:00:19.874 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 59.8298 ms
+2020-08-01 02:00:21.881 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 298.965 ms
+2020-08-01 02:00:22.659 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 85.9621 ms
+2020-08-01 02:00:25.230 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 747.2447 ms
+2020-08-01 02:00:27.101 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 41.6056 ms
+2020-08-01 02:00:55.159 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 26756.4453 ms
+2020-08-01 02:00:58.700 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 28.7964 ms
+2020-08-01 02:00:59.693 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 254.5017 ms
+2020-08-01 02:03:12.682 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 81990.7604 ms
+2020-08-01 02:03:47.394 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 25.7032 ms
+2020-08-01 02:04:01.099 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 11653.6932 ms
+2020-08-01 02:04:02.675 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 45.3035 ms
+2020-08-01 02:07:13.896 +03:00 [INF] Starting web host
+2020-08-01 02:07:15.219 +03:00 [DBG] Hosting starting
+2020-08-01 02:07:15.613 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:07:15.613 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:07:15.623 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:07:15.623 +03:00 [DBG] Hosting started
+2020-08-01 02:07:15.829 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:07:15.833 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:07:16.134 +03:00 [INF] HTTP GET / responded 200 in 455.8367 ms
+2020-08-01 02:07:16.192 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 16.8724 ms
+2020-08-01 02:07:16.246 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4674 ms
+2020-08-01 02:07:23.751 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:08:07.824 +03:00 [INF] Starting web host
+2020-08-01 02:08:09.273 +03:00 [DBG] Hosting starting
+2020-08-01 02:08:09.643 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:08:09.644 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:08:09.661 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:08:09.661 +03:00 [DBG] Hosting started
+2020-08-01 02:08:09.954 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:08:09.958 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:08:10.260 +03:00 [INF] HTTP GET / responded 200 in 512.312 ms
+2020-08-01 02:08:10.264 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:08:10.266 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:08:10.290 +03:00 [INF] HTTP GET / responded 200 in 27.2928 ms
+2020-08-01 02:08:10.335 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 13.7833 ms
+2020-08-01 02:08:10.354 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4097 ms
+2020-08-01 02:08:10.373 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.316 ms
+2020-08-01 02:08:15.034 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:08:32.802 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:08:32.809 +03:00 [INF] HTTP POST / responded 302 in 17829.2562 ms
+2020-08-01 02:08:32.888 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 71.3363 ms
+2020-08-01 02:08:35.071 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 161.4563 ms
+2020-08-01 02:08:36.336 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 91.0637 ms
+2020-08-01 02:08:38.669 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 702.0128 ms
+2020-08-01 02:10:42.236 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 121679.6774 ms
+2020-08-01 02:12:49.020 +03:00 [INF] Starting web host
+2020-08-01 02:12:50.452 +03:00 [DBG] Hosting starting
+2020-08-01 02:12:50.850 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:12:50.850 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:12:50.861 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:12:50.861 +03:00 [DBG] Hosting started
+2020-08-01 02:12:51.060 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:12:51.063 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:12:51.327 +03:00 [INF] HTTP GET / responded 200 in 415.2692 ms
+2020-08-01 02:12:51.331 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:12:51.333 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:12:51.382 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 17.2801 ms
+2020-08-01 02:12:51.395 +03:00 [INF] HTTP GET / responded 200 in 66.4927 ms
+2020-08-01 02:12:51.444 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5631 ms
+2020-08-01 02:12:51.492 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3153 ms
+2020-08-01 02:13:04.933 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:13:10.369 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:13:10.374 +03:00 [INF] HTTP POST / responded 302 in 5495.0061 ms
+2020-08-01 02:13:10.417 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 34.0447 ms
+2020-08-01 02:13:23.788 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 187.3881 ms
+2020-08-01 02:13:24.751 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 88.6155 ms
+2020-08-01 02:13:28.317 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2551.0523 ms
+2020-08-01 02:14:00.672 +03:00 [INF] Starting web host
+2020-08-01 02:14:02.147 +03:00 [DBG] Hosting starting
+2020-08-01 02:14:02.515 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:14:02.525 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:14:02.526 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:14:02.527 +03:00 [DBG] Hosting started
+2020-08-01 02:14:02.719 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:14:02.722 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:14:02.984 +03:00 [INF] HTTP GET / responded 200 in 405.4875 ms
+2020-08-01 02:14:02.987 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:14:02.988 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:14:03.038 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 19.869 ms
+2020-08-01 02:14:03.040 +03:00 [INF] HTTP GET / responded 200 in 54.2975 ms
+2020-08-01 02:14:03.105 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3131 ms
+2020-08-01 02:14:03.134 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3091 ms
+2020-08-01 02:14:12.029 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:14:19.478 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:14:19.487 +03:00 [INF] HTTP POST / responded 302 in 7582.067 ms
+2020-08-01 02:14:19.540 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 44.2078 ms
+2020-08-01 02:14:21.621 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 201.6302 ms
+2020-08-01 02:14:21.650 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 29.2297 ms
+2020-08-01 02:14:22.651 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 64.5451 ms
+2020-08-01 02:14:23.555 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 93.1056 ms
+2020-08-01 02:14:26.455 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 697.6819 ms
+2020-08-01 02:14:31.020 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2706.4045 ms
+2020-08-01 02:14:38.389 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 45.0495 ms
+2020-08-01 02:22:22.718 +03:00 [INF] Starting web host
+2020-08-01 02:22:24.202 +03:00 [DBG] Hosting starting
+2020-08-01 02:22:24.557 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:22:24.557 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:22:24.568 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:22:24.568 +03:00 [DBG] Hosting started
+2020-08-01 02:22:24.783 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:22:24.788 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:22:25.109 +03:00 [INF] HTTP GET / responded 200 in 488.4384 ms
+2020-08-01 02:22:25.172 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 12.6003 ms
+2020-08-01 02:22:32.357 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:22:39.867 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:22:39.873 +03:00 [INF] HTTP POST / responded 302 in 7599.672 ms
+2020-08-01 02:22:39.926 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 43.6866 ms
+2020-08-01 02:22:43.349 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 230.2345 ms
+2020-08-01 02:22:44.322 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 64.2823 ms
+2020-08-01 02:22:45.880 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 96.8096 ms
+2020-08-01 02:22:47.493 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 654.7377 ms
+2020-08-01 02:22:53.102 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2850.4327 ms
+2020-08-01 02:25:19.152 +03:00 [INF] Starting web host
+2020-08-01 02:25:20.681 +03:00 [DBG] Hosting starting
+2020-08-01 02:25:21.066 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 02:25:21.066 +03:00 [INF] Hosting environment: Development
+2020-08-01 02:25:21.077 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 02:25:21.077 +03:00 [DBG] Hosting started
+2020-08-01 02:25:21.288 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:25:21.293 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 02:25:21.646 +03:00 [INF] HTTP GET / responded 200 in 513.1265 ms
+2020-08-01 02:25:21.724 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 18.2314 ms
+2020-08-01 02:25:21.760 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4972 ms
+2020-08-01 02:25:28.455 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 02:25:36.091 +03:00 [INF] Adem Soruç in logged
+2020-08-01 02:25:36.101 +03:00 [INF] HTTP POST / responded 302 in 7694.3492 ms
+2020-08-01 02:25:36.193 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 82.9326 ms
+2020-08-01 02:25:37.973 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 227.1748 ms
+2020-08-01 02:25:38.624 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 169.6612 ms
+2020-08-01 02:25:39.542 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 57.3866 ms
+2020-08-01 02:25:43.181 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2159.5652 ms
+2020-08-01 14:14:06.114 +03:00 [INF] Starting web host
+2020-08-01 14:14:07.575 +03:00 [DBG] Hosting starting
+2020-08-01 14:14:07.886 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:14:07.887 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:14:07.894 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:14:07.894 +03:00 [DBG] Hosting started
+2020-08-01 14:14:08.041 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 99.6903 ms
+2020-08-01 14:14:08.104 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:14:08.104 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:14:08.291 +03:00 [INF] HTTP GET / responded 200 in 351.1576 ms
+2020-08-01 14:14:08.314 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4058 ms
+2020-08-01 14:14:08.343 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.1678 ms
+2020-08-01 14:14:19.777 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:14:24.225 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:14:24.230 +03:00 [INF] HTTP POST / responded 302 in 4478.3419 ms
+2020-08-01 14:14:24.269 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 30.2871 ms
+2020-08-01 14:14:25.538 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 32.0147 ms
+2020-08-01 14:14:25.885 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 60.5261 ms
+2020-08-01 14:14:26.914 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 22.7487 ms
+2020-08-01 14:14:29.753 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2001.9642 ms
+2020-08-01 14:14:33.147 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.3156 ms
+2020-08-01 14:14:35.311 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:14:35.312 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:14:35.315 +03:00 [INF] HTTP GET / responded 200 in 7.8531 ms
+2020-08-01 14:14:35.333 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4991 ms
+2020-08-01 14:18:14.918 +03:00 [INF] Starting web host
+2020-08-01 14:18:15.760 +03:00 [DBG] Hosting starting
+2020-08-01 14:18:15.989 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:18:15.989 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:18:15.997 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:18:15.997 +03:00 [DBG] Hosting started
+2020-08-01 14:18:16.119 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:18:16.122 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:18:16.291 +03:00 [INF] HTTP GET / responded 200 in 263.7037 ms
+2020-08-01 14:18:16.294 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:18:16.296 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:18:16.327 +03:00 [INF] HTTP GET / responded 200 in 34.0618 ms
+2020-08-01 14:18:16.363 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 27.1896 ms
+2020-08-01 14:18:16.367 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.263 ms
+2020-08-01 14:18:16.391 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2173 ms
+2020-08-01 14:18:16.471 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.756 ms
+2020-08-01 14:18:21.989 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:18:24.998 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:18:25.001 +03:00 [INF] HTTP POST / responded 302 in 3040.0139 ms
+2020-08-01 14:18:25.025 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 15.8727 ms
+2020-08-01 14:18:29.014 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 58.2126 ms
+2020-08-01 14:18:29.675 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 19.8577 ms
+2020-08-01 14:18:32.392 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 1568.5084 ms
+2020-08-01 14:18:35.278 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 12.9864 ms
+2020-08-01 14:19:24.015 +03:00 [INF] Starting web host
+2020-08-01 14:19:24.851 +03:00 [DBG] Hosting starting
+2020-08-01 14:19:25.084 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:19:25.084 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:19:25.093 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:19:25.093 +03:00 [DBG] Hosting started
+2020-08-01 14:19:25.219 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 88.6464 ms
+2020-08-01 14:19:25.269 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:19:25.270 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:19:25.423 +03:00 [INF] HTTP GET / responded 200 in 294.2396 ms
+2020-08-01 14:19:25.445 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5199 ms
+2020-08-01 14:19:25.471 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2457 ms
+2020-08-01 14:25:37.358 +03:00 [INF] Starting web host
+2020-08-01 14:25:38.211 +03:00 [DBG] Hosting starting
+2020-08-01 14:25:38.435 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:25:38.435 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:25:38.441 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:25:38.441 +03:00 [DBG] Hosting started
+2020-08-01 14:25:38.574 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:25:38.578 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:25:38.741 +03:00 [INF] HTTP GET / responded 200 in 265.9209 ms
+2020-08-01 14:25:38.779 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 10.9056 ms
+2020-08-01 14:25:38.795 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4047 ms
+2020-08-01 14:25:38.879 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.5937 ms
+2020-08-01 14:25:43.518 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:25:47.238 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:25:47.241 +03:00 [INF] HTTP POST / responded 302 in 3745.9016 ms
+2020-08-01 14:25:47.281 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 29.8032 ms
+2020-08-01 14:25:49.164 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 60.3835 ms
+2020-08-01 14:25:49.694 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 22.2268 ms
+2020-08-01 14:25:52.847 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 2362.446 ms
+2020-08-01 14:25:57.066 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 16.1149 ms
+2020-08-01 14:33:14.598 +03:00 [INF] Starting web host
+2020-08-01 14:33:15.546 +03:00 [DBG] Hosting starting
+2020-08-01 14:33:15.821 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:33:15.822 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:33:15.829 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:33:15.829 +03:00 [DBG] Hosting started
+2020-08-01 14:33:15.974 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:33:15.977 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:33:16.166 +03:00 [INF] HTTP GET / responded 200 in 299.5257 ms
+2020-08-01 14:33:16.210 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 11.8551 ms
+2020-08-01 14:33:16.229 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2515 ms
+2020-08-01 14:33:16.312 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.4687 ms
+2020-08-01 14:33:22.713 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:33:26.435 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:33:26.438 +03:00 [INF] HTTP POST / responded 302 in 3748.4701 ms
+2020-08-01 14:33:26.477 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 26.2056 ms
+2020-08-01 14:33:27.624 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 73.0151 ms
+2020-08-01 14:33:28.180 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 26.4723 ms
+2020-08-01 14:33:34.618 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 183.7992 ms
+2020-08-01 14:33:38.895 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 17.0971 ms
+2020-08-01 14:33:40.951 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 16.9165 ms
+2020-08-01 14:33:43.143 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 17.9009 ms
+2020-08-01 14:33:43.987 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 38.8602 ms
+2020-08-01 14:33:47.100 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 14.4649 ms
+2020-08-01 14:33:48.376 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 52.2919 ms
+2020-08-01 14:33:52.348 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/css/bootstrap.min.css.map responded 200 in 50.7757 ms
+2020-08-01 14:33:52.348 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/css/bootstrap.css.map responded 200 in 50.7895 ms
+2020-08-01 14:33:58.184 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 16.7609 ms
+2020-08-01 14:34:18.989 +03:00 [INF] Starting web host
+2020-08-01 14:34:19.906 +03:00 [DBG] Hosting starting
+2020-08-01 14:34:20.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:34:20.193 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:34:20.202 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:34:20.202 +03:00 [DBG] Hosting started
+2020-08-01 14:34:20.353 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:34:20.356 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:34:20.571 +03:00 [INF] HTTP GET / responded 200 in 331.2589 ms
+2020-08-01 14:34:20.631 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 22.9817 ms
+2020-08-01 14:34:20.669 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/css/bootstrap.css responded 200 in 61.4442 ms
+2020-08-01 14:34:20.683 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/js/bootstrap.js responded 200 in 75.2997 ms
+2020-08-01 14:34:20.716 +03:00 [INF] HTTP GET /node_modules/jquery/dist/jquery.min.js responded 200 in 107.9163 ms
+2020-08-01 14:34:20.740 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2743 ms
+2020-08-01 14:34:20.794 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 responded 200 in 11.5007 ms
+2020-08-01 14:34:20.822 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.5025 ms
+2020-08-01 14:34:25.396 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:34:29.896 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:34:29.899 +03:00 [INF] HTTP POST / responded 302 in 4533.1994 ms
+2020-08-01 14:34:29.931 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 28.0924 ms
+2020-08-01 14:34:29.960 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/css/bootstrap.min.css responded 200 in 13.1844 ms
+2020-08-01 14:34:29.984 +03:00 [INF] HTTP GET /node_modules/bootstrap/dist/js/bootstrap.min.js responded 200 in 37.2964 ms
+2020-08-01 14:34:30.782 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 68.4793 ms
+2020-08-01 14:34:31.350 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 36.4082 ms
+2020-08-01 14:34:32.374 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 206.2646 ms
+2020-08-01 14:34:36.146 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 18.7716 ms
+2020-08-01 14:34:36.958 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 22.2851 ms
+2020-08-01 14:34:42.133 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 25.7692 ms
+2020-08-01 14:35:16.982 +03:00 [INF] Starting web host
+2020-08-01 14:35:18.080 +03:00 [DBG] Hosting starting
+2020-08-01 14:35:18.402 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:35:18.403 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:35:18.412 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:35:18.413 +03:00 [DBG] Hosting started
+2020-08-01 14:35:18.573 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:35:18.575 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:35:18.798 +03:00 [INF] HTTP GET / responded 200 in 343.069 ms
+2020-08-01 14:35:18.846 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 13.3909 ms
+2020-08-01 14:35:18.928 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.6515 ms
+2020-08-01 14:35:37.965 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:35:50.825 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:35:50.829 +03:00 [INF] HTTP POST / responded 302 in 12888.269 ms
+2020-08-01 14:35:50.862 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 27.1613 ms
+2020-08-01 14:35:52.070 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 69.7887 ms
+2020-08-01 14:35:52.720 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 20.0969 ms
+2020-08-01 14:35:54.817 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 151.9069 ms
+2020-08-01 14:35:56.402 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 16.8721 ms
+2020-08-01 14:35:57.437 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 31.9876 ms
+2020-08-01 14:35:58.935 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 12.252 ms
+2020-08-01 14:35:59.800 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 18.8985 ms
+2020-08-01 14:36:01.217 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 12.9072 ms
+2020-08-01 14:36:02.580 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 15.7311 ms
+2020-08-01 14:36:03.849 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.4608 ms
+2020-08-01 14:36:04.975 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:04.976 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:36:04.980 +03:00 [INF] HTTP GET / responded 200 in 8.0324 ms
+2020-08-01 14:36:04.993 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.9272 ms
+2020-08-01 14:36:09.832 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:09.839 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 14:36:09.841 +03:00 [INF] HTTP POST / responded 302 in 9.4312 ms
+2020-08-01 14:36:09.859 +03:00 [INF] HTTP GET /User/Index responded 200 in 14.61 ms
+2020-08-01 14:36:10.652 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 38.4403 ms
+2020-08-01 14:36:12.416 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 12.3897 ms
+2020-08-01 14:36:15.366 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=1 responded 200 in 30.3351 ms
+2020-08-01 14:36:17.413 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 26.0481 ms
+2020-08-01 14:36:17.978 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 37.4587 ms
+2020-08-01 14:36:19.404 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:19.405 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:36:19.409 +03:00 [INF] HTTP GET / responded 200 in 5.5966 ms
+2020-08-01 14:36:19.424 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.8502 ms
+2020-08-01 14:36:24.885 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:24.894 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:36:24.895 +03:00 [INF] HTTP POST / responded 302 in 9.7831 ms
+2020-08-01 14:36:24.900 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 1.1915 ms
+2020-08-01 14:36:25.740 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 7.7487 ms
+2020-08-01 14:36:26.442 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.9457 ms
+2020-08-01 14:36:27.281 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 12.3123 ms
+2020-08-01 14:36:29.357 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 8.1582 ms
+2020-08-01 14:36:30.033 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:30.033 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:36:30.034 +03:00 [INF] HTTP GET / responded 200 in 2.0605 ms
+2020-08-01 14:36:30.049 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2629 ms
+2020-08-01 14:36:36.644 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:36.652 +03:00 [INF] Yusuf Ceylan in logged
+2020-08-01 14:36:36.653 +03:00 [INF] HTTP POST / responded 302 in 9.4412 ms
+2020-08-01 14:36:36.659 +03:00 [INF] HTTP GET /User/Index responded 200 in 0.9942 ms
+2020-08-01 14:36:37.353 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 7.4048 ms
+2020-08-01 14:36:38.753 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 8.9087 ms
+2020-08-01 14:36:39.632 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=1 responded 200 in 6.0239 ms
+2020-08-01 14:36:41.677 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 13.7022 ms
+2020-08-01 14:36:42.081 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 6.3045 ms
+2020-08-01 14:36:43.131 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:43.131 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:36:43.133 +03:00 [INF] HTTP GET / responded 200 in 1.4662 ms
+2020-08-01 14:36:43.146 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2173 ms
+2020-08-01 14:36:47.871 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:47.877 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:36:47.877 +03:00 [INF] HTTP POST / responded 302 in 6.3072 ms
+2020-08-01 14:36:47.880 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.4921 ms
+2020-08-01 14:36:48.780 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.193 ms
+2020-08-01 14:36:49.299 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.1806 ms
+2020-08-01 14:36:50.188 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 11.8946 ms
+2020-08-01 14:36:52.343 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.0508 ms
+2020-08-01 14:36:54.385 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:54.385 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:36:54.386 +03:00 [INF] HTTP GET / responded 200 in 1.8769 ms
+2020-08-01 14:36:54.402 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2357 ms
+2020-08-01 14:36:59.463 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:36:59.470 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 14:36:59.470 +03:00 [INF] HTTP POST / responded 302 in 6.9902 ms
+2020-08-01 14:36:59.474 +03:00 [INF] HTTP GET /User/Index responded 200 in 0.4662 ms
+2020-08-01 14:37:00.255 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 71.3355 ms
+2020-08-01 14:37:00.541 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 5.3795 ms
+2020-08-01 14:37:01.124 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 6.5104 ms
+2020-08-01 14:37:02.168 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=2 responded 200 in 5.9204 ms
+2020-08-01 14:37:04.563 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 12.1783 ms
+2020-08-01 14:37:04.846 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.5854 ms
+2020-08-01 14:37:06.556 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=3 responded 200 in 5.4386 ms
+2020-08-01 14:37:07.862 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.3404 ms
+2020-08-01 14:37:08.150 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.9329 ms
+2020-08-01 14:37:08.913 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=4 responded 200 in 5.5716 ms
+2020-08-01 14:37:10.686 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 12.491 ms
+2020-08-01 14:37:11.003 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.145 ms
+2020-08-01 14:37:12.729 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=5 responded 200 in 5.4543 ms
+2020-08-01 14:37:14.418 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.0267 ms
+2020-08-01 14:37:15.087 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.1198 ms
+2020-08-01 14:37:24.289 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.265 ms
+2020-08-01 14:37:25.426 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.5039 ms
+2020-08-01 14:37:26.022 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:37:26.022 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:37:26.023 +03:00 [INF] HTTP GET / responded 200 in 1.0171 ms
+2020-08-01 14:37:26.037 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2387 ms
+2020-08-01 14:37:47.170 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:37:47.180 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:37:47.180 +03:00 [INF] HTTP POST / responded 302 in 10.6675 ms
+2020-08-01 14:37:47.187 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:37:47.187 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:37:47.191 +03:00 [INF] HTTP GET / responded 200 in 4.3409 ms
+2020-08-01 14:37:47.204 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2879 ms
+2020-08-01 14:37:52.145 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:37:52.155 +03:00 [INF] Adem Soruç in logged
+2020-08-01 14:37:52.156 +03:00 [INF] HTTP POST / responded 302 in 12.1197 ms
+2020-08-01 14:37:52.159 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.4922 ms
+2020-08-01 14:37:53.016 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.0727 ms
+2020-08-01 14:37:53.875 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.2127 ms
+2020-08-01 14:37:55.054 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 161.8997 ms
+2020-08-01 14:37:59.134 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 13.9022 ms
+2020-08-01 14:38:02.008 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.6384 ms
+2020-08-01 14:38:04.299 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 67.3085 ms
+2020-08-01 14:38:05.958 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 9.5929 ms
+2020-08-01 14:38:08.488 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.3025 ms
+2020-08-01 14:41:05.360 +03:00 [INF] Starting web host
+2020-08-01 14:41:05.585 +03:00 [DBG] Hosting starting
+2020-08-01 14:41:05.678 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 14:41:05.678 +03:00 [INF] Hosting environment: Development
+2020-08-01 14:41:05.679 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 14:41:05.679 +03:00 [DBG] Hosting started
+2020-08-01 14:41:05.745 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 14:41:05.747 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 14:41:05.861 +03:00 [INF] HTTP GET / responded 200 in 167.2157 ms
+2020-08-01 14:41:05.886 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 3.4195 ms
+2020-08-01 14:41:05.901 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3445 ms
+2020-08-01 14:41:05.948 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.719 ms
+2020-08-01 15:04:19.530 +03:00 [INF] Starting web host
+2020-08-01 15:04:21.783 +03:00 [DBG] Hosting starting
+2020-08-01 15:04:22.297 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:04:22.297 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:04:22.298 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:04:22.298 +03:00 [DBG] Hosting started
+2020-08-01 15:04:22.507 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:04:22.509 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:04:22.726 +03:00 [INF] HTTP GET / responded 200 in 347.369 ms
+2020-08-01 15:04:22.776 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 27.701 ms
+2020-08-01 15:04:22.838 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.4008 ms
+2020-08-01 15:04:26.901 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:04:41.451 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:04:41.453 +03:00 [INF] HTTP POST / responded 302 in 14577.5198 ms
+2020-08-01 15:04:41.488 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 26.3882 ms
+2020-08-01 15:04:43.711 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 37.3055 ms
+2020-08-01 15:04:44.279 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 60.2441 ms
+2020-08-01 15:04:44.912 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 19.1025 ms
+2020-08-01 15:04:46.038 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 179.0191 ms
+2020-08-01 15:04:47.403 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 17.0356 ms
+2020-08-01 15:04:48.236 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 199.5873 ms
+2020-08-01 15:04:49.818 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 18.6268 ms
+2020-08-01 15:04:50.255 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 16.874 ms
+2020-08-01 15:04:51.124 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 65.9628 ms
+2020-08-01 15:04:52.354 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 13.963 ms
+2020-08-01 15:04:54.206 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:04:54.207 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:04:54.209 +03:00 [INF] HTTP GET / responded 200 in 5.6621 ms
+2020-08-01 15:04:54.226 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3883 ms
+2020-08-01 15:05:00.237 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:05:00.250 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 15:05:00.251 +03:00 [INF] HTTP POST / responded 302 in 15.4192 ms
+2020-08-01 15:05:00.273 +03:00 [INF] HTTP GET /User/Index responded 200 in 17.8812 ms
+2020-08-01 15:05:01.271 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 62.329 ms
+2020-08-01 15:05:01.914 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 31.42 ms
+2020-08-01 15:05:02.535 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 11.9463 ms
+2020-08-01 15:05:03.572 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=6 responded 200 in 20.9627 ms
+2020-08-01 15:05:05.853 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 25.8015 ms
+2020-08-01 15:05:07.159 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 16.3388 ms
+2020-08-01 15:05:07.561 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 13.5421 ms
+2020-08-01 15:05:10.217 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.6126 ms
+2020-08-01 15:05:11.417 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 10.8772 ms
+2020-08-01 15:05:11.820 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 13.5131 ms
+2020-08-01 15:05:14.338 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=7 responded 200 in 7.7925 ms
+2020-08-01 15:05:16.080 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 13.0035 ms
+2020-08-01 15:05:16.705 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 8.8113 ms
+2020-08-01 15:05:18.722 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 12.5037 ms
+2020-08-01 15:05:19.184 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 9.8718 ms
+2020-08-01 15:05:19.715 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.0527 ms
+2020-08-01 15:05:20.228 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.3561 ms
+2020-08-01 15:05:21.705 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.1937 ms
+2020-08-01 15:05:22.430 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:05:22.430 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:05:22.432 +03:00 [INF] HTTP GET / responded 200 in 1.9731 ms
+2020-08-01 15:05:22.445 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2441 ms
+2020-08-01 15:05:34.179 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:05:34.186 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:05:34.186 +03:00 [INF] HTTP POST / responded 302 in 7.7738 ms
+2020-08-01 15:05:34.190 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.5402 ms
+2020-08-01 15:05:35.385 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 1.9588 ms
+2020-08-01 15:05:35.834 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 4.9201 ms
+2020-08-01 15:05:36.393 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 5.288 ms
+2020-08-01 15:05:58.431 +03:00 [INF] Starting web host
+2020-08-01 15:05:59.383 +03:00 [DBG] Hosting starting
+2020-08-01 15:05:59.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:05:59.653 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:05:59.654 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:05:59.654 +03:00 [DBG] Hosting started
+2020-08-01 15:05:59.811 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:05:59.815 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:05:59.979 +03:00 [INF] HTTP GET / responded 200 in 284.7004 ms
+2020-08-01 15:06:00.016 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 19.3901 ms
+2020-08-01 15:06:11.567 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:06:24.397 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 15:06:24.399 +03:00 [INF] HTTP POST / responded 302 in 12860.1556 ms
+2020-08-01 15:06:24.434 +03:00 [INF] HTTP GET /User/Index responded 200 in 25.1986 ms
+2020-08-01 15:06:26.317 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 77.504 ms
+2020-08-01 15:06:27.115 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 21.4675 ms
+2020-08-01 15:06:28.128 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=1 responded 200 in 52.6499 ms
+2020-08-01 15:06:29.726 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 28.3923 ms
+2020-08-01 15:06:30.169 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 32.5359 ms
+2020-08-01 15:06:31.058 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=2 responded 200 in 10.6609 ms
+2020-08-01 15:06:32.778 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 20.0436 ms
+2020-08-01 15:06:33.102 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 13.0244 ms
+2020-08-01 15:06:33.982 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=3 responded 200 in 10.6122 ms
+2020-08-01 15:06:35.612 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 18.4225 ms
+2020-08-01 15:06:36.025 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 16.9734 ms
+2020-08-01 15:06:36.916 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 12.8423 ms
+2020-08-01 15:07:00.069 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 18.503 ms
+2020-08-01 15:07:02.211 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=4 responded 200 in 12.8342 ms
+2020-08-01 15:07:04.482 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 14.1322 ms
+2020-08-01 15:07:04.794 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.6998 ms
+2020-08-01 15:07:06.515 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=5 responded 200 in 8.5464 ms
+2020-08-01 15:07:08.301 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 14.8109 ms
+2020-08-01 15:07:08.595 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 8.3432 ms
+2020-08-01 15:07:10.074 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 9.5411 ms
+2020-08-01 15:07:11.240 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=6 responded 200 in 7.6306 ms
+2020-08-01 15:07:13.097 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 10.9205 ms
+2020-08-01 15:07:13.427 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.438 ms
+2020-08-01 15:07:14.395 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=7 responded 200 in 6.4454 ms
+2020-08-01 15:07:15.980 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.0802 ms
+2020-08-01 15:07:16.287 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 7.2972 ms
+2020-08-01 15:07:17.202 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=8 responded 200 in 7.1701 ms
+2020-08-01 15:07:18.900 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 12.9886 ms
+2020-08-01 15:07:19.233 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 9.285 ms
+2020-08-01 15:07:20.031 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=9 responded 200 in 6.5526 ms
+2020-08-01 15:07:21.706 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 10.4639 ms
+2020-08-01 15:07:22.003 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 6.6341 ms
+2020-08-01 15:07:23.672 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=10 responded 200 in 5.5228 ms
+2020-08-01 15:07:25.527 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.2113 ms
+2020-08-01 15:07:25.824 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 7.3587 ms
+2020-08-01 15:07:26.528 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:07:26.528 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:07:26.529 +03:00 [INF] HTTP GET / responded 200 in 1.9797 ms
+2020-08-01 15:07:26.544 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3765 ms
+2020-08-01 15:07:31.159 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:07:31.169 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:07:31.170 +03:00 [INF] HTTP POST / responded 302 in 10.6332 ms
+2020-08-01 15:07:31.196 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 19.3272 ms
+2020-08-01 15:07:32.090 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 22.4931 ms
+2020-08-01 15:07:32.659 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 33.6299 ms
+2020-08-01 15:07:33.515 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 139.6231 ms
+2020-08-01 15:07:35.829 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 133.6616 ms
+2020-08-01 15:07:40.988 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.125 ms
+2020-08-01 15:07:41.799 +03:00 [INF] HTTP GET /Manager/Update?questionId=2&surveyId=1 responded 200 in 44.5303 ms
+2020-08-01 15:07:43.217 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.0966 ms
+2020-08-01 15:07:44.153 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 10.7844 ms
+2020-08-01 15:07:46.281 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.4555 ms
+2020-08-01 15:07:47.843 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:07:47.843 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:07:47.845 +03:00 [INF] HTTP GET / responded 200 in 2.4287 ms
+2020-08-01 15:07:47.861 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2392 ms
+2020-08-01 15:31:41.194 +03:00 [INF] Starting web host
+2020-08-01 15:31:42.461 +03:00 [DBG] Hosting starting
+2020-08-01 15:31:42.761 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:31:42.761 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:31:42.770 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:31:42.770 +03:00 [DBG] Hosting started
+2020-08-01 15:31:42.919 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:31:42.921 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:31:43.129 +03:00 [INF] HTTP GET / responded 200 in 318.1833 ms
+2020-08-01 15:31:43.171 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 11.0873 ms
+2020-08-01 15:31:43.251 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.37 ms
+2020-08-01 15:31:50.499 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:32:03.663 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:32:03.665 +03:00 [INF] HTTP POST / responded 302 in 13195.9397 ms
+2020-08-01 15:32:03.694 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 22.0137 ms
+2020-08-01 15:32:04.864 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 79.8019 ms
+2020-08-01 15:32:05.387 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 22.2814 ms
+2020-08-01 15:32:52.190 +03:00 [INF] Starting web host
+2020-08-01 15:32:53.024 +03:00 [DBG] Hosting starting
+2020-08-01 15:32:53.272 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:32:53.272 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:32:53.278 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:32:53.278 +03:00 [DBG] Hosting started
+2020-08-01 15:32:53.401 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:32:53.404 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:32:53.585 +03:00 [INF] HTTP GET / responded 200 in 273.0791 ms
+2020-08-01 15:32:53.635 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 12.0184 ms
+2020-08-01 15:32:53.723 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.5439 ms
+2020-08-01 15:32:58.441 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:33:01.414 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:33:01.416 +03:00 [INF] HTTP POST / responded 302 in 3000.9989 ms
+2020-08-01 15:33:01.454 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 28.5304 ms
+2020-08-01 15:33:02.645 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 60.3277 ms
+2020-08-01 15:33:03.230 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 28.7592 ms
+2020-08-01 15:45:18.475 +03:00 [INF] Starting web host
+2020-08-01 15:45:19.345 +03:00 [DBG] Hosting starting
+2020-08-01 15:45:19.553 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:45:19.553 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:45:19.561 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:45:19.561 +03:00 [DBG] Hosting started
+2020-08-01 15:45:19.680 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:45:19.683 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:45:19.851 +03:00 [INF] HTTP GET / responded 200 in 258.4797 ms
+2020-08-01 15:45:19.895 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 12.1313 ms
+2020-08-01 15:45:19.978 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.4755 ms
+2020-08-01 15:46:12.355 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:46:25.270 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:46:25.273 +03:00 [INF] HTTP POST / responded 302 in 12949.5312 ms
+2020-08-01 15:46:25.304 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 23.7139 ms
+2020-08-01 15:46:27.808 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 77.9453 ms
+2020-08-01 15:46:28.743 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 19.5503 ms
+2020-08-01 15:46:29.267 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 26.3466 ms
+2020-08-01 15:46:51.444 +03:00 [INF] Starting web host
+2020-08-01 15:46:52.212 +03:00 [DBG] Hosting starting
+2020-08-01 15:46:52.437 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:46:52.438 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:46:52.447 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:46:52.447 +03:00 [DBG] Hosting started
+2020-08-01 15:46:52.580 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 96.0138 ms
+2020-08-01 15:46:52.618 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:46:52.619 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:46:52.777 +03:00 [INF] HTTP GET / responded 200 in 294.5732 ms
+2020-08-01 15:46:52.810 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.7771 ms
+2020-08-01 15:46:52.833 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.1624 ms
+2020-08-01 15:46:52.907 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2271 ms
+2020-08-01 15:46:58.165 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:47:11.143 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:47:11.145 +03:00 [INF] HTTP POST / responded 302 in 13004.0384 ms
+2020-08-01 15:47:11.177 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 24.1723 ms
+2020-08-01 15:47:12.309 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 69.6243 ms
+2020-08-01 15:47:12.724 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 22.2665 ms
+2020-08-01 15:47:13.184 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 22.802 ms
+2020-08-01 15:49:15.017 +03:00 [INF] Starting web host
+2020-08-01 15:49:15.882 +03:00 [DBG] Hosting starting
+2020-08-01 15:49:16.117 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 15:49:16.117 +03:00 [INF] Hosting environment: Development
+2020-08-01 15:49:16.126 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 15:49:16.126 +03:00 [DBG] Hosting started
+2020-08-01 15:49:16.248 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:49:16.250 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 15:49:16.407 +03:00 [INF] HTTP GET / responded 200 in 249.8899 ms
+2020-08-01 15:49:16.448 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 11.6294 ms
+2020-08-01 15:49:16.539 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.435 ms
+2020-08-01 15:49:21.242 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 15:49:24.244 +03:00 [INF] Adem Soruç in logged
+2020-08-01 15:49:24.246 +03:00 [INF] HTTP POST / responded 302 in 3028.952 ms
+2020-08-01 15:49:24.277 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 23.2806 ms
+2020-08-01 15:49:25.144 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 62.2317 ms
+2020-08-01 15:49:25.700 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 25.5187 ms
+2020-08-01 15:49:26.720 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 267.4232 ms
+2020-08-01 15:49:36.065 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 156.0715 ms
+2020-08-01 15:49:41.866 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.0841 ms
+2020-08-01 15:49:43.498 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 17.8898 ms
+2020-08-01 15:49:46.680 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 19.3733 ms
+2020-08-01 15:49:47.405 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 15.6165 ms
+2020-08-01 15:49:49.753 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 12.9842 ms
+2020-08-01 15:49:50.499 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 21.9512 ms
+2020-08-01 15:49:54.247 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 10.2079 ms
+2020-08-01 15:49:55.212 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=5 responded 200 in 13.4406 ms
+2020-08-01 15:49:57.443 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.7163 ms
+2020-08-01 15:49:58.368 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 89.6892 ms
+2020-08-01 15:50:02.883 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 10.2844 ms
+2020-08-01 15:50:05.443 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.8563 ms
+2020-08-01 15:50:06.936 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 85.5582 ms
+2020-08-01 15:50:32.406 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 23.7631 ms
+2020-08-01 15:50:37.294 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.5294 ms
+2020-08-01 15:50:39.897 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 95.7564 ms
+2020-08-01 15:50:40.971 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 9.1925 ms
+2020-08-01 15:50:45.613 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 8.7501 ms
+2020-08-01 15:50:53.731 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 83.7485 ms
+2020-08-01 15:50:56.463 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 11.9722 ms
+2020-08-01 15:50:59.895 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.2277 ms
+2020-08-01 15:51:07.297 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 80.4926 ms
+2020-08-01 15:51:09.168 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 12.0952 ms
+2020-08-01 15:51:12.408 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 8.6633 ms
+2020-08-01 15:51:15.221 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 89.0289 ms
+2020-08-01 15:51:16.295 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.197 ms
+2020-08-01 15:51:17.653 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.8322 ms
+2020-08-01 15:51:19.542 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 79.557 ms
+2020-08-01 15:51:25.357 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 6.6592 ms
+2020-08-01 15:51:36.633 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.2895 ms
+2020-08-01 15:51:48.378 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 82.0401 ms
+2020-08-01 15:52:10.352 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.9931 ms
+2020-08-01 15:52:11.104 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 61.5494 ms
+2020-08-01 15:52:13.359 +03:00 [INF] Adem Soruç updated his personal information.
+2020-08-01 15:52:13.363 +03:00 [INF] HTTP POST /Manager/MyAccount responded 200 in 36.9602 ms
+2020-08-01 15:52:15.701 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.3488 ms
+2020-08-01 15:52:16.077 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 10.263 ms
+2020-08-01 15:52:18.190 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.9455 ms
+2020-08-01 15:52:18.868 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 19.6852 ms
+2020-08-01 15:52:19.690 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 2.1582 ms
+2020-08-01 15:52:20.051 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 4.1818 ms
+2020-08-01 15:52:20.439 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.549 ms
+2020-08-01 15:52:20.876 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 4.5551 ms
+2020-08-01 15:52:21.939 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 5.7833 ms
+2020-08-01 15:52:22.433 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.4535 ms
+2020-08-01 15:52:23.281 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 10.6124 ms
+2020-08-01 15:52:26.709 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.0651 ms
+2020-08-01 15:52:27.413 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 8.4897 ms
+2020-08-01 15:52:31.435 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.0667 ms
+2020-08-01 15:52:32.264 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=5 responded 200 in 7.2688 ms
+2020-08-01 15:52:34.850 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.9331 ms
+2020-08-01 15:52:35.561 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.8309 ms
+2020-08-01 15:52:38.541 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.9464 ms
+2020-08-01 15:52:43.539 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 92.6116 ms
+2020-08-01 16:04:28.106 +03:00 [INF] Starting web host
+2020-08-01 16:04:28.981 +03:00 [DBG] Hosting starting
+2020-08-01 16:04:29.199 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 16:04:29.199 +03:00 [INF] Hosting environment: Development
+2020-08-01 16:04:29.207 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 16:04:29.207 +03:00 [DBG] Hosting started
+2020-08-01 16:04:29.328 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 85.9578 ms
+2020-08-01 16:04:29.383 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:04:29.384 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:04:29.521 +03:00 [INF] HTTP GET / responded 200 in 280.9714 ms
+2020-08-01 16:04:29.544 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3352 ms
+2020-08-01 16:04:29.572 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.1744 ms
+2020-08-01 16:04:40.040 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:04:52.947 +03:00 [INF] Adem Soruç in logged
+2020-08-01 16:04:52.950 +03:00 [INF] HTTP POST / responded 302 in 12931.8019 ms
+2020-08-01 16:04:52.984 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 25.9928 ms
+2020-08-01 16:04:54.299 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 62.0033 ms
+2020-08-01 16:04:54.846 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 21.5861 ms
+2020-08-01 16:04:55.949 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 275.9699 ms
+2020-08-01 16:07:35.917 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 163.1221 ms
+2020-08-01 16:07:50.579 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.6575 ms
+2020-08-01 16:08:28.141 +03:00 [INF] Starting web host
+2020-08-01 16:08:29.006 +03:00 [DBG] Hosting starting
+2020-08-01 16:08:29.226 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 16:08:29.226 +03:00 [INF] Hosting environment: Development
+2020-08-01 16:08:29.233 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 16:08:29.233 +03:00 [DBG] Hosting started
+2020-08-01 16:08:29.367 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 98.3624 ms
+2020-08-01 16:08:29.414 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:08:29.415 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:08:29.560 +03:00 [INF] HTTP GET / responded 200 in 293.0866 ms
+2020-08-01 16:08:29.587 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5342 ms
+2020-08-01 16:08:29.611 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.1847 ms
+2020-08-01 16:08:35.430 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:08:38.438 +03:00 [INF] Adem Soruç in logged
+2020-08-01 16:08:38.440 +03:00 [INF] HTTP POST / responded 302 in 3034.7962 ms
+2020-08-01 16:08:38.471 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 24.477 ms
+2020-08-01 16:08:39.809 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 68.5621 ms
+2020-08-01 16:08:40.286 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 21.9642 ms
+2020-08-01 16:08:41.569 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 310.2816 ms
+2020-08-01 16:08:44.694 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 139.0562 ms
+2020-08-01 16:08:47.341 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.2339 ms
+2020-08-01 16:08:48.668 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 134.3685 ms
+2020-08-01 16:08:50.251 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 39.338 ms
+2020-08-01 16:09:08.566 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.3226 ms
+2020-08-01 16:09:11.693 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 178.1341 ms
+2020-08-01 16:09:17.623 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 9.1277 ms
+2020-08-01 16:09:18.226 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 11.4555 ms
+2020-08-01 16:09:19.239 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 81.7306 ms
+2020-08-01 16:09:22.457 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 8.0365 ms
+2020-08-01 16:09:23.220 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.0825 ms
+2020-08-01 16:09:27.727 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 106.6804 ms
+2020-08-01 16:10:07.092 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 17.2236 ms
+2020-08-01 16:10:09.415 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 9.3115 ms
+2020-08-01 16:10:11.411 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 108.4288 ms
+2020-08-01 16:10:13.082 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 12.6523 ms
+2020-08-01 16:10:24.438 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.316 ms
+2020-08-01 16:10:27.289 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 113.2166 ms
+2020-08-01 16:10:28.586 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.9917 ms
+2020-08-01 16:10:43.105 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.026 ms
+2020-08-01 16:11:10.446 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 60.7535 ms
+2020-08-01 16:11:16.036 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 39.7241 ms
+2020-08-01 16:11:18.154 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 16.1358 ms
+2020-08-01 16:11:19.108 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 23.0417 ms
+2020-08-01 16:11:20.826 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 15.1298 ms
+2020-08-01 16:11:20.836 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 7.6779 ms
+2020-08-01 16:11:22.519 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 11.3979 ms
+2020-08-01 16:11:22.527 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 4.5456 ms
+2020-08-01 16:11:23.083 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 7.9051 ms
+2020-08-01 16:11:25.840 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 10.9626 ms
+2020-08-01 16:11:26.969 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=12&surveyId=3 responded 200 in 4.3938 ms
+2020-08-01 16:11:30.232 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 9.3921 ms
+2020-08-01 16:11:30.239 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=12&CountOptionAdded=1 responded 200 in 3.861 ms
+2020-08-01 16:11:32.196 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 9.6154 ms
+2020-08-01 16:11:32.203 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=12&CountOptionAdded=2 responded 200 in 3.8157 ms
+2020-08-01 16:11:32.789 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 4.2009 ms
+2020-08-01 16:11:36.119 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.5114 ms
+2020-08-01 16:11:37.162 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.9665 ms
+2020-08-01 16:11:38.571 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=11 responded 200 in 6.6029 ms
+2020-08-01 16:11:41.168 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 6.5575 ms
+2020-08-01 16:11:41.881 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=12 responded 200 in 7.0059 ms
+2020-08-01 16:11:42.738 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 4.5946 ms
+2020-08-01 16:11:43.889 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 37.3477 ms
+2020-08-01 16:11:45.565 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.1342 ms
+2020-08-01 16:11:46.287 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.2233 ms
+2020-08-01 16:11:47.575 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:11:47.575 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:11:47.576 +03:00 [INF] HTTP GET / responded 200 in 4.5458 ms
+2020-08-01 16:11:47.595 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2875 ms
+2020-08-01 16:11:52.616 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:11:52.626 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 16:11:52.626 +03:00 [INF] HTTP POST / responded 302 in 9.9 ms
+2020-08-01 16:11:52.646 +03:00 [INF] HTTP GET /User/Index responded 200 in 16.1225 ms
+2020-08-01 16:11:53.844 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 53.4496 ms
+2020-08-01 16:11:54.501 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 25.3355 ms
+2020-08-01 16:11:55.257 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.9369 ms
+2020-08-01 16:11:56.325 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=6 responded 200 in 18.4743 ms
+2020-08-01 16:11:58.056 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 13.5572 ms
+2020-08-01 16:11:58.447 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 5.6816 ms
+2020-08-01 16:11:59.307 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=7 responded 200 in 6.0099 ms
+2020-08-01 16:12:00.714 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 12.4076 ms
+2020-08-01 16:12:01.009 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.2356 ms
+2020-08-01 16:12:01.904 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=8 responded 200 in 6.0765 ms
+2020-08-01 16:12:03.940 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 9.3508 ms
+2020-08-01 16:12:04.275 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 7.0358 ms
+2020-08-01 16:12:05.007 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=9 responded 200 in 5.4213 ms
+2020-08-01 16:12:06.739 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.4488 ms
+2020-08-01 16:12:07.113 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 7.1712 ms
+2020-08-01 16:12:07.893 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=10 responded 200 in 4.576 ms
+2020-08-01 16:12:09.740 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 9.8556 ms
+2020-08-01 16:12:10.056 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 8.6083 ms
+2020-08-01 16:12:11.082 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:12:11.082 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:12:11.084 +03:00 [INF] HTTP GET / responded 200 in 2.7213 ms
+2020-08-01 16:12:11.099 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3951 ms
+2020-08-01 16:12:20.828 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:12:20.835 +03:00 [INF] Adem Soruç in logged
+2020-08-01 16:12:20.835 +03:00 [INF] HTTP POST / responded 302 in 7.438 ms
+2020-08-01 16:12:20.840 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.5664 ms
+2020-08-01 16:12:21.800 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 8.2693 ms
+2020-08-01 16:12:22.627 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 5.1534 ms
+2020-08-01 16:12:26.006 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 99.1105 ms
+2020-08-01 16:12:27.693 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=7 responded 200 in 9.6075 ms
+2020-08-01 16:12:34.396 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.8568 ms
+2020-08-01 16:12:35.673 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.8249 ms
+2020-08-01 16:12:36.313 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 38.8831 ms
+2020-08-01 16:12:37.449 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 4.1106 ms
+2020-08-01 16:12:38.059 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 1.4963 ms
+2020-08-01 16:12:39.196 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.6396 ms
+2020-08-01 16:12:39.629 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 11.0867 ms
+2020-08-01 16:12:40.388 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.557 ms
+2020-08-01 16:12:40.709 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 1.757 ms
+2020-08-01 16:12:41.518 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:12:41.518 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:12:41.519 +03:00 [INF] HTTP GET / responded 200 in 1.1711 ms
+2020-08-01 16:12:41.537 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4413 ms
+2020-08-01 16:13:01.655 +03:00 [INF] Starting web host
+2020-08-01 16:13:02.440 +03:00 [DBG] Hosting starting
+2020-08-01 16:13:02.706 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 16:13:02.706 +03:00 [INF] Hosting environment: Development
+2020-08-01 16:13:02.714 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 16:13:02.714 +03:00 [DBG] Hosting started
+2020-08-01 16:13:02.854 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:13:02.856 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:13:03.029 +03:00 [INF] HTTP GET / responded 200 in 271.8577 ms
+2020-08-01 16:13:03.033 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:13:03.034 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:13:03.078 +03:00 [INF] HTTP GET / responded 200 in 46.8974 ms
+2020-08-01 16:13:03.089 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 12.2825 ms
+2020-08-01 16:13:03.120 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3017 ms
+2020-08-01 16:13:03.138 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.219 ms
+2020-08-01 16:13:03.961 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.0498 ms
+2020-08-01 16:13:03.965 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.4017 ms
+2020-08-01 16:14:03.328 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:14:16.250 +03:00 [INF] Adem Soruç in logged
+2020-08-01 16:14:16.257 +03:00 [INF] HTTP POST / responded 302 in 12952.9633 ms
+2020-08-01 16:14:16.283 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 20.7598 ms
+2020-08-01 16:14:20.458 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 96.5125 ms
+2020-08-01 16:14:21.444 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 21.2222 ms
+2020-08-01 16:15:14.540 +03:00 [INF] Starting web host
+2020-08-01 16:15:15.291 +03:00 [DBG] Hosting starting
+2020-08-01 16:15:15.502 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 16:15:15.502 +03:00 [INF] Hosting environment: Development
+2020-08-01 16:15:15.509 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 16:15:15.509 +03:00 [DBG] Hosting started
+2020-08-01 16:15:15.640 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:15:15.642 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 16:15:15.803 +03:00 [INF] HTTP GET / responded 200 in 261.3454 ms
+2020-08-01 16:15:15.846 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 11.2453 ms
+2020-08-01 16:15:15.861 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2024 ms
+2020-08-01 16:15:15.937 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.5076 ms
+2020-08-01 16:15:20.813 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 16:15:23.758 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 16:15:23.760 +03:00 [INF] HTTP POST / responded 302 in 2969.9851 ms
+2020-08-01 16:15:23.792 +03:00 [INF] HTTP GET /User/Index responded 200 in 23.211 ms
+2020-08-01 16:15:26.110 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 76.7093 ms
+2020-08-01 16:15:26.699 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 20.3562 ms
+2020-08-01 16:15:48.493 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 39.3066 ms
+2020-08-01 16:16:10.416 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 17.8077 ms
+2020-08-01 16:16:11.326 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 11.885 ms
+2020-08-01 17:08:06.741 +03:00 [INF] Starting web host
+2020-08-01 17:08:07.645 +03:00 [DBG] Hosting starting
+2020-08-01 17:08:07.902 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:08:07.902 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:08:07.910 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:08:07.910 +03:00 [DBG] Hosting started
+2020-08-01 17:08:08.076 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 116.5963 ms
+2020-08-01 17:08:08.120 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:08:08.121 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:08:08.304 +03:00 [INF] HTTP GET / responded 200 in 346.067 ms
+2020-08-01 17:08:08.334 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3777 ms
+2020-08-01 17:08:08.363 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3168 ms
+2020-08-01 17:08:08.458 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2815 ms
+2020-08-01 17:08:17.819 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:08:22.091 +03:00 [INF] Tuncay Damlar in logged
+2020-08-01 17:08:22.093 +03:00 [INF] HTTP POST / responded 302 in 4298.7033 ms
+2020-08-01 17:08:22.140 +03:00 [INF] HTTP GET /User/Index responded 200 in 35.9758 ms
+2020-08-01 17:08:25.938 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 115.3916 ms
+2020-08-01 17:08:27.771 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 94.4724 ms
+2020-08-01 17:08:28.586 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 19.9352 ms
+2020-08-01 17:08:29.854 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 28.2486 ms
+2020-08-01 17:08:31.675 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=6 responded 200 in 51.6311 ms
+2020-08-01 17:08:33.647 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 41.2429 ms
+2020-08-01 17:08:34.117 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 28.0725 ms
+2020-08-01 17:08:35.107 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=7 responded 200 in 10.7001 ms
+2020-08-01 17:08:36.817 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 23.8479 ms
+2020-08-01 17:08:37.235 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 15.4267 ms
+2020-08-01 17:08:38.495 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=8 responded 200 in 41.9328 ms
+2020-08-01 17:08:40.407 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 22.0248 ms
+2020-08-01 17:08:40.727 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 17.0147 ms
+2020-08-01 17:08:41.665 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=9 responded 200 in 8.8816 ms
+2020-08-01 17:08:43.518 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 14.2941 ms
+2020-08-01 17:08:43.841 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 15.3831 ms
+2020-08-01 17:08:44.904 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=2&questionId=10 responded 200 in 11.1689 ms
+2020-08-01 17:08:46.688 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 17.6263 ms
+2020-08-01 17:08:46.997 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 10.0583 ms
+2020-08-01 17:08:49.670 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:08:49.670 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:08:49.673 +03:00 [INF] HTTP GET / responded 200 in 3.8069 ms
+2020-08-01 17:08:49.696 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 1.1316 ms
+2020-08-01 17:08:53.857 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:08:53.868 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:08:53.869 +03:00 [INF] HTTP POST / responded 302 in 12.1607 ms
+2020-08-01 17:08:53.902 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 28.7637 ms
+2020-08-01 17:08:55.425 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 58.4736 ms
+2020-08-01 17:08:58.777 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 27.6362 ms
+2020-08-01 17:08:59.804 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 12.5728 ms
+2020-08-01 17:09:01.881 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 319.7195 ms
+2020-08-01 17:09:10.412 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 177.0612 ms
+2020-08-01 17:09:14.267 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.4604 ms
+2020-08-01 17:09:15.758 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.5913 ms
+2020-08-01 17:09:18.425 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.0304 ms
+2020-08-01 17:09:19.201 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 14.5584 ms
+2020-08-01 17:09:22.384 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 8.1123 ms
+2020-08-01 17:09:23.806 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.5313 ms
+2020-08-01 17:09:24.835 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 15.4739 ms
+2020-08-01 17:09:28.002 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 37.4147 ms
+2020-08-01 17:09:29.848 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 17.0862 ms
+2020-08-01 17:09:30.682 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 23.5921 ms
+2020-08-01 17:09:32.269 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 31.6352 ms
+2020-08-01 17:09:32.282 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 8.1994 ms
+2020-08-01 17:09:33.871 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 32.0182 ms
+2020-08-01 17:09:33.882 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 6.2916 ms
+2020-08-01 17:09:34.467 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 8.8459 ms
+2020-08-01 17:09:40.692 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 16.4309 ms
+2020-08-01 17:09:41.621 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=12&surveyId=3 responded 200 in 4.6183 ms
+2020-08-01 17:09:43.560 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 21.4655 ms
+2020-08-01 17:09:43.571 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=12&CountOptionAdded=1 responded 200 in 4.8882 ms
+2020-08-01 17:09:45.276 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 14.2689 ms
+2020-08-01 17:09:45.287 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=12&CountOptionAdded=2 responded 200 in 6.9392 ms
+2020-08-01 17:09:46.643 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 5.0379 ms
+2020-08-01 17:09:47.709 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=12&surveyId=3 responded 200 in 4.3085 ms
+2020-08-01 17:09:48.461 +03:00 [INF] HTTP GET /Manager/CreateOption?surveyId=3&questionId=12&isDeleted=true&optionId=37 responded 200 in 38.934 ms
+2020-08-01 17:09:49.231 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 6.4081 ms
+2020-08-01 17:09:51.675 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=12&surveyId=3 responded 200 in 5.1311 ms
+2020-08-01 17:09:55.014 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 9.9515 ms
+2020-08-01 17:09:55.025 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=12&CountOptionAdded=2 responded 200 in 6.0789 ms
+2020-08-01 17:09:56.561 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 5.4417 ms
+2020-08-01 17:09:57.418 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 7.414 ms
+2020-08-01 17:09:58.414 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 8.6414 ms
+2020-08-01 17:10:00.335 +03:00 [INF] HTTP GET /Manager/Update?questionId=11&surveyId=3 responded 200 in 61.7044 ms
+2020-08-01 17:10:02.549 +03:00 [INF] HTTP GET /Manager/UpdateOptions?questionOptionId=34&surveyId=3&questionId=11 responded 200 in 28.9718 ms
+2020-08-01 17:10:06.158 +03:00 [INF] HTTP POST /Manager/UpdateOptions responded 200 in 17.9036 ms
+2020-08-01 17:10:06.802 +03:00 [INF] HTTP GET /Manager/Update?surveyId=3&questionId=11 responded 200 in 8.7968 ms
+2020-08-01 17:10:07.536 +03:00 [INF] HTTP GET /Manager/UpdateOptions?questionOptionId=35&surveyId=3&questionId=11 responded 200 in 3.6138 ms
+2020-08-01 17:10:12.784 +03:00 [INF] HTTP POST /Manager/UpdateOptions responded 200 in 12.2254 ms
+2020-08-01 17:10:13.353 +03:00 [INF] HTTP GET /Manager/Update?surveyId=3&questionId=11 responded 200 in 11.3479 ms
+2020-08-01 17:10:15.572 +03:00 [INF] HTTP POST /Manager/Update responded 302 in 29.7331 ms
+2020-08-01 17:10:15.586 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 11.67 ms
+2020-08-01 17:10:16.627 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.0717 ms
+2020-08-01 17:10:18.705 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:10:18.705 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:10:18.706 +03:00 [INF] HTTP GET / responded 200 in 1.6199 ms
+2020-08-01 17:10:18.726 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.6207 ms
+2020-08-01 17:21:43.718 +03:00 [INF] Starting web host
+2020-08-01 17:21:44.630 +03:00 [DBG] Hosting starting
+2020-08-01 17:21:44.865 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:21:44.865 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:21:44.872 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:21:44.872 +03:00 [DBG] Hosting started
+2020-08-01 17:21:45.016 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:21:45.019 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:21:45.194 +03:00 [INF] HTTP GET / responded 200 in 284.5203 ms
+2020-08-01 17:21:45.235 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 11.4838 ms
+2020-08-01 17:21:45.250 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.1991 ms
+2020-08-01 17:21:45.323 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.5806 ms
+2020-08-01 17:21:57.675 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:22:01.449 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 17:22:01.451 +03:00 [INF] HTTP POST / responded 302 in 3799.7843 ms
+2020-08-01 17:22:01.486 +03:00 [INF] HTTP GET /User/Index responded 200 in 30.3806 ms
+2020-08-01 17:22:02.621 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 82.552 ms
+2020-08-01 17:22:03.078 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 77.1653 ms
+2020-08-01 17:22:03.737 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 15.0542 ms
+2020-08-01 17:22:39.667 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:22:39.668 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:22:39.680 +03:00 [INF] HTTP GET / responded 200 in 17.2668 ms
+2020-08-01 17:22:39.705 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.7491 ms
+2020-08-01 17:22:46.102 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:22:46.113 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:22:46.114 +03:00 [INF] HTTP POST / responded 302 in 13.0278 ms
+2020-08-01 17:22:46.139 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 20.5585 ms
+2020-08-01 17:22:46.946 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 47.2804 ms
+2020-08-01 17:22:47.568 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 48.3215 ms
+2020-08-01 17:23:35.420 +03:00 [INF] HTTP GET /Manager/Update?questionId=1&surveyId=1 responded 200 in 75.0632 ms
+2020-08-01 17:24:03.166 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 26.9755 ms
+2020-08-01 17:24:04.250 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 141.0327 ms
+2020-08-01 17:24:24.725 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 45.5464 ms
+2020-08-01 17:24:25.459 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=2 responded 200 in 22.3913 ms
+2020-08-01 17:24:27.565 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 11.5391 ms
+2020-08-01 17:24:28.178 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 20.1652 ms
+2020-08-01 17:24:42.713 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 9.409 ms
+2020-08-01 17:24:43.668 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 12.6936 ms
+2020-08-01 17:24:49.153 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 8.3271 ms
+2020-08-01 17:24:49.924 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 13.7733 ms
+2020-08-01 17:25:27.891 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 15.7372 ms
+2020-08-01 17:25:28.648 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.2425 ms
+2020-08-01 17:25:29.745 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 233.3417 ms
+2020-08-01 17:27:40.001 +03:00 [INF] Starting web host
+2020-08-01 17:27:40.904 +03:00 [DBG] Hosting starting
+2020-08-01 17:27:41.227 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:27:41.227 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:27:41.234 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:27:41.234 +03:00 [DBG] Hosting started
+2020-08-01 17:27:41.380 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 102.346 ms
+2020-08-01 17:27:41.438 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:27:41.440 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:27:41.629 +03:00 [INF] HTTP GET / responded 200 in 353.3974 ms
+2020-08-01 17:27:41.656 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4249 ms
+2020-08-01 17:27:41.688 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2594 ms
+2020-08-01 17:27:51.703 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:27:54.603 +03:00 [INF] HTTP GET /Account/Register responded 200 in 2911.7926 ms
+2020-08-01 17:27:54.622 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.8281 ms
+2020-08-01 17:27:54.641 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2107 ms
+2020-08-01 17:28:55.298 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:28:55.326 +03:00 [INF] Sule Soruç
+2020-08-01 17:28:55.346 +03:00 [INF] HTTP POST /Account/Register responded 302 in 78.7121 ms
+2020-08-01 17:28:55.359 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:28:55.359 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:28:55.372 +03:00 [INF] HTTP GET / responded 200 in 18.0049 ms
+2020-08-01 17:28:55.394 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3839 ms
+2020-08-01 17:28:55.413 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2015 ms
+2020-08-01 17:29:03.418 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:29:03.587 +03:00 [INF] Sule Soruç in logged
+2020-08-01 17:29:03.593 +03:00 [INF] HTTP POST / responded 302 in 178.3614 ms
+2020-08-01 17:29:03.612 +03:00 [INF] HTTP GET /User/Index responded 200 in 15.6053 ms
+2020-08-01 17:29:05.181 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 56.0702 ms
+2020-08-01 17:29:09.802 +03:00 [INF] Sule Soruç updated his personal information.
+2020-08-01 17:29:09.808 +03:00 [INF] HTTP POST /User/MyAccount responded 200 in 48.513 ms
+2020-08-01 17:29:14.042 +03:00 [INF] Sule Soruç updated his personal information.
+2020-08-01 17:29:14.050 +03:00 [INF] HTTP POST /User/MyAccount responded 200 in 27.6705 ms
+2020-08-01 17:29:19.302 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 74.5116 ms
+2020-08-01 17:29:20.099 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 13.8872 ms
+2020-08-01 17:29:22.181 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=1 responded 200 in 34.3118 ms
+2020-08-01 17:29:23.757 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 21.5711 ms
+2020-08-01 17:29:24.044 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 23.2513 ms
+2020-08-01 17:29:24.955 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=2 responded 200 in 11.5067 ms
+2020-08-01 17:29:26.872 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 13.0841 ms
+2020-08-01 17:29:27.175 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 13.6051 ms
+2020-08-01 17:29:28.069 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=3 responded 200 in 11.6992 ms
+2020-08-01 17:29:29.492 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 14.4096 ms
+2020-08-01 17:29:29.778 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 13.5869 ms
+2020-08-01 17:29:31.527 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=4 responded 200 in 9.278 ms
+2020-08-01 17:29:33.934 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 17.4886 ms
+2020-08-01 17:29:34.219 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 7.3812 ms
+2020-08-01 17:29:35.143 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=1&questionId=5 responded 200 in 6.6792 ms
+2020-08-01 17:29:36.722 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 10.9546 ms
+2020-08-01 17:29:37.064 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 9.8576 ms
+2020-08-01 17:30:06.645 +03:00 [INF] HTTP GET /User/MyAccount responded 200 in 15.5399 ms
+2020-08-01 17:30:07.072 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 9.1628 ms
+2020-08-01 17:30:07.654 +03:00 [INF] HTTP GET /User/Surveys?surveyId=1 responded 200 in 8.302 ms
+2020-08-01 17:30:08.013 +03:00 [INF] HTTP GET /User/Surveys?surveyId=2 responded 200 in 9.0527 ms
+2020-08-01 17:30:09.346 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:30:09.347 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:30:09.349 +03:00 [INF] HTTP GET / responded 200 in 2.5903 ms
+2020-08-01 17:30:09.364 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2928 ms
+2020-08-01 17:30:14.455 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:30:14.460 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:30:14.460 +03:00 [INF] HTTP POST / responded 302 in 5.7485 ms
+2020-08-01 17:30:14.483 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 18.7143 ms
+2020-08-01 17:30:16.041 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 50.079 ms
+2020-08-01 17:30:21.524 +03:00 [INF] Adem Soruç updated his personal information.
+2020-08-01 17:30:21.531 +03:00 [INF] HTTP POST /Manager/MyAccount responded 200 in 31.4632 ms
+2020-08-01 17:30:22.636 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 17.5285 ms
+2020-08-01 17:30:23.346 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.4183 ms
+2020-08-01 17:30:27.082 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.3687 ms
+2020-08-01 17:30:28.038 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.7191 ms
+2020-08-01 17:30:30.082 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.7667 ms
+2020-08-01 17:30:30.941 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 168.3815 ms
+2020-08-01 17:30:32.436 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.0391 ms
+2020-08-01 17:30:33.340 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.0561 ms
+2020-08-01 17:30:34.372 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 131.352 ms
+2020-08-01 17:30:58.709 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 153.4025 ms
+2020-08-01 17:31:01.972 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.8611 ms
+2020-08-01 17:31:04.494 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 161.5027 ms
+2020-08-01 17:31:05.462 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 8.6223 ms
+2020-08-01 17:31:21.077 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.438 ms
+2020-08-01 17:31:22.868 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.3408 ms
+2020-08-01 17:31:26.604 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.5541 ms
+2020-08-01 17:31:30.371 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 12.1254 ms
+2020-08-01 17:31:41.837 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.0852 ms
+2020-08-01 17:31:43.174 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 108.2257 ms
+2020-08-01 17:31:44.700 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 10.7643 ms
+2020-08-01 17:31:47.851 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.4198 ms
+2020-08-01 17:31:48.746 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 117.7294 ms
+2020-08-01 17:31:51.210 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.628 ms
+2020-08-01 17:31:53.765 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.7758 ms
+2020-08-01 17:31:54.978 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 122.8773 ms
+2020-08-01 17:31:56.219 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 8.9315 ms
+2020-08-01 17:32:15.610 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.5289 ms
+2020-08-01 17:32:17.042 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 133.1283 ms
+2020-08-01 17:32:18.606 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 6.8946 ms
+2020-08-01 17:32:28.296 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.1296 ms
+2020-08-01 17:32:29.046 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.433 ms
+2020-08-01 17:32:31.244 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 9.836 ms
+2020-08-01 17:32:32.859 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.235 ms
+2020-08-01 17:32:34.092 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 9.2781 ms
+2020-08-01 17:32:37.180 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.8635 ms
+2020-08-01 17:32:38.334 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 7.0074 ms
+2020-08-01 17:32:40.937 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.8658 ms
+2020-08-01 17:39:31.451 +03:00 [INF] Starting web host
+2020-08-01 17:39:32.393 +03:00 [DBG] Hosting starting
+2020-08-01 17:39:32.656 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:39:32.656 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:39:32.664 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:39:32.664 +03:00 [DBG] Hosting started
+2020-08-01 17:39:32.799 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:39:32.801 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:39:32.958 +03:00 [INF] HTTP GET / responded 200 in 258.0805 ms
+2020-08-01 17:39:32.999 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 19.8223 ms
+2020-08-01 17:39:33.017 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2088 ms
+2020-08-01 17:39:33.089 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.398 ms
+2020-08-01 17:39:38.358 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:39:41.484 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:39:41.485 +03:00 [INF] HTTP POST / responded 302 in 3151.3481 ms
+2020-08-01 17:39:41.499 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:39:41.499 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:39:41.502 +03:00 [INF] HTTP GET / responded 200 in 6.9214 ms
+2020-08-01 17:39:41.518 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.31 ms
+2020-08-01 17:39:41.545 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3046 ms
+2020-08-01 17:39:48.241 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:39:48.253 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:39:48.256 +03:00 [INF] HTTP POST / responded 302 in 15.7428 ms
+2020-08-01 17:39:48.294 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 30.0841 ms
+2020-08-01 17:39:51.219 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 60.3404 ms
+2020-08-01 17:39:52.040 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 32.2732 ms
+2020-08-01 17:39:55.369 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 159.2695 ms
+2020-08-01 17:40:05.920 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 14.0268 ms
+2020-08-01 17:40:07.405 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 232.2136 ms
+2020-08-01 17:40:09.593 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 26.5332 ms
+2020-08-01 17:40:16.751 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 15.925 ms
+2020-08-01 17:40:18.767 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=3 responded 200 in 13.0046 ms
+2020-08-01 17:40:25.269 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 13.8371 ms
+2020-08-01 17:40:26.880 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 9.1261 ms
+2020-08-01 17:40:28.365 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 88.2349 ms
+2020-08-01 17:40:31.746 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 10.8899 ms
+2020-08-01 17:40:32.542 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 7.5156 ms
+2020-08-01 17:40:33.075 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.7791 ms
+2020-08-01 17:40:33.520 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 58.4767 ms
+2020-08-01 17:40:34.364 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:40:34.364 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:40:34.366 +03:00 [INF] HTTP GET / responded 200 in 3.1379 ms
+2020-08-01 17:40:34.383 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3425 ms
+2020-08-01 17:40:45.414 +03:00 [INF] Starting web host
+2020-08-01 17:40:46.188 +03:00 [DBG] Hosting starting
+2020-08-01 17:40:46.405 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:40:46.406 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:40:46.413 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:40:46.413 +03:00 [DBG] Hosting started
+2020-08-01 17:40:46.542 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:40:46.544 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:40:46.704 +03:00 [INF] HTTP GET / responded 200 in 256.0473 ms
+2020-08-01 17:40:46.748 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 12.0589 ms
+2020-08-01 17:40:46.770 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2453 ms
+2020-08-01 17:40:46.838 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.3055 ms
+2020-08-01 17:40:51.505 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:40:54.525 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:40:54.527 +03:00 [INF] HTTP POST / responded 302 in 3044.7406 ms
+2020-08-01 17:40:54.563 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 27.5728 ms
+2020-08-01 17:40:55.751 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 77.0327 ms
+2020-08-01 17:40:56.376 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 65.9785 ms
+2020-08-01 17:40:57.159 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 16.0355 ms
+2020-08-01 17:40:59.683 +03:00 [INF] Adem Soruç updated his personal information.
+2020-08-01 17:40:59.689 +03:00 [INF] HTTP POST /Manager/MyAccount responded 200 in 49.438 ms
+2020-08-01 17:41:00.802 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 33.6055 ms
+2020-08-01 17:41:01.239 +03:00 [INF] HTTP GET /Manager/MyAccount responded 200 in 26.8741 ms
+2020-08-01 17:41:02.085 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 10.8582 ms
+2020-08-01 17:41:02.543 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 17.3587 ms
+2020-08-01 17:41:05.236 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 39.558 ms
+2020-08-01 17:41:06.676 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 29.5523 ms
+2020-08-01 17:41:07.723 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 31.1192 ms
+2020-08-01 17:41:09.098 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 21.7111 ms
+2020-08-01 17:41:09.112 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 9.913 ms
+2020-08-01 17:41:12.840 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 14.1494 ms
+2020-08-01 17:41:12.848 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 5.1058 ms
+2020-08-01 17:41:13.611 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 11.8976 ms
+2020-08-01 17:41:15.642 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 8.9754 ms
+2020-08-01 17:41:17.317 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:17.318 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:41:17.320 +03:00 [INF] HTTP GET / responded 200 in 5.7057 ms
+2020-08-01 17:41:17.337 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5272 ms
+2020-08-01 17:41:21.631 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:21.640 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 17:41:21.641 +03:00 [INF] HTTP POST / responded 302 in 10.3917 ms
+2020-08-01 17:41:21.663 +03:00 [INF] HTTP GET /User/Index responded 200 in 18.4134 ms
+2020-08-01 17:41:22.600 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 42.3327 ms
+2020-08-01 17:41:23.280 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 11.2801 ms
+2020-08-01 17:41:25.496 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 25.3896 ms
+2020-08-01 17:41:26.971 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 17.4176 ms
+2020-08-01 17:41:27.921 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 9.8723 ms
+2020-08-01 17:41:30.611 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:30.611 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:41:30.614 +03:00 [INF] HTTP GET / responded 200 in 3.3199 ms
+2020-08-01 17:41:30.628 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2634 ms
+2020-08-01 17:41:35.484 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:35.490 +03:00 [INF] Tuncay Damlar in logged
+2020-08-01 17:41:35.490 +03:00 [INF] HTTP POST / responded 302 in 7.028 ms
+2020-08-01 17:41:35.494 +03:00 [INF] HTTP GET /User/Index responded 200 in 1.0156 ms
+2020-08-01 17:41:36.262 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 7.9415 ms
+2020-08-01 17:41:36.961 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 8.0991 ms
+2020-08-01 17:41:38.322 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 6.0076 ms
+2020-08-01 17:41:40.098 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.7616 ms
+2020-08-01 17:41:40.525 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 7.6496 ms
+2020-08-01 17:41:41.407 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:41.407 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:41:41.408 +03:00 [INF] HTTP GET / responded 200 in 1.2891 ms
+2020-08-01 17:41:41.427 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.6404 ms
+2020-08-01 17:41:46.288 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:41:46.293 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:41:46.293 +03:00 [INF] HTTP POST / responded 302 in 5.7674 ms
+2020-08-01 17:41:46.298 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.8452 ms
+2020-08-01 17:41:47.240 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.3733 ms
+2020-08-01 17:41:47.832 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 8.4537 ms
+2020-08-01 17:41:48.789 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 117.2527 ms
+2020-08-01 17:41:52.446 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=11 responded 200 in 130.5155 ms
+2020-08-01 17:41:56.533 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 6.4522 ms
+2020-08-01 17:41:58.034 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 39.2999 ms
+2020-08-01 17:42:01.034 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 11.3542 ms
+2020-08-01 17:42:03.117 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.9014 ms
+2020-08-01 17:42:03.650 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 5.1023 ms
+2020-08-01 17:42:04.812 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=2 responded 200 in 89.5948 ms
+2020-08-01 17:42:07.981 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.3348 ms
+2020-08-01 17:42:08.479 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.2224 ms
+2020-08-01 17:42:09.253 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 30.7983 ms
+2020-08-01 17:42:18.347 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.9467 ms
+2020-08-01 17:42:19.185 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 6.0116 ms
+2020-08-01 17:42:20.353 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 32.4552 ms
+2020-08-01 17:42:42.919 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 10.5654 ms
+2020-08-01 17:42:43.559 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 4.54 ms
+2020-08-01 17:42:44.329 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 117.7927 ms
+2020-08-01 17:42:47.621 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 10.9547 ms
+2020-08-01 17:42:48.172 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 6.1459 ms
+2020-08-01 17:42:48.495 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 4.395 ms
+2020-08-01 17:44:28.396 +03:00 [INF] Starting web host
+2020-08-01 17:44:29.196 +03:00 [DBG] Hosting starting
+2020-08-01 17:44:29.416 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:44:29.416 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:44:29.423 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:44:29.423 +03:00 [DBG] Hosting started
+2020-08-01 17:44:29.546 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 87.6876 ms
+2020-08-01 17:44:29.590 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:44:29.591 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:44:29.762 +03:00 [INF] HTTP GET / responded 200 in 304.3932 ms
+2020-08-01 17:44:29.785 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3717 ms
+2020-08-01 17:44:29.812 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.2384 ms
+2020-08-01 17:44:29.890 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.1473 ms
+2020-08-01 17:44:33.739 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:44:36.810 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:44:36.813 +03:00 [INF] HTTP POST / responded 302 in 3098.4677 ms
+2020-08-01 17:44:36.841 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 24.682 ms
+2020-08-01 17:44:37.919 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 73.9478 ms
+2020-08-01 17:44:38.574 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 23.2968 ms
+2020-08-01 17:44:40.431 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 22.2938 ms
+2020-08-01 17:44:43.474 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 44.1304 ms
+2020-08-01 17:44:44.848 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 19.5751 ms
+2020-08-01 17:44:45.639 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 29.4246 ms
+2020-08-01 17:44:47.562 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 31.1082 ms
+2020-08-01 17:44:47.578 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 10.5718 ms
+2020-08-01 17:44:49.424 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 13.2358 ms
+2020-08-01 17:44:49.435 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 7.6762 ms
+2020-08-01 17:44:49.889 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 13.8562 ms
+2020-08-01 17:44:50.900 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 37.2235 ms
+2020-08-01 17:44:51.856 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:44:51.856 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:44:51.861 +03:00 [INF] HTTP GET / responded 200 in 8.7435 ms
+2020-08-01 17:44:51.880 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5469 ms
+2020-08-01 17:45:01.471 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:45:01.480 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 17:45:01.481 +03:00 [INF] HTTP POST / responded 302 in 10.6277 ms
+2020-08-01 17:45:01.505 +03:00 [INF] HTTP GET /User/Index responded 200 in 20.535 ms
+2020-08-01 17:45:02.426 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 40.6883 ms
+2020-08-01 17:45:03.331 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 11.2849 ms
+2020-08-01 17:45:04.350 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 28.4284 ms
+2020-08-01 17:45:05.719 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 19.5913 ms
+2020-08-01 17:45:06.070 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 13.9099 ms
+2020-08-01 17:45:08.271 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:45:08.271 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:45:08.276 +03:00 [INF] HTTP GET / responded 200 in 5.837 ms
+2020-08-01 17:45:08.292 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3902 ms
+2020-08-01 17:45:12.986 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:45:12.993 +03:00 [INF] Tuncay Damlar in logged
+2020-08-01 17:45:12.994 +03:00 [INF] HTTP POST / responded 302 in 8.7714 ms
+2020-08-01 17:45:12.999 +03:00 [INF] HTTP GET /User/Index responded 200 in 1.1639 ms
+2020-08-01 17:45:13.717 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 10.3589 ms
+2020-08-01 17:45:14.566 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 9.8871 ms
+2020-08-01 17:45:15.674 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 8.3053 ms
+2020-08-01 17:45:17.464 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.9328 ms
+2020-08-01 17:45:17.950 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 10.856 ms
+2020-08-01 17:45:48.174 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:45:48.174 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:45:48.181 +03:00 [INF] HTTP GET / responded 200 in 6.6843 ms
+2020-08-01 17:45:48.195 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3938 ms
+2020-08-01 17:45:52.409 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:45:52.416 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:45:52.417 +03:00 [INF] HTTP POST / responded 302 in 7.9758 ms
+2020-08-01 17:45:52.423 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.9165 ms
+2020-08-01 17:45:59.849 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.749 ms
+2020-08-01 17:46:00.441 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 4.6048 ms
+2020-08-01 17:46:12.841 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 11417.5405 ms
+2020-08-01 17:46:21.210 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 6.9922 ms
+2020-08-01 17:46:23.036 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=11 responded 200 in 124.1445 ms
+2020-08-01 17:46:26.090 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 5.8675 ms
+2020-08-01 17:50:07.563 +03:00 [INF] Starting web host
+2020-08-01 17:50:08.327 +03:00 [DBG] Hosting starting
+2020-08-01 17:50:08.538 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-01 17:50:08.539 +03:00 [INF] Hosting environment: Development
+2020-08-01 17:50:08.545 +03:00 [INF] Content root path: C:\Users\ugurc\Source\Repos\SurveyApplication\SurveyApplication\SurveyApplication.SurveyDb.MvcWebUI
+2020-08-01 17:50:08.545 +03:00 [DBG] Hosting started
+2020-08-01 17:50:08.674 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:08.676 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:50:08.832 +03:00 [INF] HTTP GET / responded 200 in 256.7148 ms
+2020-08-01 17:50:08.874 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 10.144 ms
+2020-08-01 17:50:08.888 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3295 ms
+2020-08-01 17:50:08.950 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2822 ms
+2020-08-01 17:50:14.407 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:17.379 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:50:17.382 +03:00 [INF] HTTP POST / responded 302 in 2999.3586 ms
+2020-08-01 17:50:17.420 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 25.0345 ms
+2020-08-01 17:50:18.192 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 65.3519 ms
+2020-08-01 17:50:19.068 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 23.6335 ms
+2020-08-01 17:50:20.597 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 20.7866 ms
+2020-08-01 17:50:22.578 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 44.325 ms
+2020-08-01 17:50:24.044 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 18.9347 ms
+2020-08-01 17:50:24.781 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=11&surveyId=3 responded 200 in 25.8581 ms
+2020-08-01 17:50:26.488 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 32.9224 ms
+2020-08-01 17:50:26.501 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=1 responded 200 in 9.6868 ms
+2020-08-01 17:50:28.159 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 14.7923 ms
+2020-08-01 17:50:28.170 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=3&QuestionId=11&CountOptionAdded=2 responded 200 in 7.8919 ms
+2020-08-01 17:50:28.574 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=3 responded 200 in 12.8147 ms
+2020-08-01 17:50:30.623 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 15.9251 ms
+2020-08-01 17:50:31.047 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:31.047 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:50:31.052 +03:00 [INF] HTTP GET / responded 200 in 8.8221 ms
+2020-08-01 17:50:31.070 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.5789 ms
+2020-08-01 17:50:36.072 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:36.085 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 17:50:36.085 +03:00 [INF] HTTP POST / responded 302 in 13.6494 ms
+2020-08-01 17:50:36.109 +03:00 [INF] HTTP GET /User/Index responded 200 in 19.3649 ms
+2020-08-01 17:50:37.123 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 46.686 ms
+2020-08-01 17:50:37.708 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 14.1666 ms
+2020-08-01 17:50:38.871 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 29.3936 ms
+2020-08-01 17:50:40.376 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 18.5924 ms
+2020-08-01 17:50:40.652 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 14.1019 ms
+2020-08-01 17:50:41.809 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:41.809 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:50:41.812 +03:00 [INF] HTTP GET / responded 200 in 2.9077 ms
+2020-08-01 17:50:41.832 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3437 ms
+2020-08-01 17:50:46.169 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:46.176 +03:00 [INF] Tuncay Damlar in logged
+2020-08-01 17:50:46.177 +03:00 [INF] HTTP POST / responded 302 in 7.7587 ms
+2020-08-01 17:50:46.183 +03:00 [INF] HTTP GET /User/Index responded 200 in 1.4209 ms
+2020-08-01 17:50:46.882 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 35.2344 ms
+2020-08-01 17:50:47.577 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 9.9547 ms
+2020-08-01 17:50:48.460 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=3&questionId=11 responded 200 in 6.7522 ms
+2020-08-01 17:50:50.115 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 11.5986 ms
+2020-08-01 17:50:50.434 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 8.03 ms
+2020-08-01 17:50:51.181 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:51.182 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:50:51.183 +03:00 [INF] HTTP GET / responded 200 in 2.2254 ms
+2020-08-01 17:50:51.201 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4172 ms
+2020-08-01 17:50:55.298 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:50:55.308 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:50:55.309 +03:00 [INF] HTTP POST / responded 302 in 10.9513 ms
+2020-08-01 17:50:55.314 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.8767 ms
+2020-08-01 17:50:56.102 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 1.7635 ms
+2020-08-01 17:50:57.202 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 6.5331 ms
+2020-08-01 17:50:58.826 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=2 responded 200 in 7.224 ms
+2020-08-01 17:50:59.129 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 6.6089 ms
+2020-08-01 17:51:31.596 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=3 responded 200 in 31224.5714 ms
+2020-08-01 17:51:54.145 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=3 responded 200 in 9.4576 ms
+2020-08-01 17:51:55.496 +03:00 [INF] HTTP GET /Manager/SurveyCreate responded 200 in 6.1014 ms
+2020-08-01 17:51:58.218 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 12.8397 ms
+2020-08-01 17:51:59.615 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 11.459 ms
+2020-08-01 17:52:00.630 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=12&surveyId=4 responded 200 in 4.9374 ms
+2020-08-01 17:52:02.247 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 15.4588 ms
+2020-08-01 17:52:02.259 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=4&QuestionId=12&CountOptionAdded=1 responded 200 in 4.4513 ms
+2020-08-01 17:52:05.158 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 9.0183 ms
+2020-08-01 17:52:05.166 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=4&QuestionId=12&CountOptionAdded=2 responded 200 in 4.8187 ms
+2020-08-01 17:52:05.577 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=4 responded 200 in 4.4337 ms
+2020-08-01 17:52:07.499 +03:00 [INF] HTTP POST /Manager/SurveyQuestionCreate responded 200 in 9.9483 ms
+2020-08-01 17:52:09.360 +03:00 [INF] HTTP GET /Manager/CreateOption?questionId=13&surveyId=4 responded 200 in 4.6041 ms
+2020-08-01 17:52:11.592 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 8.7652 ms
+2020-08-01 17:52:11.599 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=4&QuestionId=13&CountOptionAdded=1 responded 200 in 3.4825 ms
+2020-08-01 17:52:14.946 +03:00 [INF] HTTP GET /Manager/CreateOption?surveyId=4&questionId=13&isDeleted=true&optionId=39 responded 200 in 33.017 ms
+2020-08-01 17:52:17.014 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 7.7263 ms
+2020-08-01 17:52:17.021 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=4&QuestionId=13&CountOptionAdded=1 responded 200 in 3.5816 ms
+2020-08-01 17:52:19.066 +03:00 [INF] HTTP POST /Manager/CreateOption responded 302 in 10.219 ms
+2020-08-01 17:52:19.076 +03:00 [INF] HTTP GET /Manager/CreateOption?QuestionResponseOption=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&QuestionResponseOptions=SurveyApplication.SurveyDb.Entities.Concrete.QuestionResponseOption&SurveyId=4&QuestionId=13&CountOptionAdded=2 responded 200 in 6.7414 ms
+2020-08-01 17:52:19.983 +03:00 [INF] HTTP GET /Manager/SurveyQuestionCreate?surveyId=4 responded 200 in 4.7744 ms
+2020-08-01 17:52:21.740 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 5.5748 ms
+2020-08-01 17:52:22.883 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:52:22.883 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:52:22.884 +03:00 [INF] HTTP GET / responded 200 in 1.498 ms
+2020-08-01 17:52:22.902 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.4146 ms
+2020-08-01 17:52:27.628 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:52:27.633 +03:00 [INF] Uğurcan Soruç in logged
+2020-08-01 17:52:27.634 +03:00 [INF] HTTP POST / responded 302 in 5.5059 ms
+2020-08-01 17:52:27.639 +03:00 [INF] HTTP GET /User/Index responded 200 in 0.5208 ms
+2020-08-01 17:52:28.308 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 7.9903 ms
+2020-08-01 17:52:29.700 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 6.2698 ms
+2020-08-01 17:52:30.982 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=4&questionId=12 responded 200 in 4.8751 ms
+2020-08-01 17:52:32.717 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 9.5651 ms
+2020-08-01 17:52:33.047 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 4.8208 ms
+2020-08-01 17:52:34.035 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=4&questionId=13 responded 200 in 4.6085 ms
+2020-08-01 17:52:36.131 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 8.3122 ms
+2020-08-01 17:52:36.421 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 7.3625 ms
+2020-08-01 17:52:37.241 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:52:37.241 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:52:37.242 +03:00 [INF] HTTP GET / responded 200 in 1.061 ms
+2020-08-01 17:52:37.259 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3136 ms
+2020-08-01 17:52:45.946 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:52:45.953 +03:00 [INF] Tuncay Damlar in logged
+2020-08-01 17:52:45.953 +03:00 [INF] HTTP POST / responded 302 in 6.7136 ms
+2020-08-01 17:52:45.957 +03:00 [INF] HTTP GET /User/Index responded 200 in 0.4263 ms
+2020-08-01 17:52:46.780 +03:00 [INF] HTTP GET /User/Surveys responded 200 in 6.9182 ms
+2020-08-01 17:52:47.525 +03:00 [INF] HTTP GET /User/Surveys?surveyId=3 responded 200 in 6.3188 ms
+2020-08-01 17:52:47.943 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 7.5572 ms
+2020-08-01 17:52:48.913 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=4&questionId=12 responded 200 in 4.4289 ms
+2020-08-01 17:52:50.667 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 8.3532 ms
+2020-08-01 17:52:51.139 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 5.483 ms
+2020-08-01 17:52:51.997 +03:00 [INF] HTTP GET /User/QuestionAnswer?surveyId=4&questionId=13 responded 200 in 4.7233 ms
+2020-08-01 17:52:54.987 +03:00 [INF] HTTP POST /User/QuestionAnswer responded 200 in 9.9167 ms
+2020-08-01 17:52:55.292 +03:00 [INF] HTTP GET /User/Surveys?surveyId=4 responded 200 in 6.8363 ms
+2020-08-01 17:52:56.118 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:52:56.118 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:52:56.119 +03:00 [INF] HTTP GET / responded 200 in 1.3192 ms
+2020-08-01 17:52:56.138 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3857 ms
+2020-08-01 17:53:00.983 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:53:00.989 +03:00 [INF] Adem Soruç in logged
+2020-08-01 17:53:00.989 +03:00 [INF] HTTP POST / responded 302 in 6.752 ms
+2020-08-01 17:53:00.994 +03:00 [INF] HTTP GET /Manager/Index responded 200 in 0.5997 ms
+2020-08-01 17:53:02.023 +03:00 [INF] HTTP GET /Manager/Surveys responded 200 in 4.9201 ms
+2020-08-01 17:53:02.806 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=4 responded 200 in 4.8021 ms
+2020-08-01 17:53:08.820 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=4 responded 200 in 5083.6501 ms
+2020-08-01 17:53:16.364 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=12 responded 200 in 127.0505 ms
+2020-08-01 17:53:17.970 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=4 responded 200 in 5.3903 ms
+2020-08-01 17:53:24.058 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=4 responded 200 in 4559.1452 ms
+2020-08-01 17:53:26.665 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=13 responded 200 in 6.4327 ms
+2020-08-01 17:53:28.989 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=4 responded 200 in 6.3816 ms
+2020-08-01 17:53:30.066 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.3254 ms
+2020-08-01 17:53:32.507 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 1546.341 ms
+2020-08-01 17:53:36.225 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=4 responded 200 in 6.7962 ms
+2020-08-01 17:53:38.728 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 5.5184 ms
+2020-08-01 17:53:42.630 +03:00 [INF] HTTP GET /Manager/UserAnalysis?surveyId=1 responded 200 in 3055.8199 ms
+2020-08-01 17:53:46.194 +03:00 [INF] HTTP GET /Manager/SurveyAnalysis?questionId=1 responded 200 in 11.3447 ms
+2020-08-01 17:53:50.367 +03:00 [INF] HTTP GET /Manager/Surveys?surveyId=1 responded 200 in 6.37 ms
+2020-08-01 17:53:53.111 +03:00 [INF] Hello first log in AccountController Constructor
+2020-08-01 17:53:53.111 +03:00 [INF] Hello firs log in AccountController Login Action
+2020-08-01 17:53:53.112 +03:00 [INF] HTTP GET / responded 200 in 1.1963 ms
+2020-08-01 17:53:53.128 +03:00 [INF] HTTP GET /node_modules/mdbootstrap/js/mdb.js responded 404 in 0.3699 ms

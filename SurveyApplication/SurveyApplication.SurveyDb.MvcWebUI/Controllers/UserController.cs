@@ -62,8 +62,13 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Controllers
         [HttpPost]
         public ActionResult MyAccount(UserUpdateListViewModel userUpdateListViewModel)
         {
+            var locker = Security.Security.CreatLocker();
+
             if (ModelState.IsValid)
             {
+                string encryptKey = locker.Encrypt(userUpdateListViewModel.Person.Password);
+                userUpdateListViewModel.Person.Password = encryptKey;
+
                 _personService.Update(userUpdateListViewModel.Person);
                 _userService.Update(userUpdateListViewModel.User);
                 _logger.LogInformation("{firstname} {lastname} updated his personal information.", userUpdateListViewModel.Person.FirstName, userUpdateListViewModel.Person.LastName);

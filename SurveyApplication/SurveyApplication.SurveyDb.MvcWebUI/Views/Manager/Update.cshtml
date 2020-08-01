@@ -10,26 +10,29 @@
     <a class="list-group-item active">Anket Düzenle</a>
 </div>
 <div class="col-md-8">
+    <hr />
+    <a class="btn btn-info pull-left" asp-controller="Manager" asp-action="Surveys" asp-route-surveyId="@Model.Question.SurveyId">Geri</a>
+    <br/>
     <hr/>
     <form asp-controller="Manager" asp-action="Update" method="post">
         <div class="form-group">
             <label>Anket İsmi</label>
-            <input asp-for="Survey.Name" class="form-control" />
+            <input asp-for="Survey.Name" class="form-control"/>
             <span asp-validation-for="Survey.Name"></span>
         </div>
         <div class="form-group">
             <label>Anket Açıklaması</label>
-            <input asp-for="Survey.Description" class="form-control" />
+            <input asp-for="Survey.Description" class="form-control"/>
             <span asp-validation-for="Survey.Description"></span>
         </div>
         <div class="form-group">
             <label>Anket Aktiflik Durumu</label>
-            <input asp-for="Survey.IsOpen" class="form-control" style="width: 30px" />
+            <input asp-for="Survey.IsOpen" class="form-control" style="width: 30px"/>
             <span asp-validation-for="Survey.IsOpen"></span>
         </div>
         <div class="form-group">
             <label>Soru</label>
-            <input asp-for="Question.Text" class="form-control" />
+            <input asp-for="Question.Text" class="form-control"/>
             <span asp-validation-for="Question.Text"></span>
         </div>
         <div>
@@ -47,24 +50,24 @@
             <div class="col-md-8">
                 <a class="btn btn-warning btn-sm" asp-controller="Manager" asp-action="UpdateOptions" asp-route-questionOptionId="@option.Id" asp-route-surveyId="@Model.Question.SurveyId" asp-route-questionId="@Model.Question.Id">Düzenle</a>
             </div>
-            <br />
-            <br />
+            <br/>
+            <br/>
         }
 
-        <input type="hidden" asp-for="Survey.Id" />
-        <input type="hidden" asp-for="Survey.StartDate" />
-        <input type="hidden" asp-for="Survey.EndDate" />
+        <input type="hidden" asp-for="Survey.Id"/>
+        <input type="hidden" asp-for="Survey.StartDate"/>
+        <input type="hidden" asp-for="Survey.EndDate"/>
         @*<input type="hidden" asp-for="Survey.IsOpen" />*@
-        <input type="hidden" asp-for="Survey.ManagerId" />
+        <input type="hidden" asp-for="Survey.ManagerId"/>
 
 
-        <input type="hidden" asp-for="Question.Id" />
-        <input type="hidden" asp-for="Question.SurveyId" />
-        <input type="hidden" asp-for="Question.QuestionTypeId" />
-        
+        <input type="hidden" asp-for="Question.Id"/>
+        <input type="hidden" asp-for="Question.SurveyId"/>
+        <input type="hidden" asp-for="Question.QuestionTypeId"/>
+
         <hr/>
 
-        <input type="submit" value="Güncelle" class="btn btn-success" />
+        <input type="submit" value="Güncelle" class="btn btn-success"/>
 
 
     </form>

@@ -15,11 +15,11 @@ namespace SurveyApplication.SurveyDb.MvcWebUI.Models
 
         //Explicitly setting the name to be used while serializing to JSON.
         [DataMember(Name = "label")]
-        public string Label = "";
+        public string Label;
 
         //Explicitly setting the name to be used while serializing to JSON.
         [DataMember(Name = "y")]
-        public Nullable<double> Y = null;
+        public double? Y = null;
 
     }
 }

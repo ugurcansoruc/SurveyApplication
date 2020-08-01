@@ -15,6 +15,9 @@
 </div>
 <div class="col-md-8">
     <hr/>
+    <a class="btn btn-info" asp-controller="Manager" asp-action="Update" asp-route-surveyId="@Model.SurveyId" asp-route-questionId="@Model.QuestionId">Geri</a>
+    <br/>
+    <hr/>
     <form asp-controller="Manager" asp-action="UpdateOptions" method="post">
         <div class="form-group">
             <h3>Seçenek</h3>
@@ -28,8 +31,6 @@
 
         <input type="hidden" asp-for="SurveyId" />
         <input type="hidden" asp-for="QuestionId" />
-        <a class="btn btn-info" asp-controller="Manager" asp-action="Update" asp-route-surveyId="@Model.SurveyId" asp-route-questionId="@Model.QuestionId">Geri</a>
-
         <input type="submit" value="Değiştir" class="btn btn-success" />
     </form>
     <br/>
